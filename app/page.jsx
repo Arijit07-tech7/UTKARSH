@@ -864,1215 +864,613 @@ function AmbientBackground() {
   );
 }
 
+
 /* =========================================================
-   HOME PAGE
+   UTKARSH — FIGMA-INSPIRED PREMIUM HOME
+   Existing authentication, developer components and backend
+   integrations remain unchanged.
 ========================================================= */
+
+function AcademicVisual() {
+  const items = [
+    ["Notes", "Study material"],
+    ["Assignments", "Stay on track"],
+    ["Routine", "Plan your day"],
+    ["Notices", "Always updated"],
+  ];
+
+  return (
+    <div className="utx-hero-visual">
+      <div className="utx-visual-orbit" aria-hidden="true">
+        <span />
+        <span />
+        <span />
+      </div>
+
+      <motion.div
+        className="utx-academic-card"
+        initial={{ opacity: 0, y: 30, rotate: 2 }}
+        animate={{ opacity: 1, y: 0, rotate: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+      >
+        <div className="utx-card-top">
+          <div>
+            <span className="utx-card-kicker">ACADEMIC SPACE</span>
+            <strong>UTKARSH</strong>
+            <small>उत्कर्ष • IT-C</small>
+          </div>
+
+          <div className="utx-card-mark">
+            <GraduationCap size={21} />
+          </div>
+        </div>
+
+        <div className="utx-card-rule">
+          <i />
+          <i />
+          <i />
+        </div>
+
+        <div className="utx-card-title">
+          <span>YOUR</span>
+          <b>ACADEMIC<br />FUTURE.</b>
+        </div>
+
+        <div className="utx-resource-grid">
+          {items.map(([title, subtitle], index) => (
+            <div className={`utx-resource utx-resource-${index + 1}`} key={title}>
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <div>
+                <b>{title}</b>
+                <small>{subtitle}</small>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="utx-card-bottom">
+          <span>INFORMATION TECHNOLOGY</span>
+          <strong>IT-C</strong>
+        </div>
+      </motion.div>
+
+      <motion.div
+        className="utx-float-card utx-float-student"
+        animate={{ y: [0, -8, 0] }}
+        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+      >
+        <span className="utx-live-dot" />
+        <div>
+          <b>Student Access</b>
+          <small>Secure academic space</small>
+        </div>
+      </motion.div>
+
+      <motion.div
+        className="utx-float-card utx-float-resource"
+        animate={{ y: [0, 7, 0] }}
+        transition={{ duration: 4.8, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
+      >
+        <span className="utx-mini-icon"><BookOpen size={15} /></span>
+        <div>
+          <b>Resources</b>
+          <small>Always within reach</small>
+        </div>
+      </motion.div>
+    </div>
+  );
+}
+
+function UtxFeatureCard({ number, icon: Icon, title, description, accent = "green" }) {
+  return (
+    <motion.article
+      className={`utx-feature-card utx-accent-${accent}`}
+      initial={{ opacity: 0, y: 28 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.16 }}
+      transition={{ duration: 0.65 }}
+      whileHover={{ y: -6 }}
+    >
+      <div className="utx-feature-head">
+        <span>{number}</span>
+        <div className="utx-feature-icon"><Icon size={20} /></div>
+      </div>
+      <div className="utx-feature-body">
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
+      <div className="utx-feature-arrow"><ArrowUpRight size={19} /></div>
+    </motion.article>
+  );
+}
+
+function UtxProcessStep({ number, title, text, icon: Icon }) {
+  return (
+    <motion.div
+      className="utx-process-step"
+      initial={{ opacity: 0, y: 22 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.55 }}
+    >
+      <div className="utx-process-number">{number}</div>
+      <div className="utx-process-icon"><Icon size={20} /></div>
+      <h3>{title}</h3>
+      <p>{text}</p>
+    </motion.div>
+  );
+}
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
   const [menu, setMenu] = useState(false);
-
-  const [loginType, setLoginType] =
-    useState("student");
-
-  const reduceMotion =
-    useReducedMotion();
-
-  /* =======================================================
-     SMOOTH SCROLL
-  ======================================================= */
+  const [loginType, setLoginType] = useState("student");
+  const reduceMotion = useReducedMotion();
 
   const scroll = (id) => {
     setMenu(false);
+    document.getElementById(id)?.scrollIntoView({
+      behavior: reduceMotion ? "auto" : "smooth",
+      block: "start",
+    });
+  };
 
-    document
-      .getElementById(id)
-      ?.scrollIntoView({
-        behavior: "smooth",
+  const openLogin = (type = "student") => {
+    setLoginType(type);
+    setMenu(false);
+    window.setTimeout(() => {
+      document.getElementById("login")?.scrollIntoView({
+        behavior: reduceMotion ? "auto" : "smooth",
         block: "start",
       });
+    }, 60);
   };
 
-  /* =======================================================
-     LOGIN ACCESS
-  ======================================================= */
-
-  const openLogin = (
-    type = "student"
-  ) => {
-    setLoginType(type);
-
-    setMenu(false);
-
-    setTimeout(() => {
-      document
-        .getElementById("login")
-        ?.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-    }, 50);
-  };
+  const featureItems = [
+    {
+      number: "01",
+      icon: BookOpen,
+      title: "Notes & Study Material",
+      description: "Access organized study materials and academic resources from one dedicated space.",
+      accent: "saffron",
+    },
+    {
+      number: "02",
+      icon: ClipboardCheck,
+      title: "Assignments",
+      description: "Keep academic work, deadlines and submission-focused resources within reach.",
+      accent: "green",
+    },
+    {
+      number: "03",
+      icon: CalendarDays,
+      title: "Class Routine",
+      description: "Stay oriented with your daily classes and the academic rhythm of IT-C.",
+      accent: "saffron",
+    },
+    {
+      number: "04",
+      icon: Layers3,
+      title: "Complete Syllabus",
+      description: "Keep semester topics, learning material and academic planning organized.",
+      accent: "green",
+    },
+    {
+      number: "05",
+      icon: Bell,
+      title: "College Notices",
+      description: "Important academic announcements stay accessible when you need them.",
+      accent: "saffron",
+    },
+    {
+      number: "06",
+      icon: MessageCircle,
+      title: "Ask Administration",
+      description: "Keep academic communication closer to the workspace where you study.",
+      accent: "green",
+    },
+  ];
 
   return (
     <AnimatePresence mode="wait">
       {loading ? (
-        <Splash
-          key="splash"
-          done={() =>
-            setLoading(false)
-          }
-        />
+        <Splash key="splash" done={() => setLoading(false)} />
       ) : (
-        <motion.div
+        <motion.main
           key="home"
-          initial={{
-            opacity: 0,
-          }}
-          animate={{
-            opacity: 1,
-          }}
-          transition={{
-            duration: 0.55,
-          }}
-          className="home-page"
+          className="home-page utx-new-home"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.55 }}
         >
-          <AmbientBackground />
+          {/* NAVIGATION */}
+          <header className="utx-nav">
+            <button className="utx-brand" type="button" onClick={() => scroll("home")}>
+              <span className="utx-brand-symbol"><GraduationCap size={20} /></span>
+              <span>
+                <b>UTKARSH</b>
+                <small>उत्कर्ष <i>•</i> IT-C</small>
+              </span>
+            </button>
 
-          {/* =================================================
-              NAVIGATION
-          ================================================= */}
-{/* =================================================
-    NAVIGATION
-================================================= */}
+            <nav className="utx-nav-links" aria-label="Primary navigation">
+              <button onClick={() => scroll("home")}>Home</button>
+              <button onClick={() => scroll("features")}>Features</button>
+              <button onClick={() => scroll("process")}>How it works</button>
+              <button onClick={() => scroll("developers")}>Developers</button>
+            </nav>
 
-<header className="landing-nav">
-
-  {/* LEFT — UTKARSH BRAND */}
-  <div className="nav-left">
-
-    <button
-      className="brand-button"
-      type="button"
-      onClick={() => scroll("home")}
-      aria-label="UTKARSH Home"
-    >
-      <span className="mini-logo">
-        <span className="utkarsh-logo-icon">
-          <GraduationCap size={22} strokeWidth={2.2} />
-        </span>
-      </span>
-
-      <span className="brand-copy">
-        <b>UTKARSH</b>
-
-        <small>
-          उत्कर्ष
-          <i>•</i>
-          IT-C
-        </small>
-      </span>
-    </button>
-
-  </div>
-
-
-  {/* CENTER — NAVIGATION */}
-  <nav className="desktop-nav">
-
-    <button
-      type="button"
-      onClick={() => scroll("home")}
-    >
-      Home
-    </button>
-
-    <button
-      type="button"
-      onClick={() => scroll("features")}
-    >
-      Features
-    </button>
-
-    <button
-      type="button"
-      onClick={() => scroll("process")}
-    >
-      How it works
-    </button>
-
-    <button
-      type="button"
-      onClick={() => scroll("developers")}
-    >
-      Developers
-    </button>
-
-  </nav>
-
-
-  {/* RIGHT — LOGIN + MOBILE MENU */}
-  <div className="nav-actions">
-
-    <button
-      className="nav-login"
-      type="button"
-      onClick={() => openLogin("student")}
-      aria-label="Student Login"
-    >
-      <span>Login</span>
-      <ArrowRight
-        size={17}
-        strokeWidth={2.4}
-      />
-    </button>
-
-    <button
-      className="menu-button"
-      type="button"
-      onClick={() => setMenu(!menu)}
-      aria-label="Toggle menu"
-      aria-expanded={menu}
-    >
-      {menu ? <X /> : <Menu />}
-    </button>
-
-  </div>
-
-</header>
-
-          {/* =================================================
-              MOBILE NAVIGATION
-          ================================================= */}
-
-          <AnimatePresence>
-            {menu && (
-              <motion.div
-                className="mobile-nav"
-                initial={{
-                  opacity: 0,
-                  y: -12,
-                }}
-                animate={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                exit={{
-                  opacity: 0,
-                  y: -12,
-                }}
+            <div className="utx-nav-right">
+              <button className="utx-nav-login" onClick={() => openLogin("student")}>
+                Login <ArrowRight size={15} />
+              </button>
+              <button
+                className="utx-menu-button"
+                onClick={() => setMenu((v) => !v)}
+                aria-label="Toggle navigation"
+                aria-expanded={menu}
               >
-                <button
-                  type="button"
-                  onClick={() =>
-                    scroll("home")
-                  }
-                >
-                  Home
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() =>
-                    scroll("features")
-                  }
-                >
-                  Features
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() =>
-                    scroll("process")
-                  }
-                >
-                  How it works
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() =>
-                    scroll("developers")
-                  }
-                >
-                  Developers
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() =>
-                    openLogin("student")
-                  }
-                >
-                  Login
-                </button>
-              </motion.div>
-            )}
-          </AnimatePresence>
-
-          {/* =================================================
-              HERO
-          ================================================= */}
-
-          <section
-            className="landing-hero"
-            id="home"
-          >
-            <div className="hero-noise" />
-
-            <motion.div
-              className="hero-glow h1"
-              animate={
-                reduceMotion
-                  ? {}
-                  : {
-                      x: [0, 30, -20, 0],
-                      y: [0, -20, 30, 0],
-                    }
-              }
-              transition={{
-                duration: 15,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-            />
-
-            <motion.div
-              className="hero-glow h2"
-              animate={
-                reduceMotion
-                  ? {}
-                  : {
-                      x: [0, -30, 20, 0],
-                      y: [0, 20, -25, 0],
-                    }
-              }
-              transition={{
-                duration: 17,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-            />
-
-            <div className="hero-flag-line">
-              <span className="saffron" />
-              <span className="white" />
-              <span className="green" />
+                {menu ? <X size={22} /> : <Menu size={22} />}
+              </button>
             </div>
 
-            <div className="hero-inner">
-              {/* HERO COPY */}
+            <div className={`utx-mobile-menu ${menu ? "is-open" : ""}`}>
+              <div className="utx-mobile-menu-inner">
+                {[
+                  ["Home", "home"],
+                  ["Features", "features"],
+                  ["How it works", "process"],
+                  ["Developers", "developers"],
+                ].map(([label, id]) => (
+                  <button key={id} onClick={() => scroll(id)}>
+                    <span>{label}</span>
+                    <ArrowUpRight size={20} />
+                  </button>
+                ))}
+                <button className="utx-mobile-login" onClick={() => openLogin("student")}>
+                  Login <ArrowRight size={18} />
+                </button>
+              </div>
+            </div>
+          </header>
 
-              <motion.div
-                className="hero-copy"
-                initial={{
-                  opacity: 0,
-                  x: -30,
-                }}
-                animate={{
-                  opacity: 1,
-                  x: 0,
-                }}
-                transition={{
-                  duration: 0.8,
-                  delay: 0.15,
-                }}
-              >
-                <div className="hero-india-badge">
-                  <IndianFlag compact />
+          {/* HERO */}
+          <section className="utx-hero" id="home">
+            <div className="utx-hero-grid" aria-hidden="true" />
+            <div className="utx-hero-glow utx-glow-saffron" aria-hidden="true" />
+            <div className="utx-hero-glow utx-glow-green" aria-hidden="true" />
 
-                  <span>
-                    <b>
-                      INDIA × ACADEMIA
-                    </b>
-
-                    <small>
-                      UTKARSH • IT-C
-                    </small>
-                  </span>
+            <div className="utx-container utx-hero-layout">
+              <div className="utx-hero-copy">
+                <div className="utx-eyebrow">
+                  <span className="utx-tricolor-dots"><i /><i /><i /></span>
+                  INDIA × ACADEMIA
                 </div>
 
-                <span className="eyebrow">
-                  <i />
-                  NARULA INSTITUTE OF TECHNOLOGY
-                </span>
-
                 <h1>
-                  India's Spirit.
-                  <br />
-
-                  <em className="hero-gradient-words">
-                    <span className="hero-word hero-word-one">
-                      One
-                    </span>{" "}
-                    <span className="hero-word hero-word-academic">
-                      Academic
-                    </span>{" "}
-                    <span className="hero-word hero-word-future">
-                      Future.
-                    </span>
-                  </em>
+                  <span className="utx-saffron">India&apos;s Spirit.</span>
+                  <span>One Academic</span>
+                  <em className="utx-green">Future.</em>
                 </h1>
 
                 <p>
-                  A modern academic command
-                  center connecting learning,
-                  resources, communication and
-                  student life in one secure
-                  platform.
+                  A modern academic command center connecting learning,
+                  resources, communication and student life in one secure platform.
                 </p>
 
-                <div className="hero-actions">
-                  <button
-                    className="gradient-btn"
-                    type="button"
-                    onClick={() =>
-                      openLogin("student")
-                    }
-                  >
-                    <GraduationCap
-                      size={18}
-                    />
-
-                    Student Access
-
-                    <ArrowRight
-                      size={18}
-                    />
+                <div className="utx-hero-actions">
+                  <button className="utx-primary-btn" onClick={() => openLogin("student")}>
+                    Student Access <ArrowRight size={18} />
                   </button>
-
-                  <button
-                    className="ghost-btn"
-                    type="button"
-                    onClick={() =>
-                      openLogin("admin")
-                    }
-                  >
-                    <ShieldCheck
-                      size={17}
-                    />
-
-                    Admin Access
-
-                    <ArrowUpRight
-                      size={17}
-                    />
+                  <button className="utx-secondary-btn" onClick={() => openLogin("admin")}>
+                    Admin Access <ArrowUpRight size={17} />
                   </button>
                 </div>
 
-                <div className="hero-trust">
-                  <span className="trust-icon">
-                    <ShieldCheck
-                      size={15}
-                    />
-                  </span>
-
-                  <span>
-                    Secure academic access
-                  </span>
-
-                  <i />
-
-                  <span>
-                    Information Technology
-                    {" • "}
-                    IT-C
-                  </span>
+                <div className="utx-hero-trust">
+                  <span className="utx-trust-mark"><ShieldCheck size={15} /></span>
+                  <span><b>Secure academic access</b> · Information Technology • IT-C</span>
                 </div>
+              </div>
 
-                <div className="hero-mini-india">
-                  <IndianFlag />
-
-                  <span>
-                    Built for
-                    <b>
-                      {" "}
-                      Indian academic excellence.
-                    </b>
-                  </span>
-                </div>
-              </motion.div>
-
-              {/* =================================================
-                  PRODUCT PREVIEW
-              ================================================= */}
-
-              <motion.div
-                className="hero-preview"
-                initial={{
-                  opacity: 0,
-                  x: 35,
-                  scale: 0.96,
-                }}
-                animate={{
-                  opacity: 1,
-                  x: 0,
-                  scale: 1,
-                }}
-                transition={{
-                  duration: 0.9,
-                  delay: 0.25,
-                }}
-              >
-                <div className="preview-glow" />
-
-                <div className="preview-window">
-                  <div className="preview-bar">
-                    <div className="preview-dots">
-                      <span />
-                      <span />
-                      <span />
-                    </div>
-
-                    <b>
-                      UTKARSH Command Center
-                    </b>
-
-                    <IndianFlag compact />
-                  </div>
-
-                  <div className="preview-body">
-                    <aside>
-                      <div className="preview-brand">
-                        <span>
-                          <GraduationCap
-                            size={17}
-                          />
-                        </span>
-
-                        <strong>
-                          UTKARSH
-                        </strong>
-                      </div>
-
-                      <small>
-                        ACADEMIC SPACE
-                      </small>
-
-                      <i className="active">
-                        <Layers3 size={14} />
-                        Dashboard
-                      </i>
-
-                      <i>
-                        <BookOpen size={14} />
-                        Notes
-                      </i>
-
-                      <i>
-                        <ClipboardCheck
-                          size={14}
-                        />
-                        Assignments
-                      </i>
-
-                      <i>
-                        <CalendarDays
-                          size={14}
-                        />
-                        Routine
-                      </i>
-
-                      <i>
-                        <Bell size={14} />
-                        Notices
-                      </i>
-
-                      <div className="preview-aside-bottom">
-                        <ShieldCheck
-                          size={13}
-                        />
-
-                        Secure
-                      </div>
-                    </aside>
-
-                    <div className="preview-main">
-                      <div className="preview-topline">
-                        <span>
-                          STUDENT SPACE
-                        </span>
-
-                        <span className="preview-live">
-                          <i />
-                          LIVE
-                        </span>
-                      </div>
-
-                      <div className="preview-welcome">
-                        <div>
-                          <small>
-                            YOUR ACADEMIC DASHBOARD
-                          </small>
-
-                          <h3>
-                            Good morning{" "}
-                            <span>
-                              👋
-                            </span>
-                          </h3>
-
-                          <p>
-                            Everything you
-                            need, right where
-                            you need it.
-                          </p>
-                        </div>
-
-                        <div className="preview-avatar">
-                          <GraduationCap
-                            size={21}
-                          />
-                        </div>
-                      </div>
-
-                      <div className="preview-stats">
-                        <div>
-                          <span>
-                            <BookOpen />
-                          </span>
-
-                          <b>
-                            Notes
-                          </b>
-
-                          <strong>
-                            —
-                          </strong>
-                        </div>
-
-                        <div>
-                          <span>
-                            <ClipboardCheck />
-                          </span>
-
-                          <b>
-                            Assignments
-                          </b>
-
-                          <strong>
-                            —
-                          </strong>
-                        </div>
-
-                        <div>
-                          <span>
-                            <CalendarDays />
-                          </span>
-
-                          <b>
-                            Classes
-                          </b>
-
-                          <strong>
-                            —
-                          </strong>
-                        </div>
-                      </div>
-
-                      <div className="preview-section-title">
-                        <span>
-                          QUICK ACCESS
-                        </span>
-
-                        <ArrowUpRight
-                          size={13}
-                        />
-                      </div>
-
-                      <div className="preview-grid">
-                        {features
-                          .slice(0, 4)
-                          .map(
-                            ({
-                              icon: Icon,
-                              title,
-                              tone,
-                            }) => (
-                              <div
-                                key={title}
-                                className={`p-card ${tone}`}
-                              >
-                                <Icon
-                                  size={18}
-                                />
-
-                                <span>
-                                  {title}
-                                </span>
-
-                                <ArrowUpRight
-                                  size={13}
-                                />
-                              </div>
-                            )
-                          )}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <motion.div
-                  className="float-card fc1"
-                  animate={
-                    reduceMotion
-                      ? {}
-                      : {
-                          y: [0, -8, 0],
-                        }
-                  }
-                  transition={{
-                    duration: 4,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
-                >
-                  <CheckCircle2
-                    size={17}
-                  />
-
-                  <span>
-                    <small>
-                      ASSIGNMENTS
-                    </small>
-
-                    <b>
-                      Stay on track
-                    </b>
-                  </span>
-                </motion.div>
-
-                <motion.div
-                  className="float-card fc2"
-                  animate={
-                    reduceMotion
-                      ? {}
-                      : {
-                          y: [0, 8, 0],
-                        }
-                  }
-                  transition={{
-                    duration: 4.5,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
-                >
-                  <Bell size={17} />
-
-                  <span>
-                    <small>
-                      NOTICES
-                    </small>
-
-                    <b>
-                      Always updated
-                    </b>
-                  </span>
-                </motion.div>
-
-                <div className="preview-chakra">
-                  <div className="chakra">
-                    <span />
-
-                    {Array.from({
-                      length: 24,
-                    }).map(
-                      (_, index) => (
-                        <i
-                          key={index}
-                          style={{
-                            transform: `translate(-50%, -100%) rotate(${index * 15}deg)`,
-                          }}
-                        />
-                      )
-                    )}
-                  </div>
-                </div>
-              </motion.div>
+              <AcademicVisual />
             </div>
 
-            <div className="hero-scroll">
-              <span>
-                SCROLL TO EXPLORE
-              </span>
-
+            <div className="utx-scroll-cue">
+              <span>SCROLL TO EXPLORE</span>
               <i />
             </div>
           </section>
 
-          {/* =================================================
-              INDIA STRIP
-          ================================================= */}
-
-          <section className="india-strip">
-            <div className="india-strip-inner">
-              <div className="india-strip-flag">
-                <IndianFlag />
+          {/* INDIA / ACADEMIA BREAK */}
+          <section className="utx-india-section">
+            <div className="utx-container utx-india-layout">
+              <div className="utx-india-copy">
+                <span className="utx-section-label">INDIA × ACADEMIA</span>
+                <h2>Built for <em>Indian academic excellence.</em></h2>
+                <p>
+                  A focused digital space shaped around the everyday academic
+                  flow of Information Technology • IT-C.
+                </p>
               </div>
 
-              <div>
-                <small>
-                  UTKARSH
-                </small>
+              <div className="utx-india-art" aria-hidden="true">
+                <div className="utx-india-ring ring-one" />
+                <div className="utx-india-ring ring-two" />
+                <div className="utx-india-ring ring-three" />
+                <div className="utx-chakra">
+                  <span />
+                  {Array.from({ length: 24 }).map((_, i) => (
+                    <i key={i} style={{ transform: `rotate(${i * 15}deg)` }} />
+                  ))}
+                </div>
+                <div className="utx-india-word">INDIA</div>
+              </div>
+            </div>
+            <div className="utx-wide-tricolor"><i /><i /><i /></div>
+          </section>
 
-                <strong>
-                  A focused academic
-                  experience for IT-C.
-                </strong>
+          {/* FEATURES */}
+          <section className="utx-section utx-features-section" id="features">
+            <div className="utx-container">
+              <div className="utx-section-intro">
+                <div>
+                  <span className="utx-section-label">ACADEMIC INTELLIGENCE</span>
+                  <h2>Everything your academic<br /><em>life needs.</em></h2>
+                </div>
+                <p>
+                  One polished workspace for the everyday academic flow
+                  of Information Technology • IT-C.
+                </p>
               </div>
 
-              <div className="india-strip-items">
-                <span>
-                  <GraduationCap
-                    size={16}
-                  />
-                  STUDENTS
-                </span>
-
-                <span>
-                  <Building2
-                    size={16}
-                  />
-                  ACADEMICS
-                </span>
-
-                <span>
-                  <ShieldCheck
-                    size={16}
-                  />
-                  SECURITY
-                </span>
+              <div className="utx-feature-grid">
+                {featureItems.map((item) => (
+                  <UtxFeatureCard key={item.number} {...item} />
+                ))}
               </div>
             </div>
           </section>
 
-          {/* =================================================
-              FEATURES
-          ================================================= */}
-
-          <section
-            className="feature-section"
-            id="features"
-          >
-            <div className="section-head">
-              <div>
-                <span className="eyebrow">
-                  ACADEMIC INTELLIGENCE
-                </span>
-
-                <h2>
-                  Everything your
-                  academic
-                  <br />
-                  life needs.
-                </h2>
+          {/* PRODUCT STORY */}
+          <section className="utx-product-section">
+            <div className="utx-container utx-product-layout">
+              <div className="utx-product-copy">
+                <span className="utx-section-label">ACADEMIC SPACE</span>
+                <h2>Everything important,<br /><em>in one place.</em></h2>
+                <p>
+                  From study material to notices, UTKARSH keeps the everyday
+                  academic flow connected without turning it into another complicated system.
+                </p>
+                <div className="utx-product-list">
+                  <span><CheckCircle2 size={16} /> Focused for IT-C</span>
+                  <span><CheckCircle2 size={16} /> Designed around student life</span>
+                  <span><CheckCircle2 size={16} /> Secure access by role</span>
+                </div>
               </div>
 
-              <p>
-                One polished workspace
-                for the everyday
-                academic flow of
-                Information Technology
-                {" • "}
-                IT-C.
-              </p>
+              <div className="utx-product-visual">
+                <div className="utx-product-panel">
+                  <div className="utx-panel-header">
+                    <span>UTKARSH</span>
+                    <small>ACADEMIC SPACE</small>
+                  </div>
+                  <div className="utx-panel-title">YOUR EVERYDAY<br /><b>ACADEMIC FLOW.</b></div>
+                  <div className="utx-panel-stack">
+                    <div><span>01</span><b>Notes & Study Material</b><ArrowUpRight size={15} /></div>
+                    <div><span>02</span><b>Assignments</b><ArrowUpRight size={15} /></div>
+                    <div><span>03</span><b>Class Routine</b><ArrowUpRight size={15} /></div>
+                    <div><span>04</span><b>Notices</b><ArrowUpRight size={15} /></div>
+                  </div>
+                  <div className="utx-panel-footer">
+                    <IndianFlag compact />
+                    <span>INFORMATION TECHNOLOGY • IT-C</span>
+                  </div>
+                </div>
+              </div>
             </div>
+          </section>
 
-            <div className="feature-grid">
-              {features.map(
-                (
-                  {
-                    icon: Icon,
-                    title,
-                    description,
-                    tone,
-                  },
-                  index
-                ) => (
-                  <motion.article
-                    key={title}
-                    className={`feature-card ${tone}`}
-                    initial={{
-                      opacity: 0,
-                      y: 25,
-                    }}
-                    whileInView={{
-                      opacity: 1,
-                      y: 0,
-                    }}
-                    whileHover={{
-                      y: -7,
-                    }}
-                    viewport={{
-                      once: true,
-                      amount: 0.12,
-                    }}
-                    transition={{
-                      duration: 0.45,
-                      delay:
-                        index * 0.045,
-                    }}
-                  >
-                    <div className="feature-card-top">
-                      <div className="feature-number">
-                        {String(
-                          index + 1
-                        ).padStart(2, "0")}
-                      </div>
+          {/* PROCESS */}
+          <section className="utx-section utx-process-section" id="process">
+            <div className="utx-container">
+              <div className="utx-process-heading">
+                <div>
+                  <span className="utx-section-label">SIMPLE & SECURE</span>
+                  <h2>From your phone to<br /><em>your academic space.</em></h2>
+                </div>
+                <p>A simple workflow designed around your everyday academic needs.</p>
+              </div>
 
-                      <ArrowUpRight
-                        className="feature-arrow"
-                        size={18}
-                      />
+              <div className="utx-process-grid">
+                <UtxProcessStep number="01" title="ACCESS" text="Enter your approved academic space." icon={Smartphone} />
+                <UtxProcessStep number="02" title="ORGANIZE" text="Find your notes, assignments and routine." icon={Layers3} />
+                <UtxProcessStep number="03" title="STAY AHEAD" text="Keep up with your academic journey." icon={Sparkles} />
+              </div>
+            </div>
+          </section>
+
+          {/* ACCESS */}
+          <section className="utx-access-section" id="login">
+            <div className="utx-access-bg" aria-hidden="true">
+              <span />
+              <span />
+            </div>
+            <div className="utx-container">
+              <div className="utx-access-heading">
+                <span className="utx-section-label">YOUR ACADEMIC COMMAND CENTER</span>
+                <h2>One secure doorway.<br /><em>Two ways in.</em></h2>
+                <p>
+                  Student access stays simple. Administration gets a dedicated
+                  protected workspace.
+                </p>
+              </div>
+
+              <div className="utx-access-grid">
+                <div className="utx-access-copy">
+                  <div className="utx-access-card utx-student-access">
+                    <span className="utx-access-number">01</span>
+                    <GraduationCap size={24} />
+                    <h3>STUDENT ACCESS</h3>
+                    <p>Your focused academic space for everyday learning.</p>
+                    <div className="utx-access-points">
+                      <span>Notes & resources</span>
+                      <span>Assignments</span>
+                      <span>Class routine</span>
                     </div>
+                    <button onClick={() => openLogin("student")}>Enter Student Space <ArrowRight size={16} /></button>
+                  </div>
 
-                    <div className="feature-icon">
-                      <Icon size={23} />
+                  <div className="utx-access-card utx-admin-access">
+                    <span className="utx-access-number">02</span>
+                    <ShieldCheck size={24} />
+                    <h3>ADMIN ACCESS</h3>
+                    <p>A protected workspace for academic administration.</p>
+                    <div className="utx-access-points">
+                      <span>Academic management</span>
+                      <span>Notices & resources</span>
+                      <span>Protected controls</span>
                     </div>
+                    <button onClick={() => openLogin("admin")}>Enter Admin Space <ArrowRight size={16} /></button>
+                  </div>
+                </div>
 
-                    <h3>
-                      {title}
-                    </h3>
+                <div className="utx-login-shell">
+                  <LoginCard initialType={loginType} />
+                </div>
+              </div>
 
-                    <p>
-                      {description}
-                    </p>
-
-                    <div className="feature-card-line" />
-                  </motion.article>
-                )
-              )}
+              <div className="utx-security-row">
+                <div><ShieldCheck size={18} /><span>Approved student access</span></div>
+                <div><LockKeyhole size={18} /><span>Role-based admin controls</span></div>
+                <div><CheckCircle2 size={18} /><span>Secure server-side session</span></div>
+              </div>
             </div>
           </section>
 
-          {/* =================================================
-              PROCESS
-          ================================================= */}
-
-          <section
-            className="process-section"
-            id="process"
-          >
-            <div className="process-decor">
-              <IndianFlag />
-            </div>
-
-            <div className="center-head">
-              <span className="eyebrow">
-                SIMPLE & SECURE
-              </span>
-
-              <h2>
-                From your phone to
-                <br />
-                your academic space.
-              </h2>
-
-              <p>
-                A simple workflow
-                designed around your
-                everyday academic needs.
-              </p>
-            </div>
-
-            <div className="process-grid">
-              {processSteps.map(
-                (
-                  {
-                    number,
-                    icon: Icon,
-                    title,
-                    description,
-                  },
-                  index
-                ) => (
-                  <motion.article
-                    key={number}
-                    initial={{
-                      opacity: 0,
-                      y: 25,
-                    }}
-                    whileInView={{
-                      opacity: 1,
-                      y: 0,
-                    }}
-                    viewport={{
-                      once: true,
-                      amount: 0.2,
-                    }}
-                    transition={{
-                      duration: 0.5,
-                      delay:
-                        index * 0.1,
-                    }}
-                  >
-                    <div className="process-number">
-                      {number}
-                    </div>
-
-                    <div className="process-icon">
-                      <Icon size={22} />
-                    </div>
-
-                    <h3>
-                      {title}
-                    </h3>
-
-                    <p>
-                      {description}
-                    </p>
-
-                    {index <
-                      processSteps.length -
-                        1 && (
-                      <ArrowRight className="process-arrow" />
-                    )}
-                  </motion.article>
-                )
-              )}
-            </div>
-          </section>
-
-          {/* =================================================
-              LOGIN / ACCESS
-          ================================================= */}
-
-          <section
-            className="access-section"
-            id="login"
-          >
-            <div className="access-copy">
-              <div className="access-india-mark">
-                <IndianFlag />
-              </div>
-
-              <span className="eyebrow">
-                YOUR ACADEMIC COMMAND CENTER
-              </span>
-
-              <h2>
-                One secure doorway.
-                <br />
-
-                <em>
-                  Two ways in.
-                </em>
-              </h2>
-
-              <p>
-                Student access stays
-                simple. Administration
-                gets a dedicated protected
-                workspace.
-              </p>
-
-              <div className="access-points">
-                <span>
-                  <CheckCircle2 />
-                  Approved student access
-                </span>
-
-                <span>
-                  <CheckCircle2 />
-                  Role-based admin controls
-                </span>
-
-                <span>
-                  <CheckCircle2 />
-                  Secure server-side session
-                </span>
-
-                <span>
-                  <CheckCircle2 />
-                  Academic resources in one place
-                </span>
-              </div>
-
-              <div className="access-note">
-                <LockKeyhole size={16} />
-
-                <span>
-                  Your credentials are
-                  processed through the
-                  existing secure UTKARSH
-                  authentication system.
-                </span>
-              </div>
-            </div>
-
-            <LoginCard
-              initialType={loginType}
-            />
-          </section>
-
-          {/* =================================================
-              DEVELOPERS
-          ================================================= */}
-
-          <section
-            className="developers"
-            id="developers"
-          >
-            <div className="developer-background">
-              <IndianFlag />
-            </div>
-
-            <div className="center-head">
-              <span className="eyebrow">
-                BUILT & DEVELOPED BY
-              </span>
-
-              <h2>
-                The people behind
-                <br />
-
-                <em>
-                  UTKARSH.
-                </em>
-              </h2>
-
-              <p>
-                Designed and engineered
-                for the Information
-                Technology
-                {" • "}
-                IT-C community.
-              </p>
-            </div>
-
-            <div className="developer-grid">
-              <DeveloperCard
-                image="/images/arijit.jpg"
-                initials="AG"
-                name="ARIJIT GUPTA"
-                role="DEVELOPER"
-                description="Product, frontend & full-stack engineering"
-                className="developer-saffron"
-              />
-
-              <DeveloperCard
-                image="/images/abir.jpg"
-                initials="BG"
-                name="ABIR GHOSH"
-                role="DEVELOPER"
-                description="Product, backend & platform engineering"
-                className="developer-green"
-              />
-            </div>
-
-            <div className="developer-note">
+          {/* MOBILE / PRODUCT MOMENT */}
+          <section className="utx-mobile-section">
+            <div className="utx-container utx-mobile-layout">
               <div>
-                <Users size={18} />
-
-                <span>
-                  Built with purpose for
-                  Narula Institute of
-                  Technology
-                  {" • "}
-                  IT-C
-                </span>
+                <span className="utx-section-label">BUILT FOR EVERYDAY STUDENT LIFE</span>
+                <h2>Your academic space.<br /><em>Wherever you study.</em></h2>
+                <p>
+                  A responsive experience designed to stay clear, useful and comfortable
+                  whether you are using a laptop or your phone between classes.
+                </p>
               </div>
 
-              <IndianFlag compact />
+              <div className="utx-phone-wrap">
+                <div className="utx-phone">
+                  <div className="utx-phone-speaker" />
+                  <div className="utx-phone-screen">
+                    <div className="utx-phone-brand"><b>UTKARSH</b><small>IT-C</small></div>
+                    <div className="utx-phone-greeting">TODAY</div>
+                    <div className="utx-phone-hero">Good morning 👋<small>Everything you need, right here.</small></div>
+                    <div className="utx-phone-card"><CalendarDays size={17} /><span>Class Routine</span><ArrowUpRight size={14} /></div>
+                    <div className="utx-phone-card"><BookOpen size={17} /><span>Study Material</span><ArrowUpRight size={14} /></div>
+                    <div className="utx-phone-card"><Bell size={17} /><span>Notices</span><ArrowUpRight size={14} /></div>
+                    <div className="utx-phone-tricolor"><i /><i /><i /></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
 
-          {/* =================================================
-              FINAL CTA
-          ================================================= */}
-
-          <section className="final-cta">
-            <div className="final-cta-flag">
-              <IndianFlag />
+          {/* IT-C IDENTITY */}
+          <section className="utx-identity-section">
+            <div className="utx-container">
+              <span className="utx-section-label">MADE FOR</span>
+              <h2>INFORMATION TECHNOLOGY<br /><em>• IT-C</em></h2>
+              <div className="utx-identity-bottom">
+                <p>Narula Institute of Technology</p>
+                <div className="utx-identity-tags">
+                  <span>LEARNING</span><span>TECHNOLOGY</span><span>COMMUNITY</span><span>PROGRESS</span>
+                </div>
+              </div>
             </div>
-
-            <span className="eyebrow">
-              UTKARSH
-              {" • "}
-              उत्कर्ष
-            </span>
-
-            <h2>
-              Your academic journey,
-              <br />
-
-              <em>
-                organized.
-              </em>
-            </h2>
-
-            <p>
-              One platform. One academic
-              space. Everything you need.
-            </p>
-
-            <button
-              type="button"
-              className="gradient-btn"
-              onClick={() =>
-                openLogin("student")
-              }
-            >
-              Enter UTKARSH
-              <ArrowRight size={18} />
-            </button>
           </section>
 
-          {/* =================================================
-              FOOTER
-          ================================================= */}
-
-          <footer className="landing-footer">
-            <div className="footer-brand">
-              <div className="footer-brand-mark">
-                <IndianFlag compact />
+          {/* DEVELOPERS */}
+          <section className="utx-developers-section" id="developers">
+            <div className="utx-container">
+              <div className="utx-section-intro utx-dev-intro">
+                <div>
+                  <span className="utx-section-label">BUILT & DEVELOPED BY</span>
+                  <h2>The people behind<br /><em>UTKARSH.</em></h2>
+                </div>
+                <p>Designed and engineered for the Information Technology • IT-C community.</p>
               </div>
 
-              <div>
-                <strong>
-                  UTKARSH
-                </strong>
-
-                <span>
-                  उत्कर्ष
-                  {" • "}
-                  Your Academic
-                  Command Center
-                </span>
+              <div className="utx-developer-grid">
+                <DeveloperCard
+                  image="/images/arijit.jpg"
+                  initials="AG"
+                  name="ARIJIT GUPTA"
+                  role="DEVELOPER"
+                  description="Product, frontend & full-stack engineering"
+                  className="developer-saffron"
+                />
+                <DeveloperCard
+                  image="/images/abir.jpg"
+                  initials="BG"
+                  name="ABIR GHOSH"
+                  role="DEVELOPER"
+                  description="Product, backend & platform engineering"
+                  className="developer-green"
+                />
               </div>
-            </div>
 
-            <div className="footer-middle">
-              <p>
-                Narula Institute of
-                Technology
-                <span>•</span>
-                Information Technology
-                <span>•</span>
-                IT-C
-              </p>
-
-              <div className="footer-india">
-                <Flag size={14} />
-                <span>
-                  INDIA
-                </span>
+              <div className="utx-developer-note">
+                <span><Users size={16} /> Built with purpose for Narula Institute of Technology • IT-C</span>
+                <span>INDIA</span>
               </div>
             </div>
+          </section>
 
-            <div className="footer-bottom">
-              <small>
-                © 2026 UTKARSH
-              </small>
+          {/* FINAL CTA */}
+          <section className="utx-final-section">
+            <div className="utx-final-orbit" aria-hidden="true">
+              <span /><span /><span />
+            </div>
+            <div className="utx-container utx-final-inner">
+              <span className="utx-section-label">UTKARSH • उत्कर्ष</span>
+              <h2>Your academic journey,<br /><em>organized.</em></h2>
+              <p>One platform. One academic space. Everything you need.</p>
+              <button className="utx-primary-btn" onClick={() => openLogin("student")}>
+                Enter UTKARSH <ArrowRight size={18} />
+              </button>
+              <div className="utx-final-tricolor"><i /><i /><i /></div>
+            </div>
+          </section>
 
-              <small>
-                ARIJIT GUPTA
-                {" & "}
-                ABIR GHOSH
-              </small>
+          {/* FOOTER */}
+          <footer className="utx-footer">
+            <div className="utx-container">
+              <div className="utx-footer-main">
+                <div className="utx-footer-brand">
+                  <b>UTKARSH</b>
+                  <span>उत्कर्ष • Your Academic Command Center</span>
+                </div>
+                <div className="utx-footer-nav">
+                  <button onClick={() => scroll("home")}>Home</button>
+                  <button onClick={() => scroll("features")}>Features</button>
+                  <button onClick={() => scroll("process")}>How it works</button>
+                  <button onClick={() => scroll("developers")}>Developers</button>
+                  <button onClick={() => openLogin("student")}>Login</button>
+                </div>
+              </div>
+              <div className="utx-footer-meta">
+                <span>Narula Institute of Technology • Information Technology • IT-C</span>
+                <span>INDIA</span>
+              </div>
+              <div className="utx-footer-bottom">
+                <small>© 2026 UTKARSH</small>
+                <small>ARIJIT GUPTA & ABIR GHOSH</small>
+              </div>
             </div>
           </footer>
-        </motion.div>
+        </motion.main>
       )}
     </AnimatePresence>
   );
