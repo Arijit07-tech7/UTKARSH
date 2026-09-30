@@ -7,7 +7,6 @@
 **India's Spirit. One Academic Future.**
 
 <p>
-  <img src="https://img.shields.io/badge/INDIA-×-ACADEMIA-ff9933?style=for-the-badge&labelColor=0b0f14" />
   <img src="https://img.shields.io/badge/NARULA_INSTITUTE_OF_TECHNOLOGY-IT--C-138808?style=for-the-badge&labelColor=0b0f14" />
   <img src="https://img.shields.io/badge/2026-ACADEMIC_PLATFORM-ffffff?style=for-the-badge&labelColor=0b0f14" />
 </p>
