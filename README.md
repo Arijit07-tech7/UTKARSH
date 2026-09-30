@@ -1,304 +1,185 @@
-README.md
-
-
 <div align="center">
 
-🇮🇳 UTKARSH • उत्कर्ष
-Your Academic Command Center
-India's Spirit. One Academic Future.
+# 🇮🇳 UTKARSH • उत्कर्ष
 
-<img src="https://img.shields.io/badge/INDIA-×-academia-orange?style=for-the-badge&labelColor=0b0f14&color=ff9933" alt="India Academia"/> <img src="https://img.shields.io/badge/NARULA_INSTITUTE_OF_TECHNOLOGY-IT--C-138808?style=for-the-badge&labelColor=0b0f14" alt="NIT IT-C"/> <img src="https://img.shields.io/badge/2026-ACADEMIC_PLATFORM-ffffff?style=for-the-badge&labelColor=0b0f14" alt="2026"/>
+### Your Academic Command Center
 
-<br/>
+**India's Spirit. One Academic Future.**
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff9933,50:ffffff,100:138808&height=170&section=header&text=UTKARSH&fontSize=58&fontColor=111827&animation=fadeIn&fontAlignY=40" width="100%" alt="UTKARSH"/>
+<p>
+  <img src="https://img.shields.io/badge/INDIA-×-ACADEMIA-ff9933?style=for-the-badge&labelColor=0b0f14" />
+  <img src="https://img.shields.io/badge/NARULA_INSTITUTE_OF_TECHNOLOGY-IT--C-138808?style=for-the-badge&labelColor=0b0f14" />
+  <img src="https://img.shields.io/badge/2026-ACADEMIC_PLATFORM-ffffff?style=for-the-badge&labelColor=0b0f14" />
+</p>
+
+<img
+  src="https://capsule-render.vercel.app/api?type=waving&color=0:ff9933,50:ffffff,100:138808&height=190&section=header&text=UTKARSH&fontSize=62&fontColor=111827&animation=fadeIn&fontAlignY=42"
+  width="100%"
+/>
 
 </div>
 
-✦ The Idea
-UTKARSH — उत्कर्ष — represents progress, growth and excellence.
+---
 
-UTKARSH is a premium academic command center designed around the everyday workflow of the Information Technology • IT-C student community at Narula Institute of Technology.
+## ✦ About UTKARSH
 
-Instead of scattering academic information across messages, files, notices and different platforms, UTKARSH brings the important parts of student life into one focused digital space.
+> **UTKARSH — उत्कर्ष — represents progress, growth and excellence.**
 
-<div align="center">
+UTKARSH is a premium academic command center created for the **Information Technology • IT-C** student community of **Narula Institute of Technology**.
 
-🎓 Learn → Organize → Track → Progress
-</div>
-
-🪷 India × Academia
-UTKARSH is intentionally built around an Indian academic identity.
-
-The visual language combines:
-
-🇮🇳 Indian tricolour spirit
-×
-🎓 Modern academic technology
-×
-✨ Premium product design
-
-The result is an interface that feels familiar, modern and purpose-built for the students it serves.
+It brings essential academic workflows into one focused digital environment — helping students access, organize and manage academic information without depending on scattered platforms.
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/🇮🇳-SAFFRON-ff9933?style=for-the-badge&labelColor=0b0f14" /> <img src="https://img.shields.io/badge/○-WHITE-ffffff?style=for-the-badge&labelColor=0b0f14" /> <img src="https://img.shields.io/badge/🇮🇳-GREEN-138808?style=for-the-badge&labelColor=0b0f14" />
+### 🎓 Learn · Organize · Track · Progress
 
 </div>
 
-⚡ What UTKARSH Brings Together
-<table> <tr> <td width="50%">
+---
 
-📚 Academic Intelligence
-A focused academic environment for:
+# 🪷 India × Academia
 
-Notes
-
-Assignments
-
-Syllabus
-
-Class routines
-
-Notices
-
-Previous questions
-
-Academic resources
-
-</td> <td width="50%">
-
-🔐 Controlled Access
-Separate access experiences for:
-
-👨‍🎓 Students
-
-🛡️ Administrators
-
-Authentication and authorization are designed around protected academic data.
-
-</td> </tr>
-
-<tr> <td width="50%">
-
-📱 Mobile First
-Designed to work beautifully across:
-
-📱 Smartphones
-
-💻 Laptops
-
-🖥️ Desktops
-
-📲 PWA environments
-
-</td> <td width="50%">
-
-✨ Premium Experience
-Built around:
-
-Smooth transitions
-
-Glass-inspired surfaces
-
-Responsive layouts
-
-Micro-interactions
-
-Clean typography
-
-Academic-focused UX
-
-</td> </tr> </table>
-
-🧠 Academic Intelligence
-<div align="center">
-
-Everything important. One academic space.
-</div>
-
-UTKARSH is structured as an academic ecosystem rather than just another student dashboard.
-
-📖 Study
-Keep learning resources organized and accessible.
-
-📝 Assignments
-Keep track of academic work and submission-related information.
-
-🗂️ Syllabus
-Maintain a centralized view of academic coverage.
-
-🕐 Routine
-Access class scheduling information without searching through scattered messages.
-
-📢 Notices
-Keep important academic announcements in one place.
-
-🧩 Previous Questions
-Create a structured space for previous academic question resources.
-
-🛡️ Security First
-UTKARSH separates the student experience from administration controls.
+UTKARSH combines three ideas into one visual identity:
 
 <div align="center">
 
-Access	Purpose
-👨‍🎓 Student	Access approved academic resources
-🛡️ Admin	Manage academic platform data and resources
+| 🇮🇳 | 🎓 | ⚡ |
+|:---:|:---:|:---:|
+| **Indian Identity** | **Academic Purpose** | **Modern Technology** |
+| Tricolour-inspired accents | Student-first workflow | Premium digital experience |
+
 </div>
 
-The platform is designed around authenticated access, role-aware interfaces and database-level protection.
+The design keeps the Indian identity **subtle, elegant and modern**, using saffron, white and green as visual accents rather than overwhelming the interface.
 
-The interface should look simple. The system underneath should take security seriously.
+---
 
-🚀 Technology
+# 🚀 Platform at a Glance
+
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=nextjs,react,js,ts,tailwind,supabase,postgres,docker,git,github&perline=5" alt="Technology Stack"/>
+<table>
+<tr>
 
-<br/><br/>
+<td align="center" width="25%">
 
-<img src="https://img.shields.io/badge/Frontend-React%20%2F%20Next.js-111827?style=for-the-badge&logo=react" /> <img src="https://img.shields.io/badge/Styling-Tailwind%20CSS-111827?style=for-the-badge&logo=tailwindcss" /> <img src="https://img.shields.io/badge/Backend-Supabase-111827?style=for-the-badge&logo=supabase" /> <img src="https://img.shields.io/badge/Database-PostgreSQL-111827?style=for-the-badge&logo=postgresql" />
+## 📚
 
-</div>
+### Study
 
-🎨 Design Philosophy
-UTKARSH follows a product-first academic design language.
-
-01 — Editorial
-Large typography, clear hierarchy and purposeful whitespace.
-
-02 — Product
-The experience is designed like a modern technology platform rather than a traditional college portal.
-
-03 — Academic
-Every interaction ultimately supports the student's academic workflow.
-
-04 — Indian Identity
-Subtle tricolour accents connect the product to its Indian academic context without overwhelming the interface.
-
-🧭 Platform Experience
-<div align="center">
-
-                 🇮🇳 UTKARSH
-                       │
-            ┌──────────┴──────────┐
-            │                     │
-        👨‍🎓 STUDENT           🛡️ ADMIN
-            │                     │
-       Academic Space       Management Space
-            │                     │
-     ┌──────┼──────┐        ┌─────┼─────┐
-     │      │      │        │     │     │
-    📚     📝     🕐       👥    📂    📢
-   Study  Tasks  Routine   Users Upload Notices
-</div>
-
-One platform. Two access experiences. One academic ecosystem.
-
-🌐 Built for IT-C
-<div align="center">
-
-NARULA INSTITUTE OF TECHNOLOGY
-Department of Information Technology
-
-IT-C
-<br/>
-
-Built for the classroom. Designed for the future.
-
-</div>
-
-👨‍💻 Developers
-<table> <tr> <td align="center" width="50%">
-
-<img src="https://github.com/Arijit07-tech7.png" width="110" height="110" style="border-radius:50%" alt="Arijit Gupta"/>
-
-ARIJIT GUPTA
-Build & Development
-
-Product • UI • Full-Stack Development
+Notes, syllabus and learning resources
 
 </td>
 
-<td align="center" width="50%">
+<td align="center" width="25%">
 
-<img src="https://ui-avatars.com/api/?name=Abir+Ghosh&size=220&background=111827&color=ffffff&bold=true" width="110" height="110" style="border-radius:50%" alt="Abir Ghosh"/>
+## 📝
 
-ABIR GHOSH
-Build & Development
+### Manage
 
-Product • Engineering • Platform Development
+Assignments and academic tasks
 
-</td> </tr> </table>
+</td>
 
-✨ Experience the Identity
-<div align="center">
+<td align="center" width="25%">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0b0f14&height=150&section=header&text=INDIA%20×%20ACADEMIA&fontSize=38&fontColor=ffffff&animation=fadeIn" width="100%" alt="India Academia"/>
+## 🕐
 
-<br/>
+### Organize
 
-India's Spirit. One Academic Future.
-</div>
+Routine, notices and schedules
 
-🛠️ Getting Started
-1. Clone
-git clone <YOUR_REPOSITORY_URL>
-cd UTKARSH
-2. Install
-npm install
-3. Configure Environment
-Create a local environment file and add the required Supabase / application configuration used by the project.
+</td>
 
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-Never commit private service-role keys, passwords or other secrets to GitHub.
+<td align="center" width="25%">
 
-4. Run
-npm run dev
-Open the local development URL shown by Next.js.
+## 🔐
 
-📦 Production
-npm run build
-npm start
-For deployment, configure the required environment variables in the hosting platform rather than committing secrets into the repository.
+### Protect
 
-🔒 Security Notes
-Keep credentials outside source control.
+Role-based academic access
 
-Use environment variables for secrets.
+</td>
 
-Keep Supabase Row Level Security enabled where required.
-
-Use role-based authorization for protected operations.
-
-Never expose service-role credentials in client-side code.
-
-Keep administrative routes protected.
-
-🌱 Vision
-UTKARSH is more than a collection of pages.
-
-It is an attempt to create a focused academic digital environment where students can spend less time searching for information and more time using it.
-
-<div align="center">
-
-From scattered information → to one academic space.
-From routine → to organized progress.
-From today’s classroom → to tomorrow’s academic future.
-</div>
-
-<div align="center">
-
-🇮🇳 उत्कर्ष
-Where India's spirit meets academic ambition.
-<br/>
-
-<img src="https://img.shields.io/badge/MADE%20FOR-IT--C-ff9933?style=for-the-badge&labelColor=0b0f14" /> <img src="https://img.shields.io/badge/BUILT%20WITH-PURPOSE-ffffff?style=for-the-badge&labelColor=0b0f14" /> <img src="https://img.shields.io/badge/LOOKING%20AHEAD-138808?style=for-the-badge&labelColor=0b0f14" />
-
-<br/><br/>
-
-UTKARSH • 2026
+</tr>
+</table>
 
 </div>
+
+---
+
+# 🧠 Academic Intelligence
+
+UTKARSH is designed as an **academic ecosystem**, not simply another dashboard.
+
+### 📖 Study Space
+
+A focused place for academic notes, resources and learning material.
+
+### 📝 Assignments
+
+A structured environment for academic tasks and submission-related information.
+
+### 🗂️ Syllabus
+
+Keep important syllabus information centralized and easier to access.
+
+### 🕐 Class Routine
+
+Quick access to class scheduling information.
+
+### 📢 Notices
+
+Keep important academic announcements visible and organized.
+
+### 📄 Previous Questions
+
+Create a structured academic resource for previous question papers and revision.
+
+---
+
+# 🧊 Platform Architecture
+
+<div align="center">
+
+```mermaid
+flowchart TB
+
+    U["🇮🇳 UTKARSH<br/><b>Academic Command Center</b>"]
+
+    U --> S["👨‍🎓 Student Access"]
+    U --> A["🛡️ Admin Access"]
+
+    S --> SA["📚 Academic Space"]
+    S --> SN["🔔 Student Information"]
+
+    A --> AM["👥 Student Management"]
+    A --> AR["📂 Academic Resources"]
+    A --> AN["📢 Notices & Platform Data"]
+
+    SA --> N["📖 Notes"]
+    SA --> AS["📝 Assignments"]
+    SA --> SY["🗂️ Syllabus"]
+    SA --> RT["🕐 Routine"]
+    SA --> PQ["📄 Previous Questions"]
+
+    S --> AUTH["🔐 Authentication"]
+    A --> AUTH
+
+    AUTH --> DB[("☁️ Supabase<br/>PostgreSQL")]
+
+    DB --> RLS["🛡️ Row Level Security"]
+
+    classDef root fill:#0b0f14,color:#ffffff,stroke:#ff9933,stroke-width:3px;
+    classDef student fill:#ffffff,color:#111827,stroke:#138808,stroke-width:2px;
+    classDef admin fill:#ffffff,color:#111827,stroke:#ff9933,stroke-width:2px;
+    classDef service fill:#f8fafc,color:#111827,stroke:#64748b,stroke-width:2px;
+    classDef database fill:#eef2ff,color:#111827,stroke:#6366f1,stroke-width:2px;
+    classDef security fill:#ecfdf5,color:#065f46,stroke:#138808,stroke-width:2px;
+
+    class U root;
+    class S,SA,SN,N,AS,SY,RT,PQ student;
+    class A,AM,AR,AN admin;
+    class AUTH service;
+    class DB database;
+    class RLS security;
