@@ -14491,14 +14491,14 @@ body {
 ========================================================= */
 
 .admin-dashboard-page {
-  --utk-text: #17231c;
-  --utk-muted: #718078;
-  --utk-line: rgba(24, 55, 37, 0.09);
-  --utk-saffron: #ff9933;
-  --utk-blue: #2457a6;
-  --utk-green: #138808;
+    --utk-text: #17231c;
+    --utk-muted: #718078;
+    --utk-line: rgba(24, 55, 37, 0.09);
+    --utk-saffron: #ff9933;
+    --utk-blue: #2457a6;
+    --utk-green: #138808;
 
-  position: relative;
+    position: relative;
 }
 
 
@@ -14507,113 +14507,105 @@ body {
 ========================================================= */
 
 .admin-dashboard-page .admin-welcome {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 
-  padding: 34px 34px !important;
+    padding: 34px 34px !important;
 
-  border-radius: 24px !important;
+    border-radius: 24px !important;
 
-  border: 1px solid rgba(24, 55, 37, 0.09) !important;
+    border: 1px solid rgba(24, 55, 37, 0.09) !important;
 
-  background:
-    radial-gradient(
-      circle at 90% 20%,
-      rgba(19, 136, 8, 0.10),
-      transparent 30%
-    ),
-    radial-gradient(
-      circle at 5% 80%,
-      rgba(255, 153, 51, 0.10),
-      transparent 30%
-    ),
-    linear-gradient(
-      120deg,
-      #fffaf5 0%,
-      #ffffff 45%,
-      #f5fbf5 100%
-    ) !important;
+    background:
+        radial-gradient(circle at 90% 20%,
+            rgba(19, 136, 8, 0.10),
+            transparent 30%),
+        radial-gradient(circle at 5% 80%,
+            rgba(255, 153, 51, 0.10),
+            transparent 30%),
+        linear-gradient(120deg,
+            #fffaf5 0%,
+            #ffffff 45%,
+            #f5fbf5 100%) !important;
 
-  box-shadow:
-    0 18px 55px rgba(25, 55, 35, 0.065) !important;
+    box-shadow:
+        0 18px 55px rgba(25, 55, 35, 0.065) !important;
 
-  margin-bottom: 20px !important;
+    margin-bottom: 20px !important;
 }
 
 
 /* tricolour line */
 
 .admin-dashboard-page .admin-welcome::before {
-  content: "";
+    content: "";
 
-  position: absolute;
+    position: absolute;
 
-  top: 0;
-  left: 0;
-  right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
 
-  height: 4px;
+    height: 4px;
 
-  background:
-    linear-gradient(
-      90deg,
-      #ff9933 0%,
-      #ff9933 33.33%,
-      #ffffff 33.33%,
-      #ffffff 66.66%,
-      #138808 66.66%,
-      #138808 100%
-    );
+    background:
+        linear-gradient(90deg,
+            #ff9933 0%,
+            #ff9933 33.33%,
+            #ffffff 33.33%,
+            #ffffff 66.66%,
+            #138808 66.66%,
+            #138808 100%);
 }
 
 
-.admin-dashboard-page .admin-welcome > div {
-  position: relative;
-  z-index: 2;
+.admin-dashboard-page .admin-welcome>div {
+    position: relative;
+    z-index: 2;
 }
 
 
 .admin-dashboard-page .admin-welcome span {
-  display: block;
+    display: block;
 
-  margin-bottom: 9px;
+    margin-bottom: 9px;
 
-  font-size: 10px !important;
+    font-size: 10px !important;
 
-  font-weight: 800 !important;
+    font-weight: 800 !important;
 
-  letter-spacing: 0.18em !important;
+    letter-spacing: 0.18em !important;
 
-  color: #829088 !important;
+    color: #829088 !important;
 }
 
 
 .admin-dashboard-page .admin-welcome h2 {
-  margin: 0 !important;
+    margin: 0 !important;
 
-  font-size: clamp(30px, 3vw, 42px) !important;
+    font-size: clamp(30px, 3vw, 42px) !important;
 
-  line-height: 1.05 !important;
+    line-height: 1.05 !important;
 
-  letter-spacing: -0.045em !important;
+    letter-spacing: -0.045em !important;
 
-  font-weight: 850 !important;
+    font-weight: 850 !important;
 
-  color: #15221a !important;
+    color: #15221a !important;
 }
 
 
 .admin-dashboard-page .admin-welcome p {
-  max-width: 620px;
+    max-width: 620px;
 
-  margin:
-    10px 0 0 !important;
+    margin:
+        10px 0 0 !important;
 
-  font-size: 14px !important;
+    font-size: 14px !important;
 
-  line-height: 1.65 !important;
+    line-height: 1.65 !important;
 
-  color: #748078 !important;
+    color: #748078 !important;
 }
 
 
@@ -14622,48 +14614,45 @@ body {
 ========================================================= */
 
 .admin-dashboard-page .admin-welcome .dashboard-retry-button {
-  position: relative;
-  z-index: 3;
+    position: relative;
+    z-index: 3;
 
-  display: inline-flex !important;
+    display: inline-flex !important;
 
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
 
-  gap: 8px;
+    gap: 8px;
 
-  padding: 12px 18px !important;
+    padding: 12px 18px !important;
 
-  border-radius: 13px !important;
+    border-radius: 13px !important;
 
-  border: 0 !important;
+    border: 0 !important;
 
-  color: white !important;
+    color: white !important;
 
-  background:
-    linear-gradient(
-      105deg,
-      #ff9933,
-      #285a9f 52%,
-      #138808
-    ) !important;
+    background:
+        linear-gradient(105deg,
+            #ff9933,
+            #285a9f 52%,
+            #138808) !important;
 
-  font-weight: 800 !important;
+    font-weight: 800 !important;
 
-  box-shadow:
-    0 10px 26px rgba(19, 136, 8, 0.15) !important;
+    box-shadow:
+        0 10px 26px rgba(19, 136, 8, 0.15) !important;
 
-  transition:
-    transform .2s ease,
-    box-shadow .2s ease !important;
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease !important;
 }
 
-.admin-dashboard-page
-.dashboard-retry-button:hover {
-  transform: translateY(-2px);
+.admin-dashboard-page .dashboard-retry-button:hover {
+    transform: translateY(-2px);
 
-  box-shadow:
-    0 15px 32px rgba(19, 136, 8, 0.20) !important;
+    box-shadow:
+        0 15px 32px rgba(19, 136, 8, 0.20) !important;
 }
 
 
@@ -14672,150 +14661,142 @@ body {
 ========================================================= */
 
 .admin-dashboard-page .stats-grid {
-  gap: 14px !important;
+    gap: 14px !important;
 
-  margin-bottom: 20px !important;
+    margin-bottom: 20px !important;
 }
 
 
-.admin-dashboard-page .stats-grid > .panel {
-  position: relative;
+.admin-dashboard-page .stats-grid>.panel {
+    position: relative;
 
-  overflow: hidden;
+    overflow: hidden;
 
-  min-height: 92px;
+    min-height: 92px;
 
-  padding: 19px 20px !important;
+    padding: 19px 20px !important;
 
-  border-radius: 18px !important;
+    border-radius: 18px !important;
 
-  border: 1px solid rgba(24, 55, 37, 0.085) !important;
+    border: 1px solid rgba(24, 55, 37, 0.085) !important;
 
-  background:
-    linear-gradient(
-      145deg,
-      #ffffff,
-      #fbfcfb
-    ) !important;
+    background:
+        linear-gradient(145deg,
+            #ffffff,
+            #fbfcfb) !important;
 
-  box-shadow:
-    0 8px 28px rgba(24, 55, 37, 0.045) !important;
+    box-shadow:
+        0 8px 28px rgba(24, 55, 37, 0.045) !important;
 
-  transition:
-    transform .22s ease,
-    box-shadow .22s ease,
-    border-color .22s ease !important;
+    transition:
+        transform .22s ease,
+        box-shadow .22s ease,
+        border-color .22s ease !important;
 }
 
 
-.admin-dashboard-page .stats-grid > .panel:hover {
-  transform: translateY(-3px);
+.admin-dashboard-page .stats-grid>.panel:hover {
+    transform: translateY(-3px);
 
-  border-color:
-    rgba(19, 136, 8, 0.16) !important;
+    border-color:
+        rgba(19, 136, 8, 0.16) !important;
 
-  box-shadow:
-    0 16px 38px rgba(24, 55, 37, 0.08) !important;
+    box-shadow:
+        0 16px 38px rgba(24, 55, 37, 0.08) !important;
 }
 
 
-.admin-dashboard-page .stats-grid > .panel::after {
-  content: "";
+.admin-dashboard-page .stats-grid>.panel::after {
+    content: "";
 
-  position: absolute;
+    position: absolute;
 
-  right: -35px;
-  bottom: -40px;
+    right: -35px;
+    bottom: -40px;
 
-  width: 100px;
-  height: 100px;
+    width: 100px;
+    height: 100px;
 
-  border-radius: 50%;
+    border-radius: 50%;
 
-  background:
-    rgba(19, 136, 8, .035);
+    background:
+        rgba(19, 136, 8, .035);
 
-  pointer-events: none;
+    pointer-events: none;
 }
 
 
 .admin-dashboard-page .stats-grid small {
-  color: #87928c !important;
+    color: #87928c !important;
 
-  font-size: 10px !important;
+    font-size: 10px !important;
 
-  font-weight: 800 !important;
+    font-weight: 800 !important;
 
-  letter-spacing: .13em !important;
+    letter-spacing: .13em !important;
 }
 
 
 .admin-dashboard-page .stats-grid h3 {
-  color: #17251d !important;
+    color: #17251d !important;
 
-  font-size: 22px !important;
+    font-size: 22px !important;
 
-  font-weight: 850 !important;
+    font-weight: 850 !important;
 }
 
 
 /* stat icon */
 
 .admin-dashboard-page .activity-dot {
-  flex-shrink: 0;
+    flex-shrink: 0;
 
-  width: 43px !important;
-  height: 43px !important;
+    width: 43px !important;
+    height: 43px !important;
 
-  display: inline-flex !important;
+    display: inline-flex !important;
 
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
 
-  border-radius: 14px !important;
+    border-radius: 14px !important;
 
-  border: 1px solid rgba(24,55,37,.08);
+    border: 1px solid rgba(24, 55, 37, .08);
 
-  background:
-    linear-gradient(
-      145deg,
-      rgba(255,153,51,.10),
-      rgba(19,136,8,.09)
-    ) !important;
+    background:
+        linear-gradient(145deg,
+            rgba(255, 153, 51, .10),
+            rgba(19, 136, 8, .09)) !important;
 
-  color: #138808 !important;
+    color: #138808 !important;
 }
 
 
 .admin-dashboard-page .activity-dot.blue {
-  color: #2457a6 !important;
+    color: #2457a6 !important;
 
-  background:
-    linear-gradient(
-      145deg,
-      rgba(36,87,166,.10),
-      rgba(19,136,8,.06)
-    ) !important;
+    background:
+        linear-gradient(145deg,
+            rgba(36, 87, 166, .10),
+            rgba(19, 136, 8, .06)) !important;
 }
 
 
 .admin-dashboard-page .activity-dot.green {
-  color: #138808 !important;
+    color: #138808 !important;
 
-  background:
-    rgba(19,136,8,.08) !important;
+    background:
+        rgba(19, 136, 8, .08) !important;
 }
 
 
 .admin-dashboard-page .activity-dot.violet {
-  color: #a65d18 !important;
+    color: #a65d18 !important;
 
-  background:
-    linear-gradient(
-      145deg,
-      rgba(255,153,51,.13),
-      rgba(36,87,166,.07)
-    ) !important;
+    background:
+        linear-gradient(145deg,
+            rgba(255, 153, 51, .13),
+            rgba(36, 87, 166, .07)) !important;
 }
 
 
@@ -14823,84 +14804,83 @@ body {
    STUDENT RECORDS PANEL
 ========================================================= */
 
-.admin-dashboard-page > .panel {
-  overflow: hidden;
+.admin-dashboard-page>.panel {
+    overflow: hidden;
 
-  padding: 0 !important;
+    padding: 0 !important;
 
-  border-radius: 22px !important;
+    border-radius: 22px !important;
 
-  border: 1px solid rgba(24,55,37,.085) !important;
+    border: 1px solid rgba(24, 55, 37, .085) !important;
 
-  background: #ffffff !important;
+    background: #ffffff !important;
 
-  box-shadow:
-    0 12px 40px rgba(24,55,37,.05) !important;
+    box-shadow:
+        0 12px 40px rgba(24, 55, 37, .05) !important;
 }
 
 
 /* panel heading */
 
 .admin-dashboard-page .panel-title {
-  padding: 22px 24px !important;
+    padding: 22px 24px !important;
 
-  border-bottom:
-    1px solid rgba(24,55,37,.07) !important;
+    border-bottom:
+        1px solid rgba(24, 55, 37, .07) !important;
 }
 
 
-.admin-dashboard-page .panel-title > div > span {
-  display: block;
+.admin-dashboard-page .panel-title>div>span {
+    display: block;
 
-  margin-bottom: 6px;
+    margin-bottom: 6px;
 
-  color: #8a958f !important;
+    color: #8a958f !important;
 
-  font-size: 10px !important;
+    font-size: 10px !important;
 
-  font-weight: 800 !important;
+    font-weight: 800 !important;
 
-  letter-spacing: .16em !important;
+    letter-spacing: .16em !important;
 }
 
 
 .admin-dashboard-page .panel-title h3 {
-  margin: 0 !important;
+    margin: 0 !important;
 
-  color: #193025 !important;
+    color: #193025 !important;
 
-  font-size: 20px !important;
+    font-size: 20px !important;
 
-  font-weight: 800 !important;
+    font-weight: 800 !important;
 
-  letter-spacing: -.025em !important;
+    letter-spacing: -.025em !important;
 }
 
 
 /* refresh */
 
-.admin-dashboard-page .panel-title
-.dashboard-retry-button {
-  display: inline-flex !important;
+.admin-dashboard-page .panel-title .dashboard-retry-button {
+    display: inline-flex !important;
 
-  align-items: center;
+    align-items: center;
 
-  gap: 7px;
+    gap: 7px;
 
-  padding: 9px 13px !important;
+    padding: 9px 13px !important;
 
-  border-radius: 10px !important;
+    border-radius: 10px !important;
 
-  border: 1px solid rgba(24,55,37,.09) !important;
+    border: 1px solid rgba(24, 55, 37, .09) !important;
 
-  background: #ffffff !important;
+    background: #ffffff !important;
 
-  color: #68776e !important;
+    color: #68776e !important;
 
-  font-weight: 700 !important;
+    font-weight: 700 !important;
 
-  box-shadow:
-    0 4px 13px rgba(24,55,37,.035) !important;
+    box-shadow:
+        0 4px 13px rgba(24, 55, 37, .035) !important;
 }
 
 
@@ -14908,86 +14888,82 @@ body {
    SEARCH AREA
 ========================================================= */
 
-.admin-dashboard-page .panel > div[style*="marginBottom"] {
-  padding:
-    18px 24px 4px !important;
+.admin-dashboard-page .panel>div[style*="marginBottom"] {
+    padding:
+        18px 24px 4px !important;
 
-  margin-bottom: 8px !important;
+    margin-bottom: 8px !important;
 }
 
 
 /* actual inline search input */
 
 .admin-dashboard-page input[type="text"] {
-  min-height: 48px !important;
+    min-height: 48px !important;
 
-  box-sizing: border-box !important;
+    box-sizing: border-box !important;
 
-  border:
-    1px solid rgba(24,55,37,.11) !important;
+    border:
+        1px solid rgba(24, 55, 37, .11) !important;
 
-  border-radius: 13px !important;
+    border-radius: 13px !important;
 
-  background:
-    #fbfcfb !important;
+    background:
+        #fbfcfb !important;
 
-  color: #1b2a21 !important;
+    color: #1b2a21 !important;
 
-  font-size: 13px !important;
+    font-size: 13px !important;
 
-  transition:
-    border-color .2s ease,
-    box-shadow .2s ease,
-    background .2s ease !important;
+    transition:
+        border-color .2s ease,
+        box-shadow .2s ease,
+        background .2s ease !important;
 }
 
 
 .admin-dashboard-page input[type="text"]:focus {
-  border-color:
-    rgba(19,136,8,.30) !important;
+    border-color:
+        rgba(19, 136, 8, .30) !important;
 
-  background: #ffffff !important;
+    background: #ffffff !important;
 
-  box-shadow:
-    0 0 0 4px rgba(19,136,8,.055) !important;
+    box-shadow:
+        0 0 0 4px rgba(19, 136, 8, .055) !important;
 }
 
 
 .admin-dashboard-page input[type="text"]::placeholder {
-  color: #9aa49f !important;
+    color: #9aa49f !important;
 }
 
 
 /* add button beside search */
 
-.admin-dashboard-page
-.panel > div[style*="marginBottom"]
-> .dashboard-retry-button {
-  min-height: 46px;
+.admin-dashboard-page .panel>div[style*="marginBottom"]>.dashboard-retry-button {
+    min-height: 46px;
 
-  display: inline-flex !important;
+    display: inline-flex !important;
 
-  align-items: center;
+    align-items: center;
 
-  gap: 7px;
+    gap: 7px;
 
-  padding: 0 15px !important;
+    padding: 0 15px !important;
 
-  border-radius: 12px !important;
+    border-radius: 12px !important;
 
-  border: 0 !important;
+    border: 0 !important;
 
-  color: #ffffff !important;
+    color: #ffffff !important;
 
-  background:
-    linear-gradient(
-      105deg,
-      #ff9933,
-      #2457a6 50%,
-      #138808
-    ) !important;
+    background:
+        linear-gradient(105deg,
+            #ff9933,
+            #2457a6 50%,
+            #138808) !important;
 
-  font-weight: 800 !important;
+    font-weight: 800 !important;
 }
 
 
@@ -14996,89 +14972,85 @@ body {
 ========================================================= */
 
 .admin-dashboard-page table {
-  border-collapse: separate !important;
+    border-collapse: separate !important;
 
-  border-spacing: 0 !important;
+    border-spacing: 0 !important;
 }
 
 
 .admin-dashboard-page thead {
-  background:
-    linear-gradient(
-      90deg,
-      #fffaf5,
-      #ffffff 50%,
-      #f6fbf6
-    ) !important;
+    background:
+        linear-gradient(90deg,
+            #fffaf5,
+            #ffffff 50%,
+            #f6fbf6) !important;
 }
 
 
 .admin-dashboard-page th {
-  color: #77837c !important;
+    color: #77837c !important;
 
-  font-size: 10px !important;
+    font-size: 10px !important;
 
-  font-weight: 850 !important;
+    font-weight: 850 !important;
 
-  letter-spacing: .10em !important;
+    letter-spacing: .10em !important;
 
-  text-transform: uppercase !important;
+    text-transform: uppercase !important;
 
-  border-bottom:
-    1px solid rgba(24,55,37,.075) !important;
+    border-bottom:
+        1px solid rgba(24, 55, 37, .075) !important;
 
-  padding:
-    14px 10px !important;
+    padding:
+        14px 10px !important;
 }
 
 
 .admin-dashboard-page td {
-  color: #53635a !important;
+    color: #53635a !important;
 
-  font-size: 13px !important;
+    font-size: 13px !important;
 
-  border-top:
-    1px solid rgba(24,55,37,.065) !important;
+    border-top:
+        1px solid rgba(24, 55, 37, .065) !important;
 
-  padding:
-    16px 10px !important;
+    padding:
+        16px 10px !important;
 
-  background: #ffffff !important;
+    background: #ffffff !important;
 }
 
 
 .admin-dashboard-page tbody tr {
-  transition:
-    background .18s ease !important;
+    transition:
+        background .18s ease !important;
 }
 
 
 .admin-dashboard-page tbody tr:hover td {
-  background:
-    linear-gradient(
-      90deg,
-      rgba(255,153,51,.025),
-      rgba(19,136,8,.025)
-    ) !important;
+    background:
+        linear-gradient(90deg,
+            rgba(255, 153, 51, .025),
+            rgba(19, 136, 8, .025)) !important;
 }
 
 
 .admin-dashboard-page td b {
-  color: #1b3024 !important;
+    color: #1b3024 !important;
 
-  font-size: 14px !important;
+    font-size: 14px !important;
 
-  font-weight: 800 !important;
+    font-weight: 800 !important;
 }
 
 
 .admin-dashboard-page td small {
-  color: #89948e !important;
+    color: #89948e !important;
 }
 
 
 .admin-dashboard-page td svg {
-  color: #687a70;
+    color: #687a70;
 }
 
 
@@ -15088,66 +15060,66 @@ body {
 ========================================================= */
 
 .admin-dashboard-page td button {
-  width: 38px !important;
-  height: 38px !important;
+    width: 38px !important;
+    height: 38px !important;
 
-  display: inline-flex !important;
+    display: inline-flex !important;
 
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
 
-  border-radius: 11px !important;
+    border-radius: 11px !important;
 
-  cursor: pointer;
+    cursor: pointer;
 
-  transition:
-    transform .18s ease,
-    box-shadow .18s ease,
-    border-color .18s ease !important;
+    transition:
+        transform .18s ease,
+        box-shadow .18s ease,
+        border-color .18s ease !important;
 }
 
 
 .admin-dashboard-page td button:first-child {
-  border:
-    1px solid rgba(36,87,166,.13) !important;
+    border:
+        1px solid rgba(36, 87, 166, .13) !important;
 
-  background:
-    rgba(36,87,166,.045) !important;
+    background:
+        rgba(36, 87, 166, .045) !important;
 
-  color: #2457a6 !important;
+    color: #2457a6 !important;
 }
 
 
 .admin-dashboard-page td button:first-child:hover {
-  transform: translateY(-2px);
+    transform: translateY(-2px);
 
-  background:
-    rgba(36,87,166,.09) !important;
+    background:
+        rgba(36, 87, 166, .09) !important;
 
-  box-shadow:
-    0 7px 18px rgba(36,87,166,.10) !important;
+    box-shadow:
+        0 7px 18px rgba(36, 87, 166, .10) !important;
 }
 
 
 .admin-dashboard-page td button:last-child {
-  border:
-    1px solid rgba(220,38,38,.13) !important;
+    border:
+        1px solid rgba(220, 38, 38, .13) !important;
 
-  background:
-    rgba(220,38,38,.045) !important;
+    background:
+        rgba(220, 38, 38, .045) !important;
 
-  color: #dc2626 !important;
+    color: #dc2626 !important;
 }
 
 
 .admin-dashboard-page td button:last-child:hover {
-  transform: translateY(-2px);
+    transform: translateY(-2px);
 
-  background:
-    rgba(220,38,38,.085) !important;
+    background:
+        rgba(220, 38, 38, .085) !important;
 
-  box-shadow:
-    0 7px 18px rgba(220,38,38,.10) !important;
+    box-shadow:
+        0 7px 18px rgba(220, 38, 38, .10) !important;
 }
 
 
@@ -15157,7 +15129,7 @@ body {
 
 .admin-dashboard-page .status-green,
 .admin-dashboard-page [class*="status"] {
-  border-radius: 999px !important;
+    border-radius: 999px !important;
 }
 
 
@@ -15166,23 +15138,21 @@ body {
 ========================================================= */
 
 .admin-dashboard-page .dashboard-empty-state {
-  min-height: 220px !important;
+    min-height: 220px !important;
 
-  margin: 12px 24px 24px !important;
+    margin: 12px 24px 24px !important;
 
-  border-radius: 18px !important;
+    border-radius: 18px !important;
 
-  border:
-    1px dashed rgba(24,55,37,.14) !important;
+    border:
+        1px dashed rgba(24, 55, 37, .14) !important;
 
-  background:
-    linear-gradient(
-      145deg,
-      #fbfcfb,
-      #ffffff
-    ) !important;
+    background:
+        linear-gradient(145deg,
+            #fbfcfb,
+            #ffffff) !important;
 
-  color: #78857d !important;
+    color: #78857d !important;
 }
 
 
@@ -15191,16 +15161,16 @@ body {
 ========================================================= */
 
 .admin-dashboard-page .status-banner {
-  border-radius: 16px !important;
+    border-radius: 16px !important;
 
-  border:
-    1px solid rgba(24,55,37,.08) !important;
+    border:
+        1px solid rgba(24, 55, 37, .08) !important;
 
-  background:
-    rgba(255,255,255,.94) !important;
+    background:
+        rgba(255, 255, 255, .94) !important;
 
-  box-shadow:
-    0 8px 25px rgba(24,55,37,.045) !important;
+    box-shadow:
+        0 8px 25px rgba(24, 55, 37, .045) !important;
 }
 
 
@@ -15209,116 +15179,97 @@ body {
    Actual page has no modal class, so target it safely
 ========================================================= */
 
-.admin-dashboard-page
-> div[style*="position: fixed"] {
-  background:
-    rgba(8,18,12,.48) !important;
+.admin-dashboard-page>div[style*="position: fixed"] {
+    background:
+        rgba(8, 18, 12, .48) !important;
 
-  backdrop-filter:
-    blur(14px) saturate(120%) !important;
+    backdrop-filter:
+        blur(14px) saturate(120%) !important;
 }
 
 
-.admin-dashboard-page
-> div[style*="position: fixed"]
-> div[role="dialog"] {
-  position: relative;
+.admin-dashboard-page>div[style*="position: fixed"]>div[role="dialog"] {
+    position: relative;
 
-  overflow: hidden;
+    overflow: hidden;
 
-  border:
-    1px solid rgba(24,55,37,.10) !important;
+    border:
+        1px solid rgba(24, 55, 37, .10) !important;
 
-  border-radius: 24px !important;
+    border-radius: 24px !important;
 
-  background:
-    linear-gradient(
-      145deg,
-      #ffffff,
-      #fbfdfb
-    ) !important;
+    background:
+        linear-gradient(145deg,
+            #ffffff,
+            #fbfdfb) !important;
 
-  box-shadow:
-    0 35px 100px rgba(10,30,18,.22) !important;
+    box-shadow:
+        0 35px 100px rgba(10, 30, 18, .22) !important;
 }
 
 
-.admin-dashboard-page
-> div[style*="position: fixed"]
-> div[role="dialog"]::before {
-  content: "";
+.admin-dashboard-page>div[style*="position: fixed"]>div[role="dialog"]::before {
+    content: "";
 
-  position: absolute;
+    position: absolute;
 
-  top: 0;
-  left: 0;
-  right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
 
-  height: 4px;
+    height: 4px;
 
-  background:
-    linear-gradient(
-      90deg,
-      #ff9933,
-      #ffffff 50%,
-      #138808
-    );
+    background:
+        linear-gradient(90deg,
+            #ff9933,
+            #ffffff 50%,
+            #138808);
 }
 
 
-.admin-dashboard-page
-> div[style*="position: fixed"]
-input {
-  background: #ffffff !important;
+.admin-dashboard-page>div[style*="position: fixed"] input {
+    background: #ffffff !important;
 
-  color: #17231c !important;
+    color: #17231c !important;
 
-  border:
-    1px solid rgba(24,55,37,.12) !important;
+    border:
+        1px solid rgba(24, 55, 37, .12) !important;
 
-  border-radius: 12px !important;
+    border-radius: 12px !important;
 
-  transition:
-    border-color .2s ease,
-    box-shadow .2s ease !important;
+    transition:
+        border-color .2s ease,
+        box-shadow .2s ease !important;
 }
 
 
-.admin-dashboard-page
-> div[style*="position: fixed"]
-input:focus {
-  border-color:
-    rgba(19,136,8,.30) !important;
+.admin-dashboard-page>div[style*="position: fixed"] input:focus {
+    border-color:
+        rgba(19, 136, 8, .30) !important;
 
-  box-shadow:
-    0 0 0 4px rgba(19,136,8,.055) !important;
+    box-shadow:
+        0 0 0 4px rgba(19, 136, 8, .055) !important;
 }
 
 
-.admin-dashboard-page
-> div[style*="position: fixed"]
-label > span {
-  color: #53635a !important;
+.admin-dashboard-page>div[style*="position: fixed"] label>span {
+    color: #53635a !important;
 }
 
 
 /* modal submit button */
 
-.admin-dashboard-page
-> div[style*="position: fixed"]
-form button[type="submit"] {
-  background:
-    linear-gradient(
-      105deg,
-      #ff9933,
-      #2457a6 50%,
-      #138808
-    ) !important;
+.admin-dashboard-page>div[style*="position: fixed"] form button[type="submit"] {
+    background:
+        linear-gradient(105deg,
+            #ff9933,
+            #2457a6 50%,
+            #138808) !important;
 
-  border: none !important;
+    border: none !important;
 
-  box-shadow:
-    0 9px 23px rgba(19,136,8,.14) !important;
+    box-shadow:
+        0 9px 23px rgba(19, 136, 8, .14) !important;
 }
 
 
@@ -15328,119 +15279,100 @@ form button[type="submit"] {
 
 @media (max-width: 760px) {
 
-  .admin-dashboard-page .admin-welcome {
-    padding: 26px 21px !important;
+    .admin-dashboard-page .admin-welcome {
+        padding: 26px 21px !important;
 
-    border-radius: 19px !important;
-  }
+        border-radius: 19px !important;
+    }
 
-  .admin-dashboard-page .admin-welcome h2 {
-    font-size: 29px !important;
-  }
+    .admin-dashboard-page .admin-welcome h2 {
+        font-size: 29px !important;
+    }
 
-  .admin-dashboard-page .admin-welcome p {
-    font-size: 13px !important;
-  }
+    .admin-dashboard-page .admin-welcome p {
+        font-size: 13px !important;
+    }
 
-  .admin-dashboard-page
-  .admin-welcome
-  .dashboard-retry-button {
-    width: 100%;
+    .admin-dashboard-page .admin-welcome .dashboard-retry-button {
+        width: 100%;
 
-    margin-top: 18px;
-  }
+        margin-top: 18px;
+    }
 
-  .admin-dashboard-page .stats-grid {
-    grid-template-columns:
-      repeat(2, minmax(0,1fr)) !important;
-  }
+    .admin-dashboard-page .stats-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
 
-  .admin-dashboard-page .stats-grid > .panel {
-    min-width: 0;
-  }
+    .admin-dashboard-page .stats-grid>.panel {
+        min-width: 0;
+    }
 
-  .admin-dashboard-page
-  .panel-title {
-    padding: 18px !important;
-  }
+    .admin-dashboard-page .panel-title {
+        padding: 18px !important;
+    }
 
-  .admin-dashboard-page
-  .panel > div[style*="marginBottom"] {
-    padding:
-      15px 16px 3px !important;
+    .admin-dashboard-page .panel>div[style*="marginBottom"] {
+        padding:
+            15px 16px 3px !important;
 
-    flex-direction: column !important;
+        flex-direction: column !important;
 
-    align-items: stretch !important;
-  }
+        align-items: stretch !important;
+    }
 
-  .admin-dashboard-page
-  .panel > div[style*="marginBottom"]
-  > .dashboard-retry-button {
-    width: 100%;
-  }
+    .admin-dashboard-page .panel>div[style*="marginBottom"]>.dashboard-retry-button {
+        width: 100%;
+    }
 
-  .admin-dashboard-page table {
-    min-width: 720px !important;
-  }
+    .admin-dashboard-page table {
+        min-width: 720px !important;
+    }
 
 }
 
 
 @media (max-width: 500px) {
 
-  .admin-dashboard-page .stats-grid {
-    grid-template-columns: 1fr !important;
-  }
+    .admin-dashboard-page .stats-grid {
+        grid-template-columns: 1fr !important;
+    }
 
-  .admin-dashboard-page .admin-welcome h2 {
-    font-size: 26px !important;
-  }
+    .admin-dashboard-page .admin-welcome h2 {
+        font-size: 26px !important;
+    }
 
-  .admin-dashboard-page
-  > div[style*="position: fixed"] {
-    padding: 12px !important;
-  }
+    .admin-dashboard-page>div[style*="position: fixed"] {
+        padding: 12px !important;
+    }
 
-  .admin-dashboard-page
-  > div[style*="position: fixed"]
-  > div[role="dialog"] {
-    padding: 21px !important;
-    border-radius: 19px !important;
-  }
+    .admin-dashboard-page>div[style*="position: fixed"]>div[role="dialog"] {
+        padding: 21px !important;
+        border-radius: 19px !important;
+    }
 
-  .admin-dashboard-page
-  > div[style*="position: fixed"]
-  form > div {
-    grid-template-columns: 1fr !important;
-  }
+    .admin-dashboard-page>div[style*="position: fixed"] form>div {
+        grid-template-columns: 1fr !important;
+    }
 
-  .admin-dashboard-page
-  > div[style*="position: fixed"]
-  form label[style*="gridColumn"] {
-    grid-column: auto !important;
-  }
+    .admin-dashboard-page>div[style*="position: fixed"] form label[style*="gridColumn"] {
+        grid-column: auto !important;
+    }
 
-  .admin-dashboard-page
-  > div[style*="position: fixed"]
-  form > div:last-child {
-    flex-direction: column-reverse !important;
-  }
+    .admin-dashboard-page>div[style*="position: fixed"] form>div:last-child {
+        flex-direction: column-reverse !important;
+    }
 
-  .admin-dashboard-page
-  > div[style*="position: fixed"]
-  form > div:last-child button {
-    width: 100%;
-  }
+    .admin-dashboard-page>div[style*="position: fixed"] form>div:last-child button {
+        width: 100%;
+    }
 }
+
 /* =========================================================
    FIX — STUDENT RECORDS ADD STUDENT BUTTON
 ========================================================= */
 
-.admin-dashboard-page
-section.panel
-> div
-> button.dashboard-retry-button {
+.admin-dashboard-page section.panel>div>button.dashboard-retry-button {
     height: 46px !important;
     min-height: 46px !important;
     min-width: 142px !important;
@@ -15458,12 +15390,10 @@ section.panel
     border-radius: 12px !important;
 
     background:
-        linear-gradient(
-            105deg,
+        linear-gradient(105deg,
             #ff9933 0%,
             #285a9f 52%,
-            #138808 100%
-        ) !important;
+            #138808 100%) !important;
 
     color: #ffffff !important;
 
@@ -15488,10 +15418,7 @@ section.panel
         filter 0.2s ease !important;
 }
 
-.admin-dashboard-page
-section.panel
-> div
-> button.dashboard-retry-button:hover {
+.admin-dashboard-page section.panel>div>button.dashboard-retry-button:hover {
     transform: translateY(-2px) !important;
 
     filter: brightness(1.03) !important;
@@ -15500,17 +15427,11 @@ section.panel
         0 13px 30px rgba(19, 136, 8, 0.20) !important;
 }
 
-.admin-dashboard-page
-section.panel
-> div
-> button.dashboard-retry-button:active {
+.admin-dashboard-page section.panel>div>button.dashboard-retry-button:active {
     transform: translateY(0) !important;
 }
 
-.admin-dashboard-page
-section.panel
-> div
-> button.dashboard-retry-button svg {
+.admin-dashboard-page section.panel>div>button.dashboard-retry-button svg {
     width: 16px !important;
     height: 16px !important;
 
@@ -15524,9 +15445,7 @@ section.panel
 
 /* Search + Add Student alignment */
 
-.admin-dashboard-page
-section.panel
-> div[style*="margin-bottom"] {
+.admin-dashboard-page section.panel>div[style*="margin-bottom"] {
     display: flex !important;
     align-items: center !important;
     gap: 12px !important;
@@ -15535,10 +15454,7 @@ section.panel
 
 /* Search takes remaining space */
 
-.admin-dashboard-page
-section.panel
-> div[style*="margin-bottom"]
-> div {
+.admin-dashboard-page section.panel>div[style*="margin-bottom"]>div {
     min-width: 0 !important;
     flex: 1 1 auto !important;
 }
@@ -15547,11 +15463,2153 @@ section.panel
 /* Mobile */
 
 @media (max-width: 760px) {
-    .admin-dashboard-page
-    section.panel
-    > div
-    > button.dashboard-retry-button {
+    .admin-dashboard-page section.panel>div>button.dashboard-retry-button {
         min-width: 0 !important;
         width: 100% !important;
+    }
+}
+
+/* UTKARSH — Premium subject-first Notes UI
+   Append this block to the END of globals.css. */
+
+.admin-notes-page {
+    max-width: 1480px;
+    margin-inline: auto;
+    padding: 30px clamp(18px, 3vw, 42px) 52px;
+}
+
+.admin-notes-page>.page-header,
+.admin-notes-page .page-header {
+    margin-bottom: 30px;
+}
+
+.admin-notes-page .subject-library-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+    margin: 0 0 22px;
+    padding: 26px 28px;
+    border: 1px solid #e2ebe4;
+    border-radius: 20px;
+    background:
+        radial-gradient(ellipse at 100% 0%, rgba(255, 153, 51, .10), transparent 34%),
+        linear-gradient(135deg, #fff 0%, #f8fbf8 100%);
+    box-shadow: 0 12px 34px rgba(26, 52, 35, .045);
+}
+
+.admin-notes-page .subject-library-header>div>span,
+.admin-notes-page .subject-workspace-title>div:last-child>span {
+    display: inline-block;
+    margin-bottom: 9px;
+    color: #71877a;
+    font-size: 10px;
+    font-weight: 850;
+    letter-spacing: .2em;
+}
+
+.admin-notes-page .subject-library-header h2 {
+    margin: 0;
+    color: #182a20;
+    font-size: clamp(22px, 2vw, 28px);
+    font-weight: 850;
+    letter-spacing: -.045em;
+    line-height: 1.2;
+}
+
+.admin-notes-page .subject-library-header p {
+    margin: 8px 0 0;
+    color: #728078;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.admin-notes-page .resource-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    margin: 0 0 22px;
+}
+
+.admin-notes-page .search-box {
+    width: min(100%, 460px);
+    min-height: 46px;
+    border: 1px solid #e1e9e3;
+    border-radius: 13px;
+    background: #fff;
+    box-shadow: none;
+}
+
+.admin-notes-page .search-box:focus-within {
+    border-color: #83b092;
+    box-shadow: 0 0 0 3px rgba(42, 130, 70, .08);
+}
+
+.admin-notes-page .search-box input {
+    min-width: 0;
+    color: #24372b;
+    font-size: 13px;
+}
+
+.admin-notes-page .soft-button {
+    min-height: 44px;
+    border: 1px solid #e1e9e3;
+    border-radius: 12px;
+    background: #fff;
+    color: #53675b;
+    font-size: 12px;
+    font-weight: 700;
+    box-shadow: none;
+    transition: background .18s ease, border-color .18s ease, transform .18s ease;
+}
+
+.admin-notes-page .soft-button:hover {
+    transform: translateY(-1px);
+    border-color: #bdd0c2;
+    background: #f7faf8;
+}
+
+.admin-notes-page .primary-button {
+    min-height: 46px;
+    padding: 0 20px;
+    border: 1px solid #e8750b;
+    border-radius: 13px;
+    background: linear-gradient(135deg, #ff982f, #e8750b);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 800;
+    box-shadow: 0 10px 23px rgba(232, 117, 11, .15);
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.admin-notes-page .primary-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(232, 117, 11, .22);
+}
+
+.admin-notes-page .subject-folder-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
+    gap: 16px;
+}
+
+.admin-notes-page .subject-folder-card {
+    position: relative;
+    display: flex;
+    min-height: 190px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    overflow: hidden;
+    border: 1px solid #e2ebe4;
+    border-radius: 18px;
+    background: #fff;
+    color: #203329;
+    text-align: left;
+    box-shadow: 0 7px 22px rgba(29, 56, 38, .035);
+    transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+
+.admin-notes-page .subject-folder-card::after {
+    position: absolute;
+    right: -32px;
+    bottom: -44px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(35, 143, 70, .08), transparent 70%);
+    content: "";
+    pointer-events: none;
+}
+
+.admin-notes-page .subject-folder-card:hover {
+    transform: translateY(-3px);
+    border-color: #b9d4c0;
+    box-shadow: 0 15px 30px rgba(29, 74, 42, .09);
+}
+
+.admin-notes-page .subject-folder-card-top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 19px;
+}
+
+.admin-notes-page .subject-folder-icon {
+    display: grid;
+    width: 52px;
+    height: 52px;
+    place-items: center;
+    border: 1px solid #dcecdf;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #f2f8f2, #e6f2e8);
+    color: #34834f;
+}
+
+.admin-notes-page .subject-folder-arrow {
+    display: grid;
+    width: 30px;
+    height: 30px;
+    place-items: center;
+    border: 1px solid #e8eee9;
+    border-radius: 50%;
+    background: #fbfdfb;
+    color: #7a8b7f;
+    transition: transform .18s ease;
+}
+
+.admin-notes-page .subject-folder-card:hover .subject-folder-arrow {
+    transform: translateX(3px);
+}
+
+.admin-notes-page .subject-folder-code {
+    margin-bottom: 6px;
+    color: #34834f;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: .15em;
+}
+
+.admin-notes-page .subject-folder-card h3 {
+    margin: 0;
+    color: #1d3025;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.45;
+}
+
+.admin-notes-page .subject-folder-card p {
+    margin: 9px 0 0;
+    color: #839087;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.admin-notes-page .subject-empty-state {
+    display: flex;
+    min-height: 285px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 36px 20px;
+    border: 1px dashed #d9e5dc;
+    border-radius: 19px;
+    background: linear-gradient(180deg, #fbfdfb, #f7faf7);
+    text-align: center;
+}
+
+.admin-notes-page .subject-empty-state>div:first-child {
+    display: grid;
+    width: 68px;
+    height: 68px;
+    margin-bottom: 15px;
+    place-items: center;
+    border: 1px solid #dcecdf;
+    border-radius: 21px;
+    background: #edf6ef;
+    color: #34834f;
+}
+
+.admin-notes-page .subject-empty-state h3 {
+    margin: 0;
+    color: #23362a;
+    font-size: 18px;
+    font-weight: 850;
+    letter-spacing: -.025em;
+}
+
+.admin-notes-page .subject-empty-state p {
+    max-width: 430px;
+    margin: 9px 0 0;
+    color: #78877e;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* Subject workspace / materials list */
+.admin-notes-page .subject-workspace-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin: 0 0 22px;
+    padding: 22px;
+    border: 1px solid #e2ebe4;
+    border-radius: 19px;
+    background:
+        radial-gradient(ellipse at 100% 0%, rgba(255, 153, 51, .09), transparent 36%),
+        #fff;
+    box-shadow: 0 10px 30px rgba(26, 52, 35, .04);
+}
+
+.admin-notes-page .subject-workspace-title {
+    display: flex;
+    min-width: 180px;
+    flex: 1;
+    align-items: center;
+    gap: 14px;
+}
+
+.admin-notes-page .subject-folder-large {
+    display: grid;
+    width: 56px;
+    height: 56px;
+    flex: 0 0 56px;
+    place-items: center;
+    border: 1px solid #dcecdf;
+    border-radius: 17px;
+    background: #edf6ef;
+    color: #34834f;
+}
+
+.admin-notes-page .subject-workspace-title h2 {
+    margin: 0;
+    color: #1c2e23;
+    font-size: 22px;
+    font-weight: 850;
+    letter-spacing: -.035em;
+}
+
+.admin-notes-page .subject-workspace-title p {
+    margin: 4px 0 0;
+    color: #738178;
+    font-size: 13px;
+}
+
+.admin-notes-page .subject-workspace-header .primary-button {
+    margin-left: auto;
+}
+
+.admin-notes-page .admin-table-card {
+    overflow: hidden;
+    border: 1px solid #e2ebe4;
+    border-radius: 17px;
+    background: #fff;
+    box-shadow: 0 8px 25px rgba(29, 56, 38, .035);
+}
+
+.admin-notes-page .table-head,
+.admin-notes-page .table-row {
+    display: grid;
+    grid-template-columns: minmax(180px, 1.4fr) minmax(130px, 1fr) minmax(90px, .65fr) 58px;
+    align-items: center;
+    gap: 14px;
+    padding: 15px 19px;
+}
+
+.admin-notes-page .table-head {
+    background: #f7faf7;
+    color: #718078;
+    font-size: 10px;
+    font-weight: 850;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.admin-notes-page .table-row {
+    min-height: 66px;
+    border-top: 1px solid #edf1ed;
+    color: #607067;
+    font-size: 12px;
+}
+
+.admin-notes-page .table-main {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+    gap: 11px;
+}
+
+.admin-notes-page .table-main b {
+    overflow: hidden;
+    color: #25372b;
+    font-size: 13px;
+    font-weight: 750;
+    text-overflow: ellipsis;
+}
+
+.admin-notes-page .table-icon {
+    display: grid;
+    width: 35px;
+    height: 35px;
+    flex: 0 0 35px;
+    place-items: center;
+    border-radius: 11px;
+    background: #edf6ef;
+    color: #34834f;
+}
+
+.admin-notes-page .delete-button {
+    display: grid;
+    width: 34px;
+    height: 34px;
+    place-items: center;
+    border: 1px solid #f1dddd;
+    border-radius: 10px;
+    background: #fff8f8;
+    color: #c64b4b;
+    cursor: pointer;
+}
+
+.admin-notes-page .delete-button:hover {
+    background: #ffeded;
+}
+
+@media (max-width: 760px) {
+    .admin-notes-page {
+        padding: 20px 14px 34px;
+    }
+
+    .admin-notes-page .subject-library-header {
+        align-items: stretch;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .admin-notes-page .subject-library-header .primary-button {
+        width: 100%;
+    }
+
+    .admin-notes-page .resource-toolbar {
+        align-items: stretch;
+    }
+
+    .admin-notes-page .search-box {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .admin-notes-page .subject-folder-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-notes-page .subject-workspace-header {
+        align-items: stretch;
+        padding: 16px;
+    }
+
+    .admin-notes-page .subject-workspace-header>.soft-button,
+    .admin-notes-page .subject-workspace-header>.primary-button {
+        width: 100%;
+    }
+
+    .admin-notes-page .subject-workspace-header .primary-button {
+        margin-left: 0;
+    }
+
+    .admin-notes-page .admin-table-card {
+        overflow-x: auto;
+    }
+
+    .admin-notes-page .table-head,
+    .admin-notes-page .table-row {
+        min-width: 650px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .admin-notes-page *,
+    .admin-notes-page *::before,
+    .admin-notes-page *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+    }
+}
+
+/* =====================================================================
+   UTKARSH — NOTES EXPERIENCE: PREMIUM TRICOLOUR ACADEMIC LIBRARY
+   CSS-only visual overrides for Admin + Student Notes pages.
+   Existing application logic, routes, components and other page styles
+   are intentionally left unchanged.
+   ===================================================================== */
+
+/* Shared palette and isolated styling for both role panels */
+.admin-notes-page,
+.student-notes-page,
+.page-wrap:has(.subject-folder-grid),
+.page-wrap:has(.subject-library-header),
+.page-wrap:has(.subject-workspace-header) {
+    --notes-ink: #10251b;
+    --notes-muted: #687b70;
+    --notes-line: rgba(19, 66, 39, .11);
+    --notes-saffron: #ff9933;
+    --notes-blue: #2457a6;
+    --notes-green: #138808;
+    --notes-paper: #ffffff;
+    --notes-soft: #f5f9f5;
+    color: var(--notes-ink);
+}
+
+/* Give the notes content a coherent, spacious canvas */
+.admin-notes-page,
+.student-notes-page {
+    width: 100%;
+    max-width: 1480px;
+    margin-inline: auto;
+    padding: clamp(18px, 2.6vw, 38px) clamp(14px, 2.8vw, 42px) 54px;
+}
+
+/* Tricolour micro-accent used on notes-specific headings */
+.admin-notes-page .subject-library-header,
+.student-notes-page .subject-library-header,
+.page-wrap:has(.subject-folder-grid) .subject-library-header,
+.page-wrap:has(.subject-workspace-header) .subject-workspace-header {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+    overflow: hidden;
+    margin: 0 0 24px;
+    padding: clamp(20px, 2.5vw, 30px);
+    border: 1px solid var(--notes-line);
+    border-radius: 22px;
+    background:
+        radial-gradient(ellipse at 95% 0%, rgba(19, 136, 8, .09), transparent 32%),
+        radial-gradient(ellipse at 0% 100%, rgba(255, 153, 51, .10), transparent 35%),
+        linear-gradient(135deg, #fff 0%, #fbfdfb 58%, #f5faf5 100%);
+    box-shadow: 0 16px 42px rgba(16, 52, 29, .055);
+}
+
+.admin-notes-page .subject-library-header::before,
+.student-notes-page .subject-library-header::before,
+.page-wrap:has(.subject-folder-grid) .subject-library-header::before,
+.page-wrap:has(.subject-workspace-header) .subject-workspace-header::before {
+    position: absolute;
+    z-index: -1;
+    inset: 0 0 auto;
+    height: 4px;
+    background: linear-gradient(90deg,
+            #ff9933 0%, #ff9933 32%,
+            #ffffff 32%, #ffffff 66%,
+            #138808 66%, #138808 100%);
+    content: "";
+}
+
+.admin-notes-page .subject-library-header>div,
+.student-notes-page .subject-library-header>div,
+.page-wrap:has(.subject-folder-grid) .subject-library-header>div {
+    min-width: 0;
+}
+
+.admin-notes-page .subject-library-header h2,
+.student-notes-page .subject-library-header h2,
+.page-wrap:has(.subject-folder-grid) .subject-library-header h2 {
+    margin: 0;
+    color: #10251b;
+    font-size: clamp(22px, 2.1vw, 29px);
+    font-weight: 850;
+    letter-spacing: -.045em;
+    line-height: 1.2;
+}
+
+.admin-notes-page .subject-library-header p,
+.student-notes-page .subject-library-header p,
+.page-wrap:has(.subject-folder-grid) .subject-library-header p {
+    margin: 8px 0 0;
+    color: #687b70;
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+/* Admin page's PageHeader: keep the existing structure, elevate only its look */
+.admin-notes-page>.page-header,
+.admin-notes-page .page-header {
+    margin-bottom: 26px;
+}
+
+/* Toolbar: search and refresh sit on one balanced line */
+.admin-notes-page .resource-toolbar,
+.student-notes-page .resource-toolbar,
+.page-wrap:has(.subject-folder-grid) .resource-toolbar,
+.page-wrap:has(.subject-workspace-header) .resource-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    margin: 0 0 22px;
+}
+
+.admin-notes-page .search-box,
+.student-notes-page .search-box,
+.page-wrap:has(.subject-folder-grid) .search-box,
+.page-wrap:has(.subject-workspace-header) .search-box {
+    display: flex;
+    width: min(100%, 500px);
+    min-width: 0;
+    min-height: 48px;
+    align-items: center;
+    gap: 11px;
+    padding: 0 15px;
+    border: 1px solid #e0e9e2;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, .96);
+    color: #6d8375;
+    box-shadow: 0 5px 18px rgba(16, 52, 29, .025);
+    transition: border-color .18s ease, box-shadow .18s ease;
+}
+
+.admin-notes-page .search-box:focus-within,
+.student-notes-page .search-box:focus-within,
+.page-wrap:has(.subject-folder-grid) .search-box:focus-within,
+.page-wrap:has(.subject-workspace-header) .search-box:focus-within {
+    border-color: rgba(19, 136, 8, .42);
+    box-shadow: 0 0 0 4px rgba(19, 136, 8, .06);
+}
+
+.admin-notes-page .search-box input,
+.student-notes-page .search-box input,
+.page-wrap:has(.subject-folder-grid) .search-box input,
+.page-wrap:has(.subject-workspace-header) .search-box input {
+    width: 100%;
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #1d3426;
+    font-size: 13px;
+}
+
+.admin-notes-page .search-box input::placeholder,
+.student-notes-page .search-box input::placeholder,
+.page-wrap:has(.subject-folder-grid) .search-box input::placeholder,
+.page-wrap:has(.subject-workspace-header) .search-box input::placeholder {
+    color: #98a69c;
+}
+
+/* Notes buttons only; do not affect the rest of the admin/student app */
+.admin-notes-page .primary-button,
+.student-notes-page .primary-button,
+.page-wrap:has(.subject-folder-grid) .primary-button,
+.page-wrap:has(.subject-workspace-header) .primary-button {
+    display: inline-flex;
+    min-height: 46px;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 0 19px;
+    border: 1px solid rgba(232, 117, 11, .28);
+    border-radius: 13px;
+    background: linear-gradient(105deg, #ff9933 0%, #e98216 44%, #138808 100%);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    white-space: nowrap;
+    box-shadow: 0 11px 25px rgba(30, 99, 44, .13), inset 0 1px 0 rgba(255, 255, 255, .22);
+    transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+}
+
+.admin-notes-page .primary-button:hover,
+.student-notes-page .primary-button:hover,
+.page-wrap:has(.subject-folder-grid) .primary-button:hover,
+.page-wrap:has(.subject-workspace-header) .primary-button:hover {
+    transform: translateY(-2px);
+    filter: saturate(1.04);
+    box-shadow: 0 15px 30px rgba(30, 99, 44, .18), inset 0 1px 0 rgba(255, 255, 255, .22);
+}
+
+.admin-notes-page .soft-button,
+.student-notes-page .soft-button,
+.page-wrap:has(.subject-folder-grid) .soft-button,
+.page-wrap:has(.subject-workspace-header) .soft-button {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 15px;
+    border: 1px solid #e0e9e2;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, .96);
+    color: #536b5c;
+    font-size: 12px;
+    font-weight: 750;
+    box-shadow: 0 5px 15px rgba(16, 52, 29, .025);
+    transition: border-color .18s ease, background .18s ease, transform .18s ease;
+}
+
+.admin-notes-page .soft-button:hover,
+.student-notes-page .soft-button:hover,
+.page-wrap:has(.subject-folder-grid) .soft-button:hover,
+.page-wrap:has(.subject-workspace-header) .soft-button:hover {
+    transform: translateY(-1px);
+    border-color: #bfd3c3;
+    background: #f7fbf7;
+}
+
+/* Subject folder cards: rich, clear, consistent for both panels */
+.admin-notes-page .subject-folder-grid,
+.student-notes-page .subject-folder-grid,
+.page-wrap:has(.subject-folder-grid) .subject-folder-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 255px), 1fr));
+    gap: 17px;
+    margin-top: 8px;
+}
+
+.admin-notes-page .subject-folder-card,
+.student-notes-page .subject-folder-card,
+.page-wrap:has(.subject-folder-grid) .subject-folder-card {
+    position: relative;
+    display: flex;
+    min-width: 0;
+    min-height: 194px;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    padding: 20px;
+    border: 1px solid #e1eae3;
+    border-radius: 19px;
+    background:
+        radial-gradient(circle at 100% 0%, rgba(19, 136, 8, .055), transparent 35%),
+        linear-gradient(145deg, #fff 0%, #fcfefc 100%);
+    color: #1c3324;
+    text-align: left;
+    box-shadow: 0 8px 25px rgba(19, 61, 34, .045);
+    transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+}
+
+.admin-notes-page .subject-folder-card::before,
+.student-notes-page .subject-folder-card::before,
+.page-wrap:has(.subject-folder-grid) .subject-folder-card::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #ff9933 0%, #fff 50%, #138808 100%);
+    opacity: .85;
+    content: "";
+}
+
+.admin-notes-page .subject-folder-card::after,
+.student-notes-page .subject-folder-card::after,
+.page-wrap:has(.subject-folder-grid) .subject-folder-card::after {
+    position: absolute;
+    right: -42px;
+    bottom: -52px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(19, 136, 8, .085), transparent 68%);
+    content: "";
+    pointer-events: none;
+}
+
+.admin-notes-page .subject-folder-card:hover,
+.student-notes-page .subject-folder-card:hover,
+.page-wrap:has(.subject-folder-grid) .subject-folder-card:hover {
+    transform: translateY(-4px);
+    border-color: #a9cdb2;
+    box-shadow: 0 18px 38px rgba(19, 74, 37, .105);
+}
+
+.admin-notes-page .subject-folder-card-top,
+.student-notes-page .subject-folder-card-top,
+.page-wrap:has(.subject-folder-grid) .subject-folder-card-top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.admin-notes-page .subject-folder-icon,
+.student-notes-page .subject-folder-icon,
+.page-wrap:has(.subject-folder-grid) .subject-folder-icon {
+    display: grid;
+    width: 54px;
+    height: 54px;
+    flex: 0 0 54px;
+    place-items: center;
+    border: 1px solid #d9e9dc;
+    border-radius: 17px;
+    background: linear-gradient(145deg, #fff4e8 0%, #f5f8f3 48%, #eaf5eb 100%);
+    color: #287a3f;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .9);
+}
+
+.admin-notes-page .subject-folder-arrow,
+.student-notes-page .subject-folder-arrow,
+.page-wrap:has(.subject-folder-grid) .subject-folder-arrow {
+    display: grid;
+    width: 31px;
+    height: 31px;
+    flex: 0 0 31px;
+    place-items: center;
+    border: 1px solid #e5ece6;
+    border-radius: 50%;
+    background: #fff;
+    color: #728579;
+    transition: transform .2s ease, color .2s ease, border-color .2s ease;
+}
+
+.admin-notes-page .subject-folder-card:hover .subject-folder-arrow,
+.student-notes-page .subject-folder-card:hover .subject-folder-arrow,
+.page-wrap:has(.subject-folder-grid) .subject-folder-card:hover .subject-folder-arrow {
+    transform: translateX(3px);
+    border-color: #c7dccb;
+    color: #138808;
+}
+
+.admin-notes-page .subject-folder-code,
+.student-notes-page .subject-folder-code,
+.page-wrap:has(.subject-folder-grid) .subject-folder-code {
+    margin: 0 0 6px;
+    color: #287a3f;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: .16em;
+    line-height: 1.4;
+}
+
+.admin-notes-page .subject-folder-card h3,
+.student-notes-page .subject-folder-card h3,
+.page-wrap:has(.subject-folder-grid) .subject-folder-card h3 {
+    margin: 0;
+    color: #172d20;
+    font-size: 15px;
+    font-weight: 850;
+    letter-spacing: -.02em;
+    line-height: 1.5;
+}
+
+.admin-notes-page .subject-folder-card p,
+.student-notes-page .subject-folder-card p,
+.page-wrap:has(.subject-folder-grid) .subject-folder-card p {
+    margin: 8px 0 0;
+    color: #829087;
+    font-size: 11px;
+    line-height: 1.55;
+}
+
+/* Folder count / small metadata, if present in either component */
+.admin-notes-page .subject-folder-card small,
+.student-notes-page .subject-folder-card small,
+.page-wrap:has(.subject-folder-grid) .subject-folder-card small {
+    color: #738278;
+    font-size: 11px;
+    font-weight: 650;
+}
+
+/* Empty state: centered, calm, and intentionally not another CTA block */
+.admin-notes-page .subject-empty-state,
+.student-notes-page .subject-empty-state,
+.page-wrap:has(.subject-folder-grid) .subject-empty-state {
+    display: flex;
+    min-height: 280px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 36px 20px;
+    border: 1px dashed #d4e2d7;
+    border-radius: 20px;
+    background:
+        radial-gradient(ellipse at 50% 0%, rgba(255, 153, 51, .055), transparent 45%),
+        linear-gradient(180deg, #fcfefc, #f6faf6);
+    text-align: center;
+}
+
+.admin-notes-page .subject-empty-state>div:first-child,
+.student-notes-page .subject-empty-state>div:first-child,
+.page-wrap:has(.subject-folder-grid) .subject-empty-state>div:first-child {
+    display: grid;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 16px;
+    place-items: center;
+    border: 1px solid #dbe9de;
+    border-radius: 22px;
+    background: linear-gradient(145deg, #fff3e5, #f0f7f0);
+    color: #287a3f;
+    box-shadow: 0 10px 25px rgba(30, 88, 43, .055);
+}
+
+.admin-notes-page .subject-empty-state h3,
+.student-notes-page .subject-empty-state h3,
+.page-wrap:has(.subject-folder-grid) .subject-empty-state h3 {
+    margin: 0;
+    color: #203528;
+    font-size: 18px;
+    font-weight: 850;
+    letter-spacing: -.025em;
+}
+
+.admin-notes-page .subject-empty-state p,
+.student-notes-page .subject-empty-state p,
+.page-wrap:has(.subject-folder-grid) .subject-empty-state p {
+    max-width: 440px;
+    margin: 9px 0 0;
+    color: #78877e;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* Subject workspace header and back navigation */
+.admin-notes-page .subject-workspace-header,
+.student-notes-page .subject-workspace-header,
+.page-wrap:has(.subject-workspace-header) .subject-workspace-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 0 0 22px;
+    padding: 20px;
+    border: 1px solid #e0e9e2;
+    border-radius: 20px;
+    background:
+        radial-gradient(ellipse at 100% 0%, rgba(19, 136, 8, .07), transparent 36%),
+        radial-gradient(ellipse at 0% 100%, rgba(255, 153, 51, .075), transparent 34%),
+        #fff;
+    box-shadow: 0 12px 32px rgba(16, 52, 29, .045);
+}
+
+.admin-notes-page .subject-workspace-title,
+.student-notes-page .subject-workspace-title,
+.page-wrap:has(.subject-workspace-header) .subject-workspace-title {
+    display: flex;
+    min-width: 180px;
+    flex: 1 1 220px;
+    align-items: center;
+    gap: 14px;
+}
+
+.admin-notes-page .subject-folder-large,
+.student-notes-page .subject-folder-large,
+.page-wrap:has(.subject-workspace-header) .subject-folder-large {
+    display: grid;
+    width: 58px;
+    height: 58px;
+    flex: 0 0 58px;
+    place-items: center;
+    border: 1px solid #dce9dd;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #fff2e4, #edf7ee);
+    color: #287a3f;
+}
+
+.admin-notes-page .subject-workspace-title span,
+.student-notes-page .subject-workspace-title span,
+.page-wrap:has(.subject-workspace-header) .subject-workspace-title span {
+    display: block;
+    margin-bottom: 5px;
+    color: #78897e;
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: .17em;
+}
+
+.admin-notes-page .subject-workspace-title h2,
+.student-notes-page .subject-workspace-title h2,
+.page-wrap:has(.subject-workspace-header) .subject-workspace-title h2 {
+    margin: 0;
+    color: #183022;
+    font-size: clamp(20px, 2vw, 25px);
+    font-weight: 850;
+    letter-spacing: -.035em;
+    line-height: 1.25;
+}
+
+.admin-notes-page .subject-workspace-title p,
+.student-notes-page .subject-workspace-title p,
+.page-wrap:has(.subject-workspace-header) .subject-workspace-title p {
+    margin: 4px 0 0;
+    color: #718078;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.admin-notes-page .subject-workspace-header>.primary-button,
+.student-notes-page .subject-workspace-header>.primary-button,
+.page-wrap:has(.subject-workspace-header) .subject-workspace-header>.primary-button {
+    margin-left: auto;
+}
+
+/* Study material cards, including student-side note PDFs */
+.admin-notes-page .resource-grid,
+.student-notes-page .resource-grid,
+.page-wrap:has(.subject-workspace-header) .resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 275px), 1fr));
+    gap: 16px;
+}
+
+.admin-notes-page .resource-card,
+.student-notes-page .resource-card,
+.page-wrap:has(.subject-workspace-header) .resource-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e2eae3;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #fff, #fbfdfb);
+    box-shadow: 0 8px 24px rgba(19, 61, 34, .04);
+    transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+
+.admin-notes-page .resource-card::before,
+.student-notes-page .resource-card::before,
+.page-wrap:has(.subject-workspace-header) .resource-card::before {
+    position: absolute;
+    inset: 0 0 auto;
+    height: 3px;
+    background: linear-gradient(90deg, #ff9933, #fff 50%, #138808);
+    content: "";
+}
+
+.admin-notes-page .resource-card:hover,
+.student-notes-page .resource-card:hover,
+.page-wrap:has(.subject-workspace-header) .resource-card:hover {
+    transform: translateY(-3px);
+    border-color: #b9d2bd;
+    box-shadow: 0 16px 32px rgba(19, 74, 37, .085);
+}
+
+.admin-notes-page .resource-card h3,
+.student-notes-page .resource-card h3,
+.page-wrap:has(.subject-workspace-header) .resource-card h3 {
+    color: #1b3023;
+    font-weight: 800;
+    letter-spacing: -.02em;
+}
+
+.admin-notes-page .resource-card p,
+.student-notes-page .resource-card p,
+.page-wrap:has(.subject-workspace-header) .resource-card p {
+    color: #748178;
+    line-height: 1.65;
+}
+
+/* Existing PDF upload modal: tricolour accent, readable fields */
+.admin-notes-page .modal-backdrop,
+.student-notes-page .modal-backdrop,
+.page-wrap:has(.subject-folder-grid) .modal-backdrop {
+    background: rgba(7, 20, 12, .48);
+    backdrop-filter: blur(13px) saturate(120%);
+}
+
+.admin-notes-page .modal.resource-modal,
+.student-notes-page .modal.resource-modal,
+.page-wrap:has(.subject-folder-grid) .modal.resource-modal {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(24, 67, 38, .12);
+    border-radius: 23px;
+    background: linear-gradient(145deg, #fff, #f9fcf9);
+    box-shadow: 0 32px 90px rgba(9, 32, 17, .22);
+}
+
+.admin-notes-page .modal.resource-modal::before,
+.student-notes-page .modal.resource-modal::before,
+.page-wrap:has(.subject-folder-grid) .modal.resource-modal::before {
+    position: absolute;
+    inset: 0 0 auto;
+    height: 4px;
+    background: linear-gradient(90deg, #ff9933, #fff 50%, #138808);
+    content: "";
+}
+
+.admin-notes-page .modal-head,
+.student-notes-page .modal-head,
+.page-wrap:has(.subject-folder-grid) .modal-head {
+    border-bottom-color: rgba(24, 67, 38, .09);
+}
+
+.admin-notes-page .resource-form-field input,
+.admin-notes-page .resource-form-field textarea,
+.admin-notes-page .resource-form-field select,
+.student-notes-page .resource-form-field input,
+.student-notes-page .resource-form-field textarea,
+.student-notes-page .resource-form-field select,
+.page-wrap:has(.subject-folder-grid) .resource-form-field input,
+.page-wrap:has(.subject-folder-grid) .resource-form-field textarea,
+.page-wrap:has(.subject-folder-grid) .resource-form-field select {
+    border-color: #dfe8e1;
+    border-radius: 12px;
+    background: #fff;
+    color: #1c3023;
+}
+
+.admin-notes-page .resource-form-field input:focus,
+.admin-notes-page .resource-form-field textarea:focus,
+.admin-notes-page .resource-form-field select:focus,
+.student-notes-page .resource-form-field input:focus,
+.student-notes-page .resource-form-field textarea:focus,
+.student-notes-page .resource-form-field select:focus,
+.page-wrap:has(.subject-folder-grid) .resource-form-field input:focus,
+.page-wrap:has(.subject-folder-grid) .resource-form-field textarea:focus,
+.page-wrap:has(.subject-folder-grid) .resource-form-field select:focus {
+    outline: 0;
+    border-color: rgba(19, 136, 8, .45);
+    box-shadow: 0 0 0 4px rgba(19, 136, 8, .065);
+}
+
+.admin-notes-page .pdf-upload-box,
+.student-notes-page .pdf-upload-box,
+.page-wrap:has(.subject-folder-grid) .pdf-upload-box {
+    border: 1px dashed #b8d1bd;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #fffaf4, #f5faf5);
+    transition: border-color .18s ease, background .18s ease;
+}
+
+.admin-notes-page .pdf-upload-box:hover,
+.student-notes-page .pdf-upload-box:hover,
+.page-wrap:has(.subject-folder-grid) .pdf-upload-box:hover {
+    border-color: #138808;
+    background: linear-gradient(145deg, #fff5e9, #eff8f0);
+}
+
+.admin-notes-page .pdf-upload-icon,
+.student-notes-page .pdf-upload-icon,
+.page-wrap:has(.subject-folder-grid) .pdf-upload-icon {
+    color: #287a3f;
+}
+
+/* Focus visibility and reduced motion */
+.admin-notes-page :is(button, a, input, textarea, select):focus-visible,
+.student-notes-page :is(button, a, input, textarea, select):focus-visible,
+.page-wrap:has(.subject-folder-grid) :is(button, a, input, textarea, select):focus-visible {
+    outline: 3px solid rgba(36, 87, 166, .28);
+    outline-offset: 3px;
+}
+
+@media (max-width: 760px) {
+
+    .admin-notes-page,
+    .student-notes-page {
+        padding: 18px 14px 34px;
+    }
+
+    .admin-notes-page .subject-library-header,
+    .student-notes-page .subject-library-header,
+    .page-wrap:has(.subject-folder-grid) .subject-library-header {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 16px;
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    .admin-notes-page .subject-library-header .primary-button,
+    .student-notes-page .subject-library-header .primary-button,
+    .page-wrap:has(.subject-folder-grid) .subject-library-header .primary-button {
+        width: 100%;
+    }
+
+    .admin-notes-page .resource-toolbar,
+    .student-notes-page .resource-toolbar,
+    .page-wrap:has(.subject-folder-grid) .resource-toolbar,
+    .page-wrap:has(.subject-workspace-header) .resource-toolbar {
+        align-items: stretch;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .admin-notes-page .search-box,
+    .student-notes-page .search-box,
+    .page-wrap:has(.subject-folder-grid) .search-box,
+    .page-wrap:has(.subject-workspace-header) .search-box {
+        width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .admin-notes-page .subject-folder-grid,
+    .student-notes-page .subject-folder-grid,
+    .page-wrap:has(.subject-folder-grid) .subject-folder-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .admin-notes-page .subject-folder-card,
+    .student-notes-page .subject-folder-card,
+    .page-wrap:has(.subject-folder-grid) .subject-folder-card {
+        min-height: 160px;
+        padding: 17px;
+    }
+
+    .admin-notes-page .subject-workspace-header,
+    .student-notes-page .subject-workspace-header,
+    .page-wrap:has(.subject-workspace-header) .subject-workspace-header {
+        align-items: stretch;
+        padding: 16px;
+        border-radius: 17px;
+    }
+
+    .admin-notes-page .subject-workspace-title,
+    .student-notes-page .subject-workspace-title,
+    .page-wrap:has(.subject-workspace-header) .subject-workspace-title {
+        flex-basis: 100%;
+    }
+
+    .admin-notes-page .subject-workspace-header>.primary-button,
+    .student-notes-page .subject-workspace-header>.primary-button,
+    .page-wrap:has(.subject-workspace-header) .subject-workspace-header>.primary-button,
+    .admin-notes-page .subject-workspace-header>.soft-button,
+    .student-notes-page .subject-workspace-header>.soft-button,
+    .page-wrap:has(.subject-workspace-header) .subject-workspace-header>.soft-button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .admin-notes-page .resource-grid,
+    .student-notes-page .resource-grid,
+    .page-wrap:has(.subject-workspace-header) .resource-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .admin-notes-page *,
+    .admin-notes-page *::before,
+    .admin-notes-page *::after,
+    .student-notes-page *,
+    .student-notes-page *::before,
+    .student-notes-page *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* =========================================================
+   UTKARSH NOTES — FINAL PREMIUM OVERRIDES
+   Scoped ONLY to Notes / Study Material UI.
+   Existing non-Notes styles are intentionally untouched.
+========================================================= */
+
+/* -------------------------
+   ADMIN NOTES — LIBRARY
+------------------------- */
+
+.admin-notes-page .subject-library-header {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+    margin-bottom: 22px;
+    padding: 24px 26px;
+    border: 1px solid #dfe9e1;
+    border-radius: 22px;
+    background:
+        radial-gradient(circle at 96% 8%, rgba(19, 136, 8, .10), transparent 27%),
+        radial-gradient(circle at 3% 100%, rgba(255, 153, 51, .10), transparent 28%),
+        linear-gradient(145deg, #ffffff 0%, #fbfefb 100%);
+    box-shadow:
+        0 16px 42px rgba(17, 62, 31, .065),
+        inset 0 1px 0 rgba(255, 255, 255, .95);
+}
+
+.admin-notes-page .subject-library-header::before {
+    position: absolute;
+    inset: 0 0 auto;
+    height: 4px;
+    background: linear-gradient(90deg, #ff9933 0%, #ffffff 50%, #138808 100%);
+    content: "";
+}
+
+.admin-notes-page .subject-library-header>div:first-child {
+    min-width: 0;
+}
+
+.admin-notes-page .subject-library-header>div:first-child>span {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #287a3f;
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: .18em;
+}
+
+.admin-notes-page .subject-library-header>div:first-child>span::before {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff9933, #138808);
+    box-shadow: 0 0 0 4px rgba(19, 136, 8, .06);
+    content: "";
+}
+
+.admin-notes-page .subject-library-header h2 {
+    margin: 7px 0 5px;
+    color: #172d20;
+    font-size: clamp(24px, 2.6vw, 34px);
+    font-weight: 900;
+    letter-spacing: -.04em;
+    line-height: 1.05;
+}
+
+.admin-notes-page .subject-library-header p {
+    margin: 0;
+    color: #748279;
+    font-size: 12px;
+    line-height: 1.65;
+}
+
+.admin-notes-page .subject-library-header>.primary-button,
+.admin-notes-page .subject-workspace-header>.primary-button,
+.admin-notes-page .subject-empty-state>.primary-button {
+    min-height: 46px;
+    border: 1px solid rgba(19, 136, 8, .12);
+    border-radius: 13px;
+    background: linear-gradient(110deg, #ff9933 0%, #e97a1e 36%, #138808 100%);
+    box-shadow:
+        0 13px 28px rgba(19, 84, 31, .16),
+        inset 0 1px 0 rgba(255, 255, 255, .28);
+    color: #ffffff;
+    font-weight: 850;
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        filter .2s ease;
+}
+
+.admin-notes-page .subject-library-header>.primary-button:hover,
+.admin-notes-page .subject-workspace-header>.primary-button:hover,
+.admin-notes-page .subject-empty-state>.primary-button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.035);
+    box-shadow:
+        0 17px 34px rgba(19, 84, 31, .22),
+        inset 0 1px 0 rgba(255, 255, 255, .28);
+}
+
+/* Subject folders */
+.admin-notes-page .subject-folder-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr));
+    gap: 16px;
+}
+
+.admin-notes-page .subject-folder-card {
+    position: relative;
+    min-height: 188px;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 20px;
+    border: 1px solid #dfe9e1;
+    border-radius: 21px;
+    background:
+        radial-gradient(circle at 100% 0%, rgba(19, 136, 8, .055), transparent 34%),
+        radial-gradient(circle at 0% 100%, rgba(255, 153, 51, .055), transparent 32%),
+        linear-gradient(145deg, #ffffff, #fbfefb);
+    box-shadow:
+        0 9px 25px rgba(16, 59, 30, .045),
+        inset 0 1px 0 rgba(255, 255, 255, .92);
+    color: #1a3022;
+    text-align: left;
+    transition:
+        transform .22s ease,
+        border-color .22s ease,
+        box-shadow .22s ease;
+}
+
+.admin-notes-page .subject-folder-card:hover {
+    transform: translateY(-5px);
+    border-color: #b4d2b9;
+    box-shadow:
+        0 20px 42px rgba(16, 74, 34, .115),
+        0 0 0 1px rgba(19, 136, 8, .035);
+}
+
+.admin-notes-page .subject-folder-card:active {
+    transform: translateY(-2px) scale(.995);
+}
+
+.admin-notes-page .subject-folder-card-top {
+    margin-bottom: 19px;
+}
+
+.admin-notes-page .subject-folder-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+    background:
+        linear-gradient(145deg, #fff3e3 0%, #f4f8f3 48%, #eaf6ec 100%);
+    color: #287a3f;
+    box-shadow:
+        0 9px 20px rgba(40, 122, 63, .08),
+        inset 0 1px 0 rgba(255, 255, 255, .95);
+}
+
+.admin-notes-page .subject-folder-card:hover .subject-folder-icon {
+    color: #138808;
+}
+
+.admin-notes-page .subject-folder-arrow {
+    width: 34px;
+    height: 34px;
+    border-color: #dfe9e1;
+    background: rgba(255, 255, 255, .88);
+    color: #6f7f74;
+    box-shadow: 0 7px 16px rgba(24, 61, 36, .045);
+}
+
+.admin-notes-page .subject-folder-card:hover .subject-folder-arrow {
+    border-color: #c5dbc9;
+    color: #138808;
+}
+
+.admin-notes-page .subject-folder-code {
+    margin-bottom: 7px;
+    color: #287a3f;
+    font-size: 10px;
+    font-weight: 950;
+    letter-spacing: .17em;
+}
+
+.admin-notes-page .subject-folder-card h3 {
+    color: #172d20;
+    font-size: 16px;
+    font-weight: 850;
+    line-height: 1.42;
+}
+
+.admin-notes-page .subject-folder-card p {
+    color: #78877e;
+    font-size: 11px;
+}
+
+/* -------------------------
+   ADMIN NOTES — WORKSPACE
+------------------------- */
+
+.admin-notes-page .subject-workspace-header {
+    position: relative;
+    overflow: hidden;
+    padding: 21px;
+    border: 1px solid #dfe9e1;
+    border-radius: 21px;
+    background:
+        radial-gradient(circle at 100% 0%, rgba(19, 136, 8, .085), transparent 33%),
+        radial-gradient(circle at 0% 100%, rgba(255, 153, 51, .075), transparent 33%),
+        linear-gradient(145deg, #ffffff, #fafdfb);
+    box-shadow:
+        0 14px 34px rgba(17, 62, 31, .06),
+        inset 0 1px 0 rgba(255, 255, 255, .95);
+}
+
+.admin-notes-page .subject-workspace-header::before {
+    position: absolute;
+    inset: 0 0 auto;
+    height: 4px;
+    background: linear-gradient(90deg, #ff9933 0%, #ffffff 50%, #138808 100%);
+    content: "";
+}
+
+.admin-notes-page .subject-folder-large {
+    width: 61px;
+    height: 61px;
+    border-radius: 19px;
+    background: linear-gradient(145deg, #fff1df, #edf7ee);
+    color: #287a3f;
+    box-shadow:
+        0 10px 24px rgba(40, 122, 63, .08),
+        inset 0 1px 0 rgba(255, 255, 255, .95);
+}
+
+.admin-notes-page .subject-workspace-title h2 {
+    font-weight: 900;
+}
+
+.admin-notes-page .subject-workspace-title p {
+    max-width: 620px;
+}
+
+/* Search + refresh */
+.admin-notes-page .resource-toolbar {
+    margin-bottom: 20px;
+}
+
+.admin-notes-page .search-box {
+    min-height: 45px;
+    height: 45px;
+    border-color: #dfe8e1;
+    border-radius: 13px;
+    background: #ffffff;
+    box-shadow: 0 6px 18px rgba(18, 61, 31, .035);
+}
+
+.admin-notes-page .search-box:focus-within {
+    border-color: rgba(19, 136, 8, .36);
+    box-shadow: 0 0 0 4px rgba(19, 136, 8, .055);
+}
+
+.admin-notes-page .soft-button {
+    min-height: 43px;
+    height: 43px;
+    border: 1px solid #dfe8e1;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #52665a;
+    box-shadow: 0 7px 18px rgba(18, 61, 31, .04);
+    font-weight: 750;
+    transition:
+        transform .18s ease,
+        border-color .18s ease,
+        box-shadow .18s ease,
+        color .18s ease;
+}
+
+.admin-notes-page .soft-button:hover:not(:disabled) {
+    transform: translateY(-1px);
+    border-color: #bdd5c2;
+    color: #287a3f;
+    box-shadow: 0 10px 22px rgba(18, 61, 31, .07);
+}
+
+.admin-notes-page .soft-button:disabled {
+    opacity: .58;
+    cursor: wait;
+}
+
+/* Notes table */
+.admin-notes-page .admin-table-card {
+    border-color: #dfe8e1;
+    border-radius: 19px;
+    background: linear-gradient(145deg, #ffffff, #fbfdfb);
+    box-shadow:
+        0 12px 30px rgba(18, 61, 31, .045),
+        inset 0 1px 0 rgba(255, 255, 255, .96);
+}
+
+.admin-notes-page .table-head {
+    grid-template-columns: minmax(220px, 1.55fr) minmax(180px, 1.25fr) 85px 110px;
+    min-height: 54px;
+    padding: 0 18px;
+    background:
+        linear-gradient(90deg, rgba(255, 153, 51, .055), rgba(255, 255, 255, .72) 50%, rgba(19, 136, 8, .055));
+    color: #718076;
+}
+
+.admin-notes-page .table-row {
+    grid-template-columns: minmax(220px, 1.55fr) minmax(180px, 1.25fr) 85px 110px;
+    min-height: 78px;
+    padding: 13px 18px;
+    border-top-color: #edf1ed;
+    color: #708076;
+    background: #ffffff;
+    transition: background .18s ease;
+}
+
+.admin-notes-page .table-row:hover {
+    background: #fbfefb;
+}
+
+.admin-notes-page .table-main {
+    min-width: 0;
+}
+
+.admin-notes-page .table-main>div {
+    min-width: 0;
+}
+
+.admin-notes-page .table-main b {
+    display: block;
+    overflow: hidden;
+    color: #203529;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.4;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.admin-notes-page .table-main small {
+    display: block;
+    overflow: hidden;
+    margin-top: 4px;
+    color: #8a958d;
+    font-size: 9px;
+    line-height: 1.35;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.admin-notes-page .table-icon {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #dfebe1;
+    border-radius: 11px;
+    background: linear-gradient(145deg, #f6fbf6, #edf6ef);
+    color: #34834f;
+}
+
+.admin-notes-page .table-row>span:not(.status) {
+    overflow: hidden;
+    color: #7b887f;
+    line-height: 1.5;
+    text-overflow: ellipsis;
+}
+
+.admin-notes-page .table-row>div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 7px;
+}
+
+.admin-notes-page .table-row>div:last-child>.soft-button {
+    min-height: 35px;
+    height: 35px;
+    padding: 0 10px;
+    font-size: 10px;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.admin-notes-page .delete-button {
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgba(220, 86, 126, .13);
+    border-radius: 10px;
+    background: rgba(220, 86, 126, .045);
+    color: #cf668f;
+    transition: transform .18s ease, background .18s ease, border-color .18s ease;
+}
+
+.admin-notes-page .delete-button:hover {
+    transform: translateY(-1px);
+    border-color: rgba(220, 86, 126, .25);
+    background: rgba(220, 86, 126, .085);
+}
+
+/* -------------------------
+   ADMIN NOTES — UPLOAD MODAL
+------------------------- */
+
+.admin-notes-page .modal.resource-modal {
+    width: min(580px, calc(100vw - 28px));
+    max-height: min(90vh, 760px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+    scrollbar-color: #b9cdbd transparent;
+}
+
+.admin-notes-page .modal.resource-modal::-webkit-scrollbar {
+    width: 7px;
+}
+
+.admin-notes-page .modal.resource-modal::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: #c2d2c5;
+}
+
+.admin-notes-page .modal.resource-modal::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.admin-notes-page .modal.resource-modal .modal-head {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    margin: -1px -1px 0;
+    padding: 23px 24px 17px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, .98), rgba(249, 252, 249, .98));
+    backdrop-filter: blur(12px);
+}
+
+.admin-notes-page .modal.resource-modal .modal-head h3 {
+    color: #172d20;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.admin-notes-page .modal.resource-modal .modal-head small {
+    display: block;
+    margin-top: 5px;
+    color: #7a877e;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.admin-notes-page .resource-form {
+    gap: 17px;
+    margin-top: 18px;
+    padding: 0 24px;
+}
+
+.admin-notes-page .resource-form-field>span {
+    color: #385143;
+    font-size: 11px;
+    font-weight: 850;
+    letter-spacing: .01em;
+}
+
+.admin-notes-page .resource-form-field input,
+.admin-notes-page .resource-form-field textarea,
+.admin-notes-page .resource-form-field select {
+    min-height: 52px;
+    border: 1px solid #dce7de;
+    border-radius: 13px;
+    background: #ffffff;
+    box-shadow: inset 0 1px 1px rgba(16, 48, 28, .025);
+    color: #203529;
+}
+
+.admin-notes-page .resource-form-field textarea {
+    min-height: 122px !important;
+    height: 122px !important;
+}
+
+.admin-notes-page .resource-form-field input:focus,
+.admin-notes-page .resource-form-field textarea:focus,
+.admin-notes-page .resource-form-field select:focus {
+    border-color: rgba(19, 136, 8, .42);
+    box-shadow:
+        0 0 0 4px rgba(19, 136, 8, .065),
+        inset 0 1px 1px rgba(16, 48, 28, .025);
+}
+
+.admin-notes-page .pdf-upload-box {
+    border: 0;
+    background: transparent;
+}
+
+.admin-notes-page .pdf-upload-content {
+    min-height: 92px;
+    padding: 15px 16px;
+    border: 1px dashed #b7ceb9;
+    border-radius: 16px;
+    background:
+        radial-gradient(circle at 0% 100%, rgba(255, 153, 51, .07), transparent 34%),
+        linear-gradient(145deg, #fffdfa, #f6fbf7);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .92);
+}
+
+.admin-notes-page .pdf-upload-content:hover {
+    border-color: #4b9560;
+    background:
+        radial-gradient(circle at 0% 100%, rgba(255, 153, 51, .10), transparent 34%),
+        linear-gradient(145deg, #fff8ef, #eef8f0);
+}
+
+.admin-notes-page .pdf-upload-icon {
+    width: 48px;
+    height: 48px;
+    flex-basis: 48px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #ff9933, #e87c22 46%, #138808);
+    box-shadow: 0 10px 24px rgba(64, 111, 61, .14);
+}
+
+.admin-notes-page .pdf-upload-content b {
+    color: #254535;
+    font-size: 13px;
+}
+
+.admin-notes-page .pdf-upload-content small {
+    color: #7b887f;
+    font-size: 10px;
+}
+
+.admin-notes-page .pdf-upload-content>svg {
+    color: #287a3f;
+}
+
+.admin-notes-page .selected-file-name {
+    margin-top: 7px;
+    padding-left: 2px;
+    color: #287a3f;
+    font-size: 10px;
+}
+
+.admin-notes-page .modal.resource-modal .modal-actions {
+    position: sticky;
+    bottom: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 19px 0 0;
+    padding: 15px 24px 22px;
+    background:
+        linear-gradient(180deg, rgba(249, 252, 249, 0), rgba(249, 252, 249, .93) 28%, rgba(249, 252, 249, 1) 100%);
+    backdrop-filter: blur(10px);
+}
+
+.admin-notes-page .modal.resource-modal .modal-actions .soft-button,
+.admin-notes-page .modal.resource-modal .modal-actions .primary-button {
+    min-height: 46px;
+    border-radius: 13px;
+}
+
+.admin-notes-page .modal.resource-modal .modal-actions .soft-button {
+    background: #ffffff;
+    border: 1px solid #dce7de;
+    color: #53665a;
+}
+
+.admin-notes-page .modal.resource-modal .modal-actions .primary-button {
+    min-width: 158px;
+    border: 1px solid rgba(19, 136, 8, .10);
+    background: linear-gradient(105deg, #ff9933, #e97b22 43%, #138808);
+    box-shadow: 0 12px 26px rgba(34, 92, 43, .15);
+}
+
+.admin-notes-page .modal.resource-modal .modal-actions .primary-button:hover:not(:disabled) {
+    transform: translateY(-1px);
+    filter: brightness(1.03);
+}
+
+.admin-notes-page .modal.resource-modal .modal-actions button:disabled {
+    opacity: .66;
+    cursor: wait;
+}
+
+/* -------------------------
+   STUDENT NOTES — SUBJECT FOLDERS
+   Uses the class names from ResourcePage.jsx.
+------------------------- */
+
+.page-wrap:has(.notes-subject-grid) {
+    max-width: 1480px;
+    margin-inline: auto;
+}
+
+.page-wrap:has(.notes-subject-grid) .notes-subject-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr));
+    gap: 16px;
+}
+
+.page-wrap:has(.notes-subject-grid) .notes-subject-card {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    min-height: 188px;
+    padding: 20px;
+    border: 1px solid #dfe9e1;
+    border-radius: 21px;
+    background:
+        radial-gradient(circle at 100% 0%, rgba(19, 136, 8, .055), transparent 34%),
+        radial-gradient(circle at 0% 100%, rgba(255, 153, 51, .055), transparent 32%),
+        linear-gradient(145deg, #ffffff, #fbfefb);
+    color: #1a3022;
+    text-align: left;
+    box-shadow:
+        0 9px 25px rgba(16, 59, 30, .045),
+        inset 0 1px 0 rgba(255, 255, 255, .92);
+    transition:
+        transform .22s ease,
+        border-color .22s ease,
+        box-shadow .22s ease;
+}
+
+.page-wrap:has(.notes-subject-grid) .notes-subject-card::before {
+    position: absolute;
+    inset: 0 0 auto;
+    z-index: -1;
+    height: 4px;
+    background: linear-gradient(90deg, #ff9933, #ffffff 50%, #138808);
+    content: "";
+}
+
+.page-wrap:has(.notes-subject-grid) .notes-subject-card:hover {
+    transform: translateY(-5px);
+    border-color: #b4d2b9;
+    box-shadow:
+        0 20px 42px rgba(16, 74, 34, .115),
+        0 0 0 1px rgba(19, 136, 8, .035);
+}
+
+.page-wrap:has(.notes-subject-grid) .notes-subject-card:active {
+    transform: translateY(-2px) scale(.995);
+}
+
+.page-wrap:has(.notes-subject-grid) .notes-folder-icon {
+    width: 56px;
+    height: 56px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #d9e9dc;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #fff3e3, #f4f8f3 50%, #eaf6ec);
+    color: #287a3f;
+    box-shadow:
+        0 9px 20px rgba(40, 122, 63, .08),
+        inset 0 1px 0 rgba(255, 255, 255, .95);
+    transition: transform .2s ease, color .2s ease;
+}
+
+.page-wrap:has(.notes-subject-grid) .notes-subject-card:hover .notes-folder-icon {
+    transform: translateY(-2px) scale(1.02);
+    color: #138808;
+}
+
+.page-wrap:has(.notes-subject-grid) .notes-subject-card-content {
+    min-width: 0;
+    margin: 18px 36px 0 0;
+}
+
+.page-wrap:has(.notes-subject-grid) .notes-subject-card-content>span {
+    display: block;
+    margin-bottom: 6px;
+    color: #287a3f;
+    font-size: 10px;
+    font-weight: 950;
+    letter-spacing: .17em;
+}
+
+.page-wrap:has(.notes-subject-grid) .notes-subject-card-content h3 {
+    margin: 0;
+    color: #172d20;
+    font-size: 16px;
+    font-weight: 850;
+    line-height: 1.45;
+}
+
+.page-wrap:has(.notes-subject-grid) .notes-subject-card-content small {
+    display: block;
+    margin-top: 8px;
+    color: #7b887f;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.page-wrap:has(.notes-subject-grid) .notes-subject-card>svg {
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    border: 1px solid #e2ebe4;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #708177;
+    box-shadow: 0 7px 16px rgba(24, 61, 36, .045);
+    transition:
+        transform .2s ease,
+        color .2s ease,
+        border-color .2s ease;
+}
+
+.page-wrap:has(.notes-subject-grid) .notes-subject-card:hover>svg {
+    transform: translate(2px, -2px);
+    border-color: #c5dbc9;
+    color: #138808;
+}
+
+/* Student material cards */
+.page-wrap:has(.resource-grid.notes) .resource-grid.notes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 275px), 1fr));
+    gap: 16px;
+}
+
+.page-wrap:has(.resource-grid.notes) .resource-card {
+    position: relative;
+    min-height: 215px;
+    overflow: hidden;
+    border: 1px solid #e1eae3;
+    border-radius: 19px;
+    background:
+        radial-gradient(circle at 100% 0%, rgba(19, 136, 8, .045), transparent 30%),
+        linear-gradient(145deg, #ffffff, #fbfdfb);
+    box-shadow: 0 9px 25px rgba(19, 61, 34, .042);
+}
+
+.page-wrap:has(.resource-grid.notes) .resource-card::before {
+    position: absolute;
+    inset: 0 0 auto;
+    height: 3px;
+    background: linear-gradient(90deg, #ff9933, #ffffff 50%, #138808);
+    content: "";
+}
+
+.page-wrap:has(.resource-grid.notes) .resource-card:hover {
+    transform: translateY(-4px);
+    border-color: #b9d2bd;
+    box-shadow: 0 18px 36px rgba(19, 74, 37, .09);
+}
+
+.page-wrap:has(.resource-grid.notes) .resource-icon {
+    border: 1px solid #dce9de;
+    background: linear-gradient(145deg, #fff2e3, #edf7ee);
+    color: #287a3f;
+}
+
+.page-wrap:has(.resource-grid.notes) .resource-card h3 {
+    color: #1b3023;
+    font-size: 16px;
+    font-weight: 850;
+}
+
+.page-wrap:has(.resource-grid.notes) .resource-card p {
+    min-height: 42px;
+    color: #748178;
+    line-height: 1.65;
+}
+
+.page-wrap:has(.resource-grid.notes) .resource-meta button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 34px;
+    padding: 0 11px;
+    border: 1px solid #d7e5da;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #287a3f;
+    font-size: 10px;
+    font-weight: 850;
+    box-shadow: 0 7px 16px rgba(18, 61, 31, .035);
+    transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+
+.page-wrap:has(.resource-grid.notes) .resource-meta button:hover {
+    transform: translateY(-1px);
+    border-color: #b9d3bd;
+    box-shadow: 0 10px 22px rgba(18, 61, 31, .07);
+}
+
+/* Student notes detail modal / PDF open action */
+.page-wrap:has(.resource-grid.notes) .modal-backdrop {
+    background: rgba(7, 20, 12, .48);
+    backdrop-filter: blur(13px) saturate(120%);
+}
+
+.page-wrap:has(.resource-grid.notes) .modal {
+    position: relative;
+    max-height: min(88vh, 720px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 1px solid rgba(24, 67, 38, .12);
+    border-radius: 23px;
+    background: linear-gradient(145deg, #ffffff, #f9fcf9);
+    box-shadow: 0 32px 90px rgba(9, 32, 17, .22);
+}
+
+.page-wrap:has(.resource-grid.notes) .modal-head {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    padding-bottom: 15px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, .97), rgba(249, 252, 249, .97));
+    backdrop-filter: blur(10px);
+}
+
+.page-wrap:has(.resource-grid.notes) .modal-detail-grid {
+    gap: 10px;
+}
+
+.page-wrap:has(.resource-grid.notes) .modal-detail-grid>span {
+    padding: 11px 12px;
+    border: 1px solid #e3ebe4;
+    border-radius: 11px;
+    background: #fbfefb;
+    color: #64746a;
+}
+
+.page-wrap:has(.resource-grid.notes) .modal .primary-button.full {
+    min-height: 47px;
+    margin-top: 11px;
+    border-radius: 13px;
+    background: linear-gradient(105deg, #ff9933, #e97b22 43%, #138808);
+    box-shadow: 0 12px 26px rgba(34, 92, 43, .14);
+}
+
+.page-wrap:has(.resource-grid.notes) .modal .primary-button.full:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.03);
+}
+
+/* -------------------------
+   MOBILE NOTES
+------------------------- */
+
+@media (max-width: 760px) {
+    .admin-notes-page .subject-library-header {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 16px;
+        padding: 20px;
+    }
+
+    .admin-notes-page .subject-library-header>.primary-button {
+        width: 100%;
+    }
+
+    .admin-notes-page .subject-folder-grid,
+    .page-wrap:has(.notes-subject-grid) .notes-subject-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .admin-notes-page .subject-folder-card,
+    .page-wrap:has(.notes-subject-grid) .notes-subject-card {
+        min-height: 165px;
+        padding: 17px;
+    }
+
+    .admin-notes-page .subject-workspace-header {
+        align-items: stretch;
+        padding: 16px;
+    }
+
+    .admin-notes-page .subject-workspace-title {
+        flex-basis: 100%;
+    }
+
+    .admin-notes-page .subject-workspace-header>.primary-button,
+    .admin-notes-page .subject-workspace-header>.soft-button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .admin-notes-page .admin-table-card {
+        overflow-x: auto;
+    }
+
+    .admin-notes-page .table-head,
+    .admin-notes-page .table-row {
+        min-width: 700px;
+    }
+
+    .admin-notes-page .modal.resource-modal {
+        width: calc(100vw - 20px);
+        max-height: 92vh;
+        border-radius: 20px;
+    }
+
+    .admin-notes-page .modal.resource-modal .resource-form {
+        padding: 0 18px;
+    }
+
+    .admin-notes-page .modal.resource-modal .modal-head {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .admin-notes-page .modal.resource-modal .modal-actions {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        padding: 13px 18px 18px;
+    }
+
+    .admin-notes-page .modal.resource-modal .modal-actions button {
+        width: 100%;
+    }
+
+    .page-wrap:has(.notes-subject-grid) .notes-subject-card-content {
+        margin-right: 30px;
+    }
+
+    .page-wrap:has(.resource-grid.notes) .resource-grid.notes {
+        grid-template-columns: 1fr;
     }
 }
