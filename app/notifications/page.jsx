@@ -1,0 +1,4 @@
+"use client";
+import { Bell,CheckCheck } from "lucide-react";
+import AppShell from "@/components/AppShell";
+export default function Notifications(){const items=["Internal Assessment Schedule has been published.","Python Programming note was updated.","Assignment verification status changed.","Admin replied to a student query."];return <AppShell title="Notifications" subtitle="Updates that matter"><div className="page-wrap"><div className="page-header"><div><span>NOTIFICATION CENTER</span><h2>Notifications</h2><p>Important academic updates in one place.</p></div><button className="soft-button"><CheckCheck size={16}/> Mark all as read</button></div><div className="notification-list">{items.map((x,i)=><article key={x}><span><Bell size={18}/></span><div><b>{x}</b><small>{i+1} hour{i===0?"":"s"} ago</small></div>{i<2&&<i/>}</article>)}</div></div></AppShell>}
