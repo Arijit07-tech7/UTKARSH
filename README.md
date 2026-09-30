@@ -1,382 +1,304 @@
+README.md
+
+
+<div align="center">
+
 🇮🇳 UTKARSH • उत्कर्ष
-
 Your Academic Command Center
+India's Spirit. One Academic Future.
 
-Narula Institute of Technology · Information Technology · IT-C
+<img src="https://img.shields.io/badge/INDIA-×-academia-orange?style=for-the-badge&labelColor=0b0f14&color=ff9933" alt="India Academia"/> <img src="https://img.shields.io/badge/NARULA_INSTITUTE_OF_TECHNOLOGY-IT--C-138808?style=for-the-badge&labelColor=0b0f14" alt="NIT IT-C"/> <img src="https://img.shields.io/badge/2026-ACADEMIC_PLATFORM-ffffff?style=for-the-badge&labelColor=0b0f14" alt="2026"/>
 
-<p align="center">
-  <strong>India's Spirit. One Academic Future.</strong>
-</p>
+<br/>
 
-<p align="center">
-  A modern academic command center designed to bring learning, resources,
-  communication, routine, assignments, notices and student access into one
-  secure digital space.
-</p>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff9933,50:ffffff,100:138808&height=170&section=header&text=UTKARSH&fontSize=58&fontColor=111827&animation=fadeIn&fontAlignY=40" width="100%" alt="UTKARSH"/>
 
-✨ About UTKARSH
+</div>
 
-UTKARSH (उत्कर्ष) is a premium academic platform created for the
-Information Technology community of Narula Institute of Technology.
+✦ The Idea
+UTKARSH — उत्कर्ष — represents progress, growth and excellence.
 
-The experience combines:
+UTKARSH is a premium academic command center designed around the everyday workflow of the Information Technology • IT-C student community at Narula Institute of Technology.
 
-🇮🇳 Indian identity and tricolour-inspired visual language
+Instead of scattering academic information across messages, files, notices and different platforms, UTKARSH brings the important parts of student life into one focused digital space.
 
-🎓 Academic organization
+<div align="center">
 
-📚 Notes and study resources
+🎓 Learn → Organize → Track → Progress
+</div>
 
-📝 Assignments
+🪷 India × Academia
+UTKARSH is intentionally built around an Indian academic identity.
 
-🗓️ Class routine
+The visual language combines:
 
-📖 Syllabus
+🇮🇳 Indian tricolour spirit
+×
+🎓 Modern academic technology
+×
+✨ Premium product design
 
-📢 Notices and communication
+The result is an interface that feels familiar, modern and purpose-built for the students it serves.
 
-🔐 Secure student and administrator access
+<div align="center">
 
-📱 Mobile-first responsive experience
+<img src="https://img.shields.io/badge/🇮🇳-SAFFRON-ff9933?style=for-the-badge&labelColor=0b0f14" /> <img src="https://img.shields.io/badge/○-WHITE-ffffff?style=for-the-badge&labelColor=0b0f14" /> <img src="https://img.shields.io/badge/🇮🇳-GREEN-138808?style=for-the-badge&labelColor=0b0f14" />
 
-✨ Smooth animations and premium interactions
+</div>
 
-UTKARSH is designed to feel less like a traditional college portal and more
-like a modern academic product.
-
-🎨 Design Philosophy
-
-UTKARSH follows a premium Indian academic technology aesthetic.
-
-The visual identity is built around:
-
-🇮🇳 India × Academia
-
-The Indian tricolour is used as a refined visual accent rather than covering
-the interface with excessive patriotic graphics.
-
-Saffron represents energy and aspiration.
-
-White represents clarity and openness.
-
-India Green represents growth and progress.
-
-These accents are combined with clean typography, soft surfaces, elegant
-spacing, glass-like elements and subtle motion.
-
-🧊 3D & Motion Experience
-
-The interface is intentionally designed around 3D visual storytelling.
-
-Instead of traditional ASCII diagrams or static technical illustrations,
-UTKARSH uses:
-
-Floating 3D academic objects
-
-Layered cards
-
-Depth-based compositions
-
-Soft shadows
-
-Perspective movement
-
-Rotating academic elements
-
-Tricolour light gradients
-
-Floating particles
-
-Scroll-based reveals
-
-Smooth section transitions
-
-Micro-interactions
-
-Subtle hover effects
-
-The goal is to make the academic experience feel alive, modern and immersive
-without sacrificing readability.
-
-🏠 Homepage Experience
-
-The UTKARSH homepage is built as a long-form product experience.
-
-INDIA × ACADEMIA
-
-The opening experience introduces:
-
-India's Spirit.
-One Academic Future.
-
-with the identity of:
-
-NARULA INSTITUTE OF TECHNOLOGY
-
-and
-
-INFORMATION TECHNOLOGY · IT-C
-
-🎓 Academic Space
-
-A visual representation of the UTKARSH academic ecosystem connects:
-
-Learn
-
-Organize
-
-Connect
-
-Progress
-
-The experience uses animated 3D-inspired elements instead of a conventional
-dashboard-heavy hero.
+⚡ What UTKARSH Brings Together
+<table> <tr> <td width="50%">
 
 📚 Academic Intelligence
+A focused academic environment for:
 
-UTKARSH brings everyday academic needs together:
-
-Notes & Study Material
-
-Organize academic resources and learning materials in one dedicated space.
+Notes
 
 Assignments
 
-Keep academic work structured and easier to track.
+Syllabus
 
-Class Routine
-
-Keep classes and schedules accessible from one place.
-
-Complete Syllabus
-
-Maintain a clear academic roadmap.
+Class routines
 
 Notices
 
-Stay connected with important academic updates.
+Previous questions
 
-🔐 Simple & Secure
+Academic resources
 
-UTKARSH is built around a simple access experience:
+</td> <td width="50%">
 
-Student Access
+🔐 Controlled Access
+Separate access experiences for:
 
-A dedicated academic workspace for students.
+👨‍🎓 Students
 
-Admin Access
+🛡️ Administrators
 
-A protected workspace for administration and academic management.
+Authentication and authorization are designed around protected academic data.
 
-The existing authentication system is kept separate from the visual layer so
-the premium interface does not compromise the underlying application flow.
+</td> </tr>
+
+<tr> <td width="50%">
+
+📱 Mobile First
+Designed to work beautifully across:
+
+📱 Smartphones
+
+💻 Laptops
+
+🖥️ Desktops
+
+📲 PWA environments
+
+</td> <td width="50%">
+
+✨ Premium Experience
+Built around:
+
+Smooth transitions
+
+Glass-inspired surfaces
+
+Responsive layouts
+
+Micro-interactions
+
+Clean typography
+
+Academic-focused UX
+
+</td> </tr> </table>
+
+🧠 Academic Intelligence
+<div align="center">
+
+Everything important. One academic space.
+</div>
+
+UTKARSH is structured as an academic ecosystem rather than just another student dashboard.
+
+📖 Study
+Keep learning resources organized and accessible.
+
+📝 Assignments
+Keep track of academic work and submission-related information.
+
+🗂️ Syllabus
+Maintain a centralized view of academic coverage.
+
+🕐 Routine
+Access class scheduling information without searching through scattered messages.
+
+📢 Notices
+Keep important academic announcements in one place.
+
+🧩 Previous Questions
+Create a structured space for previous academic question resources.
+
+🛡️ Security First
+UTKARSH separates the student experience from administration controls.
+
+<div align="center">
+
+Access	Purpose
+👨‍🎓 Student	Access approved academic resources
+🛡️ Admin	Manage academic platform data and resources
+</div>
+
+The platform is designed around authenticated access, role-aware interfaces and database-level protection.
+
+The interface should look simple. The system underneath should take security seriously.
+
+🚀 Technology
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=nextjs,react,js,ts,tailwind,supabase,postgres,docker,git,github&perline=5" alt="Technology Stack"/>
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/Frontend-React%20%2F%20Next.js-111827?style=for-the-badge&logo=react" /> <img src="https://img.shields.io/badge/Styling-Tailwind%20CSS-111827?style=for-the-badge&logo=tailwindcss" /> <img src="https://img.shields.io/badge/Backend-Supabase-111827?style=for-the-badge&logo=supabase" /> <img src="https://img.shields.io/badge/Database-PostgreSQL-111827?style=for-the-badge&logo=postgresql" />
+
+</div>
+
+🎨 Design Philosophy
+UTKARSH follows a product-first academic design language.
+
+01 — Editorial
+Large typography, clear hierarchy and purposeful whitespace.
+
+02 — Product
+The experience is designed like a modern technology platform rather than a traditional college portal.
+
+03 — Academic
+Every interaction ultimately supports the student's academic workflow.
+
+04 — Indian Identity
+Subtle tricolour accents connect the product to its Indian academic context without overwhelming the interface.
+
+🧭 Platform Experience
+<div align="center">
+
+                 🇮🇳 UTKARSH
+                       │
+            ┌──────────┴──────────┐
+            │                     │
+        👨‍🎓 STUDENT           🛡️ ADMIN
+            │                     │
+       Academic Space       Management Space
+            │                     │
+     ┌──────┼──────┐        ┌─────┼─────┐
+     │      │      │        │     │     │
+    📚     📝     🕐       👥    📂    📢
+   Study  Tasks  Routine   Users Upload Notices
+</div>
+
+One platform. Two access experiences. One academic ecosystem.
+
+🌐 Built for IT-C
+<div align="center">
+
+NARULA INSTITUTE OF TECHNOLOGY
+Department of Information Technology
+
+IT-C
+<br/>
+
+Built for the classroom. Designed for the future.
+
+</div>
 
 👨‍💻 Developers
+<table> <tr> <td align="center" width="50%">
 
-Arijit Gupta
+<img src="https://github.com/Arijit07-tech7.png" width="110" height="110" style="border-radius:50%" alt="Arijit Gupta"/>
 
-Product · Frontend · Full-Stack Engineering
+ARIJIT GUPTA
+Build & Development
 
-Responsible for product direction, interface development and full-stack
-engineering.
+Product • UI • Full-Stack Development
 
-Abir Ghosh
+</td>
 
-Product · Backend · Platform Engineering
+<td align="center" width="50%">
 
-Responsible for backend architecture, platform functionality and system
-engineering.
+<img src="https://ui-avatars.com/api/?name=Abir+Ghosh&size=220&background=111827&color=ffffff&bold=true" width="110" height="110" style="border-radius:50%" alt="Abir Ghosh"/>
 
-🛠️ Technology
+ABIR GHOSH
+Build & Development
 
-UTKARSH is built using a modern web stack.
+Product • Engineering • Platform Development
 
-Frontend
+</td> </tr> </table>
 
-React
+✨ Experience the Identity
+<div align="center">
 
-Next.js
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0b0f14&height=150&section=header&text=INDIA%20×%20ACADEMIA&fontSize=38&fontColor=ffffff&animation=fadeIn" width="100%" alt="India Academia"/>
 
-JavaScript
+<br/>
 
-Tailwind CSS
+India's Spirit. One Academic Future.
+</div>
 
-Framer Motion
-
-Lucide React
-
-Backend
-
-Next.js API routes
-
-Server-side authentication flows
-
-Secure API communication
-
-Database & Platform
-
-Supabase
-
-PostgreSQL
-
-Row-level security concepts
-
-Cloud storage for academic resources
-
-Progressive Experience
-
-Responsive UI
-
-Mobile-first layouts
-
-PWA-ready architecture
-
-Smooth animated interactions
-
-🔑 Core Platform Flow
-
-Student
-
-Students can enter their academic space through the approved mobile-number
-authentication flow and access the resources provided by UTKARSH.
-
-Administrator
-
-Administrators have a dedicated protected workspace for managing academic
-content and approved student access.
-
-🛡️ Security
-
-Security is treated as a core part of the platform rather than an afterthought.
-
-UTKARSH is designed around:
-
-Approved student access
-
-Role-based administrative access
-
-Secure server-side authentication
-
-Protected academic resources
-
-Controlled API operations
-
-Database-level access policies
-
-Authentication and application data remain separate from the presentation
-layer so visual redesigns do not need to alter the core security flow.
-
-📱 Responsive Experience
-
-UTKARSH is designed for:
-
-Mobile phones
-
-Tablets
-
-Laptops
-
-Desktop monitors
-
-The mobile experience is not simply a compressed desktop layout.
-
-Important interface elements are redesigned for touch interaction with:
-
-Larger tap targets
-
-Stacked layouts
-
-Mobile navigation
-
-Responsive cards
-
-Scroll-friendly tables
-
-Optimized typography
-
-Reduced visual clutter
-
-🌈 Visual Language
-
-The interface follows a restrained palette:
-
-Element
-
-Direction
-
-🇮🇳 Saffron
-
-Energy & aspiration
-
-🤍 White
-
-Clarity & openness
-
-🇮🇳 India Green
-
-Growth & progress
-
-🌌 Deep Navy
-
-Trust & technology
-
-🌿 Soft Ivory
-
-Academic warmth
-
-The colours are used as accents, keeping the overall product clean and
-professional.
-
-🚀 Getting Started
-
-Clone the project:
-
-git clone <your-repository-url>
+🛠️ Getting Started
+1. Clone
+git clone <YOUR_REPOSITORY_URL>
 cd UTKARSH
-
-Install dependencies:
-
+2. Install
 npm install
+3. Configure Environment
+Create a local environment file and add the required Supabase / application configuration used by the project.
 
-Start the development server:
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+Never commit private service-role keys, passwords or other secrets to GitHub.
 
+4. Run
 npm run dev
+Open the local development URL shown by Next.js.
 
-Open the local application in your browser:
+📦 Production
+npm run build
+npm start
+For deployment, configure the required environment variables in the hosting platform rather than committing secrets into the repository.
 
-http://localhost:3000
+🔒 Security Notes
+Keep credentials outside source control.
 
-⚙️ Environment
+Use environment variables for secrets.
 
-Create a .env.local file and provide the environment variables required by
-your Supabase and authentication configuration.
+Keep Supabase Row Level Security enabled where required.
 
-Do not commit secrets, service-role keys or private credentials to GitHub.
+Use role-based authorization for protected operations.
 
-🧩 Project Philosophy
+Never expose service-role credentials in client-side code.
 
-UTKARSH is built around one simple idea:
+Keep administrative routes protected.
 
-Academic technology should feel human, focused and inspiring.
+🌱 Vision
+UTKARSH is more than a collection of pages.
 
-The platform combines the discipline of academia with the polish of modern
-product design.
+It is an attempt to create a focused academic digital environment where students can spend less time searching for information and more time using it.
 
-Every screen should communicate:
+<div align="center">
 
-Learn. Organize. Connect. Progress.
+From scattered information → to one academic space.
+From routine → to organized progress.
+From today’s classroom → to tomorrow’s academic future.
+</div>
 
-🇮🇳 UTKARSH
+<div align="center">
 
-उत्कर्ष · Your Academic Command Center
+🇮🇳 उत्कर्ष
+Where India's spirit meets academic ambition.
+<br/>
 
-Narula Institute of Technology
-Information Technology · IT-C
+<img src="https://img.shields.io/badge/MADE%20FOR-IT--C-ff9933?style=for-the-badge&labelColor=0b0f14" /> <img src="https://img.shields.io/badge/BUILT%20WITH-PURPOSE-ffffff?style=for-the-badge&labelColor=0b0f14" /> <img src="https://img.shields.io/badge/LOOKING%20AHEAD-138808?style=for-the-badge&labelColor=0b0f14" />
 
-<p align="center">
-  <strong>Built with purpose for Indian academic excellence.</strong>
-</p>
+<br/><br/>
 
-<p align="center">
-  © 2026 UTKARSH · Arijit Gupta & Abir Ghosh
-</p>
+UTKARSH • 2026
+
+</div>
