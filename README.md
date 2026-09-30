@@ -12,10 +12,7 @@
   <img src="https://img.shields.io/badge/2026-ACADEMIC_PLATFORM-ffffff?style=for-the-badge&labelColor=0b0f14" />
 </p>
 
-<img
-  src="https://capsule-render.vercel.app/api?type=waving&color=0:ff9933,50:ffffff,100:138808&height=190&section=header&text=UTKARSH&fontSize=62&fontColor=111827&animation=fadeIn&fontAlignY=42"
-  width="100%"
-/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff9933,50:ffffff,100:138808&height=190&section=header&text=UTKARSH&fontSize=62&fontColor=111827&animation=fadeIn&fontAlignY=42" width="100%" />
 
 </div>
 
@@ -27,7 +24,7 @@
 
 UTKARSH is a premium academic command center created for the **Information Technology • IT-C** student community of **Narula Institute of Technology**.
 
-It brings essential academic workflows into one focused digital environment — helping students access, organize and manage academic information without depending on scattered platforms.
+It brings essential academic workflows into one focused digital environment — helping students access, organize and manage academic information from one place.
 
 <div align="center">
 
@@ -39,78 +36,30 @@ It brings essential academic workflows into one focused digital environment — 
 
 # 🪷 India × Academia
 
-UTKARSH combines three ideas into one visual identity:
+UTKARSH combines:
 
-<div align="center">
+**🇮🇳 Indian Identity**  
+**🎓 Academic Purpose**  
+**⚡ Modern Technology**
 
-| 🇮🇳 | 🎓 | ⚡ |
-|:---:|:---:|:---:|
-| **Indian Identity** | **Academic Purpose** | **Modern Technology** |
-| Tricolour-inspired accents | Student-first workflow | Premium digital experience |
-
-</div>
-
-The design keeps the Indian identity **subtle, elegant and modern**, using saffron, white and green as visual accents rather than overwhelming the interface.
+The visual identity uses subtle saffron, white and green accents with a clean academic interface.
 
 ---
 
-# 🚀 Platform at a Glance
+# 🚀 Platform
 
 <div align="center">
 
-<table>
-<tr>
-
-<td align="center" width="25%">
-
-## 📚
-
-### Study
-
-Notes, syllabus and learning resources
-
-</td>
-
-<td align="center" width="25%">
-
-## 📝
-
-### Manage
-
-Assignments and academic tasks
-
-</td>
-
-<td align="center" width="25%">
-
-## 🕐
-
-### Organize
-
-Routine, notices and schedules
-
-</td>
-
-<td align="center" width="25%">
-
-## 🔐
-
-### Protect
-
-Role-based academic access
-
-</td>
-
-</tr>
-</table>
+| 📚 Study | 📝 Manage | 🕐 Organize | 🔐 Protect |
+|:---:|:---:|:---:|:---:|
+| Notes & Resources | Assignments | Routine & Schedule | Secure Access |
+| Syllabus | Academic Tasks | Notices | Student / Admin |
 
 </div>
 
 ---
 
 # 🧠 Academic Intelligence
-
-UTKARSH is designed as an **academic ecosystem**, not simply another dashboard.
 
 ### 📖 Study Space
 
@@ -122,7 +71,7 @@ A structured environment for academic tasks and submission-related information.
 
 ### 🗂️ Syllabus
 
-Keep important syllabus information centralized and easier to access.
+Keep important syllabus information centralized and accessible.
 
 ### 🕐 Class Routine
 
@@ -130,11 +79,11 @@ Quick access to class scheduling information.
 
 ### 📢 Notices
 
-Keep important academic announcements visible and organized.
+Keep important academic announcements organized.
 
 ### 📄 Previous Questions
 
-Create a structured academic resource for previous question papers and revision.
+A structured academic resource for previous question papers and revision.
 
 ---
 
@@ -142,44 +91,225 @@ Create a structured academic resource for previous question papers and revision.
 
 <div align="center">
 
-```mermaid
-flowchart TB
+**🇮🇳 UTKARSH**
 
-    U["🇮🇳 UTKARSH<br/><b>Academic Command Center</b>"]
+**Academic Command Center**
 
-    U --> S["👨‍🎓 Student Access"]
-    U --> A["🛡️ Admin Access"]
+↓
 
-    S --> SA["📚 Academic Space"]
-    S --> SN["🔔 Student Information"]
+**👨‍🎓 Student Access** ───────── **🛡️ Admin Access**
 
-    A --> AM["👥 Student Management"]
-    A --> AR["📂 Academic Resources"]
-    A --> AN["📢 Notices & Platform Data"]
+↓
 
-    SA --> N["📖 Notes"]
-    SA --> AS["📝 Assignments"]
-    SA --> SY["🗂️ Syllabus"]
-    SA --> RT["🕐 Routine"]
-    SA --> PQ["📄 Previous Questions"]
+**📚 Academic Space** ───────── **👥 Management Space**
 
-    S --> AUTH["🔐 Authentication"]
-    A --> AUTH
+↓
 
-    AUTH --> DB[("☁️ Supabase<br/>PostgreSQL")]
+**Notes • Assignments • Syllabus • Routine • Questions**
 
-    DB --> RLS["🛡️ Row Level Security"]
+↓
 
-    classDef root fill:#0b0f14,color:#ffffff,stroke:#ff9933,stroke-width:3px;
-    classDef student fill:#ffffff,color:#111827,stroke:#138808,stroke-width:2px;
-    classDef admin fill:#ffffff,color:#111827,stroke:#ff9933,stroke-width:2px;
-    classDef service fill:#f8fafc,color:#111827,stroke:#64748b,stroke-width:2px;
-    classDef database fill:#eef2ff,color:#111827,stroke:#6366f1,stroke-width:2px;
-    classDef security fill:#ecfdf5,color:#065f46,stroke:#138808,stroke-width:2px;
+**🔐 Authentication**
 
-    class U root;
-    class S,SA,SN,N,AS,SY,RT,PQ student;
-    class A,AM,AR,AN admin;
-    class AUTH service;
-    class DB database;
-    class RLS security;
+↓
+
+**☁️ Supabase • PostgreSQL**
+
+↓
+
+**🛡️ Row Level Security**
+
+</div>
+
+---
+
+# 🔐 Security
+
+UTKARSH separates student access from administrative controls.
+
+| Access | Purpose |
+|:---:|---|
+| 👨‍🎓 **Student** | Access approved academic resources |
+| 🛡️ **Admin** | Manage academic platform data |
+| 🔑 **Authentication** | Verify authorized users |
+| 🗄️ **Supabase** | Store application data |
+| 🛡️ **RLS** | Protect database access |
+
+### Security Principles
+
+- Keep credentials outside source control.
+- Use environment variables for sensitive configuration.
+- Keep Supabase Row Level Security enabled where required.
+- Protect administrative operations with proper authorization.
+- Never expose service-role credentials in client-side code.
+
+---
+
+# 🎨 Design Philosophy
+
+UTKARSH follows a simple design direction:
+
+### Editorial
+
+Large typography, clean hierarchy and intentional whitespace.
+
+### Product
+
+A modern technology-platform experience instead of a traditional college portal.
+
+### Academic
+
+Every section is designed around an actual academic workflow.
+
+### Indian Identity
+
+Subtle saffron, white and green accents represent the Indian academic identity.
+
+### Responsive
+
+Designed for smartphones, tablets, laptops and desktops.
+
+---
+
+# ⚡ Technology Stack
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=nextjs,react,js,ts,tailwind,supabase,postgres,docker,git,github&perline=5" />
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/Frontend-React%20%2F%20Next.js-111827?style=for-the-badge&logo=react" />
+<img src="https://img.shields.io/badge/Styling-Tailwind%20CSS-111827?style=for-the-badge&logo=tailwindcss" />
+<img src="https://img.shields.io/badge/Backend-Supabase-111827?style=for-the-badge&logo=supabase" />
+<img src="https://img.shields.io/badge/Database-PostgreSQL-111827?style=for-the-badge&logo=postgresql" />
+
+</div>
+
+---
+
+# 👨‍💻 Developers
+
+<div align="center">
+
+<table>
+
+<tr>
+
+<td align="center" width="50%">
+
+<img src="https://github.com/Arijit07-tech7.png" width="120" height="120" alt="Arijit Gupta" />
+
+### ARIJIT GUPTA
+
+**Build & Development**
+
+Product • UI • Full-Stack Development
+
+<br/>
+
+<a href="https://github.com/Arijit07-tech7">
+<img src="https://img.shields.io/badge/GitHub-Arijit07--tech7-111827?style=for-the-badge&logo=github" />
+</a>
+
+</td>
+
+<td align="center" width="50%">
+
+<img src="https://ui-avatars.com/api/?name=Abir+Ghosh&size=240&background=111827&color=ffffff&bold=true" width="120" height="120" alt="Abir Ghosh" />
+
+### ABIR GHOSH
+
+**Build & Development**
+
+Product • Engineering • Platform Development
+
+<br/>
+
+<a href="https://github.com/Abir-Ghosh-sudo">
+<img src="https://img.shields.io/badge/GitHub-Abir--Ghosh--sudo-111827?style=for-the-badge&logo=github" />
+</a>
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+---
+
+# 🛠️ Getting Started
+
+### 01 · Clone
+
+`git clone <YOUR_REPOSITORY_URL>`
+
+`cd UTKARSH`
+
+### 02 · Install
+
+`npm install`
+
+### 03 · Environment
+
+Create your local environment file:
+
+`NEXT_PUBLIC_SUPABASE_URL=your_supabase_url`
+
+`NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key`
+
+> Never commit passwords, private keys or service-role credentials to GitHub.
+
+### 04 · Run
+
+`npm run dev`
+
+---
+
+# 📦 Production
+
+`npm run build`
+
+`npm start`
+
+Configure production environment variables directly in your deployment platform.
+
+---
+
+# 🌱 Vision
+
+UTKARSH brings academic information into one focused digital environment.
+
+<div align="center">
+
+### From scattered information → to one academic space.
+
+### From routine → to organized progress.
+
+### From today's classroom → to tomorrow's academic future.
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff9933,50:ffffff,100:138808&height=150&section=footer" width="100%" />
+
+# 🇮🇳 उत्कर्ष
+
+### Where India's spirit meets academic ambition.
+
+<br/>
+
+<img src="https://img.shields.io/badge/MADE%20FOR-IT--C-ff9933?style=for-the-badge&labelColor=0b0f14" />
+<img src="https://img.shields.io/badge/BUILT%20WITH-PURPOSE-ffffff?style=for-the-badge&labelColor=0b0f14" />
+<img src="https://img.shields.io/badge/LOOKING%20AHEAD-138808?style=for-the-badge&labelColor=0b0f14" />
+
+<br/><br/>
+
+**UTKARSH • 2026**
+
+</div>
