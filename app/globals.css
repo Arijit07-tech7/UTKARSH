@@ -14483,3 +14483,1075 @@ body {
         min-height: 54px !important;
     }
 }
+
+/* =========================================================
+   UTKARSH — ADMIN STUDENTS PAGE
+   PREMIUM INDIAN ACADEMIC UI
+   Works with the ACTUAL students/page.jsx structure
+========================================================= */
+
+.admin-dashboard-page {
+  --utk-text: #17231c;
+  --utk-muted: #718078;
+  --utk-line: rgba(24, 55, 37, 0.09);
+  --utk-saffron: #ff9933;
+  --utk-blue: #2457a6;
+  --utk-green: #138808;
+
+  position: relative;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.admin-dashboard-page .admin-welcome {
+  position: relative;
+  overflow: hidden;
+
+  padding: 34px 34px !important;
+
+  border-radius: 24px !important;
+
+  border: 1px solid rgba(24, 55, 37, 0.09) !important;
+
+  background:
+    radial-gradient(
+      circle at 90% 20%,
+      rgba(19, 136, 8, 0.10),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 5% 80%,
+      rgba(255, 153, 51, 0.10),
+      transparent 30%
+    ),
+    linear-gradient(
+      120deg,
+      #fffaf5 0%,
+      #ffffff 45%,
+      #f5fbf5 100%
+    ) !important;
+
+  box-shadow:
+    0 18px 55px rgba(25, 55, 35, 0.065) !important;
+
+  margin-bottom: 20px !important;
+}
+
+
+/* tricolour line */
+
+.admin-dashboard-page .admin-welcome::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 4px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ff9933 0%,
+      #ff9933 33.33%,
+      #ffffff 33.33%,
+      #ffffff 66.66%,
+      #138808 66.66%,
+      #138808 100%
+    );
+}
+
+
+.admin-dashboard-page .admin-welcome > div {
+  position: relative;
+  z-index: 2;
+}
+
+
+.admin-dashboard-page .admin-welcome span {
+  display: block;
+
+  margin-bottom: 9px;
+
+  font-size: 10px !important;
+
+  font-weight: 800 !important;
+
+  letter-spacing: 0.18em !important;
+
+  color: #829088 !important;
+}
+
+
+.admin-dashboard-page .admin-welcome h2 {
+  margin: 0 !important;
+
+  font-size: clamp(30px, 3vw, 42px) !important;
+
+  line-height: 1.05 !important;
+
+  letter-spacing: -0.045em !important;
+
+  font-weight: 850 !important;
+
+  color: #15221a !important;
+}
+
+
+.admin-dashboard-page .admin-welcome p {
+  max-width: 620px;
+
+  margin:
+    10px 0 0 !important;
+
+  font-size: 14px !important;
+
+  line-height: 1.65 !important;
+
+  color: #748078 !important;
+}
+
+
+/* =========================================================
+   ADD STUDENT BUTTON
+========================================================= */
+
+.admin-dashboard-page .admin-welcome .dashboard-retry-button {
+  position: relative;
+  z-index: 3;
+
+  display: inline-flex !important;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 12px 18px !important;
+
+  border-radius: 13px !important;
+
+  border: 0 !important;
+
+  color: white !important;
+
+  background:
+    linear-gradient(
+      105deg,
+      #ff9933,
+      #285a9f 52%,
+      #138808
+    ) !important;
+
+  font-weight: 800 !important;
+
+  box-shadow:
+    0 10px 26px rgba(19, 136, 8, 0.15) !important;
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease !important;
+}
+
+.admin-dashboard-page
+.dashboard-retry-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 15px 32px rgba(19, 136, 8, 0.20) !important;
+}
+
+
+/* =========================================================
+   STAT CARDS
+========================================================= */
+
+.admin-dashboard-page .stats-grid {
+  gap: 14px !important;
+
+  margin-bottom: 20px !important;
+}
+
+
+.admin-dashboard-page .stats-grid > .panel {
+  position: relative;
+
+  overflow: hidden;
+
+  min-height: 92px;
+
+  padding: 19px 20px !important;
+
+  border-radius: 18px !important;
+
+  border: 1px solid rgba(24, 55, 37, 0.085) !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #fbfcfb
+    ) !important;
+
+  box-shadow:
+    0 8px 28px rgba(24, 55, 37, 0.045) !important;
+
+  transition:
+    transform .22s ease,
+    box-shadow .22s ease,
+    border-color .22s ease !important;
+}
+
+
+.admin-dashboard-page .stats-grid > .panel:hover {
+  transform: translateY(-3px);
+
+  border-color:
+    rgba(19, 136, 8, 0.16) !important;
+
+  box-shadow:
+    0 16px 38px rgba(24, 55, 37, 0.08) !important;
+}
+
+
+.admin-dashboard-page .stats-grid > .panel::after {
+  content: "";
+
+  position: absolute;
+
+  right: -35px;
+  bottom: -40px;
+
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(19, 136, 8, .035);
+
+  pointer-events: none;
+}
+
+
+.admin-dashboard-page .stats-grid small {
+  color: #87928c !important;
+
+  font-size: 10px !important;
+
+  font-weight: 800 !important;
+
+  letter-spacing: .13em !important;
+}
+
+
+.admin-dashboard-page .stats-grid h3 {
+  color: #17251d !important;
+
+  font-size: 22px !important;
+
+  font-weight: 850 !important;
+}
+
+
+/* stat icon */
+
+.admin-dashboard-page .activity-dot {
+  flex-shrink: 0;
+
+  width: 43px !important;
+  height: 43px !important;
+
+  display: inline-flex !important;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px !important;
+
+  border: 1px solid rgba(24,55,37,.08);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,153,51,.10),
+      rgba(19,136,8,.09)
+    ) !important;
+
+  color: #138808 !important;
+}
+
+
+.admin-dashboard-page .activity-dot.blue {
+  color: #2457a6 !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(36,87,166,.10),
+      rgba(19,136,8,.06)
+    ) !important;
+}
+
+
+.admin-dashboard-page .activity-dot.green {
+  color: #138808 !important;
+
+  background:
+    rgba(19,136,8,.08) !important;
+}
+
+
+.admin-dashboard-page .activity-dot.violet {
+  color: #a65d18 !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,153,51,.13),
+      rgba(36,87,166,.07)
+    ) !important;
+}
+
+
+/* =========================================================
+   STUDENT RECORDS PANEL
+========================================================= */
+
+.admin-dashboard-page > .panel {
+  overflow: hidden;
+
+  padding: 0 !important;
+
+  border-radius: 22px !important;
+
+  border: 1px solid rgba(24,55,37,.085) !important;
+
+  background: #ffffff !important;
+
+  box-shadow:
+    0 12px 40px rgba(24,55,37,.05) !important;
+}
+
+
+/* panel heading */
+
+.admin-dashboard-page .panel-title {
+  padding: 22px 24px !important;
+
+  border-bottom:
+    1px solid rgba(24,55,37,.07) !important;
+}
+
+
+.admin-dashboard-page .panel-title > div > span {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #8a958f !important;
+
+  font-size: 10px !important;
+
+  font-weight: 800 !important;
+
+  letter-spacing: .16em !important;
+}
+
+
+.admin-dashboard-page .panel-title h3 {
+  margin: 0 !important;
+
+  color: #193025 !important;
+
+  font-size: 20px !important;
+
+  font-weight: 800 !important;
+
+  letter-spacing: -.025em !important;
+}
+
+
+/* refresh */
+
+.admin-dashboard-page .panel-title
+.dashboard-retry-button {
+  display: inline-flex !important;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 9px 13px !important;
+
+  border-radius: 10px !important;
+
+  border: 1px solid rgba(24,55,37,.09) !important;
+
+  background: #ffffff !important;
+
+  color: #68776e !important;
+
+  font-weight: 700 !important;
+
+  box-shadow:
+    0 4px 13px rgba(24,55,37,.035) !important;
+}
+
+
+/* =========================================================
+   SEARCH AREA
+========================================================= */
+
+.admin-dashboard-page .panel > div[style*="marginBottom"] {
+  padding:
+    18px 24px 4px !important;
+
+  margin-bottom: 8px !important;
+}
+
+
+/* actual inline search input */
+
+.admin-dashboard-page input[type="text"] {
+  min-height: 48px !important;
+
+  box-sizing: border-box !important;
+
+  border:
+    1px solid rgba(24,55,37,.11) !important;
+
+  border-radius: 13px !important;
+
+  background:
+    #fbfcfb !important;
+
+  color: #1b2a21 !important;
+
+  font-size: 13px !important;
+
+  transition:
+    border-color .2s ease,
+    box-shadow .2s ease,
+    background .2s ease !important;
+}
+
+
+.admin-dashboard-page input[type="text"]:focus {
+  border-color:
+    rgba(19,136,8,.30) !important;
+
+  background: #ffffff !important;
+
+  box-shadow:
+    0 0 0 4px rgba(19,136,8,.055) !important;
+}
+
+
+.admin-dashboard-page input[type="text"]::placeholder {
+  color: #9aa49f !important;
+}
+
+
+/* add button beside search */
+
+.admin-dashboard-page
+.panel > div[style*="marginBottom"]
+> .dashboard-retry-button {
+  min-height: 46px;
+
+  display: inline-flex !important;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 0 15px !important;
+
+  border-radius: 12px !important;
+
+  border: 0 !important;
+
+  color: #ffffff !important;
+
+  background:
+    linear-gradient(
+      105deg,
+      #ff9933,
+      #2457a6 50%,
+      #138808
+    ) !important;
+
+  font-weight: 800 !important;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.admin-dashboard-page table {
+  border-collapse: separate !important;
+
+  border-spacing: 0 !important;
+}
+
+
+.admin-dashboard-page thead {
+  background:
+    linear-gradient(
+      90deg,
+      #fffaf5,
+      #ffffff 50%,
+      #f6fbf6
+    ) !important;
+}
+
+
+.admin-dashboard-page th {
+  color: #77837c !important;
+
+  font-size: 10px !important;
+
+  font-weight: 850 !important;
+
+  letter-spacing: .10em !important;
+
+  text-transform: uppercase !important;
+
+  border-bottom:
+    1px solid rgba(24,55,37,.075) !important;
+
+  padding:
+    14px 10px !important;
+}
+
+
+.admin-dashboard-page td {
+  color: #53635a !important;
+
+  font-size: 13px !important;
+
+  border-top:
+    1px solid rgba(24,55,37,.065) !important;
+
+  padding:
+    16px 10px !important;
+
+  background: #ffffff !important;
+}
+
+
+.admin-dashboard-page tbody tr {
+  transition:
+    background .18s ease !important;
+}
+
+
+.admin-dashboard-page tbody tr:hover td {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255,153,51,.025),
+      rgba(19,136,8,.025)
+    ) !important;
+}
+
+
+.admin-dashboard-page td b {
+  color: #1b3024 !important;
+
+  font-size: 14px !important;
+
+  font-weight: 800 !important;
+}
+
+
+.admin-dashboard-page td small {
+  color: #89948e !important;
+}
+
+
+.admin-dashboard-page td svg {
+  color: #687a70;
+}
+
+
+/* =========================================================
+   EDIT / DELETE BUTTONS
+   These override the inline styles from page.jsx
+========================================================= */
+
+.admin-dashboard-page td button {
+  width: 38px !important;
+  height: 38px !important;
+
+  display: inline-flex !important;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px !important;
+
+  cursor: pointer;
+
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease,
+    border-color .18s ease !important;
+}
+
+
+.admin-dashboard-page td button:first-child {
+  border:
+    1px solid rgba(36,87,166,.13) !important;
+
+  background:
+    rgba(36,87,166,.045) !important;
+
+  color: #2457a6 !important;
+}
+
+
+.admin-dashboard-page td button:first-child:hover {
+  transform: translateY(-2px);
+
+  background:
+    rgba(36,87,166,.09) !important;
+
+  box-shadow:
+    0 7px 18px rgba(36,87,166,.10) !important;
+}
+
+
+.admin-dashboard-page td button:last-child {
+  border:
+    1px solid rgba(220,38,38,.13) !important;
+
+  background:
+    rgba(220,38,38,.045) !important;
+
+  color: #dc2626 !important;
+}
+
+
+.admin-dashboard-page td button:last-child:hover {
+  transform: translateY(-2px);
+
+  background:
+    rgba(220,38,38,.085) !important;
+
+  box-shadow:
+    0 7px 18px rgba(220,38,38,.10) !important;
+}
+
+
+/* =========================================================
+   STATUS BADGE
+========================================================= */
+
+.admin-dashboard-page .status-green,
+.admin-dashboard-page [class*="status"] {
+  border-radius: 999px !important;
+}
+
+
+/* =========================================================
+   EMPTY / LOADING
+========================================================= */
+
+.admin-dashboard-page .dashboard-empty-state {
+  min-height: 220px !important;
+
+  margin: 12px 24px 24px !important;
+
+  border-radius: 18px !important;
+
+  border:
+    1px dashed rgba(24,55,37,.14) !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      #fbfcfb,
+      #ffffff
+    ) !important;
+
+  color: #78857d !important;
+}
+
+
+/* =========================================================
+   STATUS BANNERS
+========================================================= */
+
+.admin-dashboard-page .status-banner {
+  border-radius: 16px !important;
+
+  border:
+    1px solid rgba(24,55,37,.08) !important;
+
+  background:
+    rgba(255,255,255,.94) !important;
+
+  box-shadow:
+    0 8px 25px rgba(24,55,37,.045) !important;
+}
+
+
+/* =========================================================
+   MODAL
+   Actual page has no modal class, so target it safely
+========================================================= */
+
+.admin-dashboard-page
+> div[style*="position: fixed"] {
+  background:
+    rgba(8,18,12,.48) !important;
+
+  backdrop-filter:
+    blur(14px) saturate(120%) !important;
+}
+
+
+.admin-dashboard-page
+> div[style*="position: fixed"]
+> div[role="dialog"] {
+  position: relative;
+
+  overflow: hidden;
+
+  border:
+    1px solid rgba(24,55,37,.10) !important;
+
+  border-radius: 24px !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #fbfdfb
+    ) !important;
+
+  box-shadow:
+    0 35px 100px rgba(10,30,18,.22) !important;
+}
+
+
+.admin-dashboard-page
+> div[style*="position: fixed"]
+> div[role="dialog"]::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 4px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ff9933,
+      #ffffff 50%,
+      #138808
+    );
+}
+
+
+.admin-dashboard-page
+> div[style*="position: fixed"]
+input {
+  background: #ffffff !important;
+
+  color: #17231c !important;
+
+  border:
+    1px solid rgba(24,55,37,.12) !important;
+
+  border-radius: 12px !important;
+
+  transition:
+    border-color .2s ease,
+    box-shadow .2s ease !important;
+}
+
+
+.admin-dashboard-page
+> div[style*="position: fixed"]
+input:focus {
+  border-color:
+    rgba(19,136,8,.30) !important;
+
+  box-shadow:
+    0 0 0 4px rgba(19,136,8,.055) !important;
+}
+
+
+.admin-dashboard-page
+> div[style*="position: fixed"]
+label > span {
+  color: #53635a !important;
+}
+
+
+/* modal submit button */
+
+.admin-dashboard-page
+> div[style*="position: fixed"]
+form button[type="submit"] {
+  background:
+    linear-gradient(
+      105deg,
+      #ff9933,
+      #2457a6 50%,
+      #138808
+    ) !important;
+
+  border: none !important;
+
+  box-shadow:
+    0 9px 23px rgba(19,136,8,.14) !important;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+
+  .admin-dashboard-page .admin-welcome {
+    padding: 26px 21px !important;
+
+    border-radius: 19px !important;
+  }
+
+  .admin-dashboard-page .admin-welcome h2 {
+    font-size: 29px !important;
+  }
+
+  .admin-dashboard-page .admin-welcome p {
+    font-size: 13px !important;
+  }
+
+  .admin-dashboard-page
+  .admin-welcome
+  .dashboard-retry-button {
+    width: 100%;
+
+    margin-top: 18px;
+  }
+
+  .admin-dashboard-page .stats-grid {
+    grid-template-columns:
+      repeat(2, minmax(0,1fr)) !important;
+  }
+
+  .admin-dashboard-page .stats-grid > .panel {
+    min-width: 0;
+  }
+
+  .admin-dashboard-page
+  .panel-title {
+    padding: 18px !important;
+  }
+
+  .admin-dashboard-page
+  .panel > div[style*="marginBottom"] {
+    padding:
+      15px 16px 3px !important;
+
+    flex-direction: column !important;
+
+    align-items: stretch !important;
+  }
+
+  .admin-dashboard-page
+  .panel > div[style*="marginBottom"]
+  > .dashboard-retry-button {
+    width: 100%;
+  }
+
+  .admin-dashboard-page table {
+    min-width: 720px !important;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .admin-dashboard-page .stats-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .admin-dashboard-page .admin-welcome h2 {
+    font-size: 26px !important;
+  }
+
+  .admin-dashboard-page
+  > div[style*="position: fixed"] {
+    padding: 12px !important;
+  }
+
+  .admin-dashboard-page
+  > div[style*="position: fixed"]
+  > div[role="dialog"] {
+    padding: 21px !important;
+    border-radius: 19px !important;
+  }
+
+  .admin-dashboard-page
+  > div[style*="position: fixed"]
+  form > div {
+    grid-template-columns: 1fr !important;
+  }
+
+  .admin-dashboard-page
+  > div[style*="position: fixed"]
+  form label[style*="gridColumn"] {
+    grid-column: auto !important;
+  }
+
+  .admin-dashboard-page
+  > div[style*="position: fixed"]
+  form > div:last-child {
+    flex-direction: column-reverse !important;
+  }
+
+  .admin-dashboard-page
+  > div[style*="position: fixed"]
+  form > div:last-child button {
+    width: 100%;
+  }
+}
+/* =========================================================
+   FIX — STUDENT RECORDS ADD STUDENT BUTTON
+========================================================= */
+
+.admin-dashboard-page
+section.panel
+> div
+> button.dashboard-retry-button {
+    height: 46px !important;
+    min-height: 46px !important;
+    min-width: 142px !important;
+
+    padding: 0 18px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 7px !important;
+
+    box-sizing: border-box !important;
+
+    border: 1px solid transparent !important;
+    border-radius: 12px !important;
+
+    background:
+        linear-gradient(
+            105deg,
+            #ff9933 0%,
+            #285a9f 52%,
+            #138808 100%
+        ) !important;
+
+    color: #ffffff !important;
+
+    font-family: inherit !important;
+    font-size: 13px !important;
+    font-weight: 800 !important;
+    line-height: 1 !important;
+
+    white-space: nowrap !important;
+
+    cursor: pointer !important;
+
+    box-shadow:
+        0 8px 22px rgba(19, 136, 8, 0.14) !important;
+
+    appearance: none !important;
+    -webkit-appearance: none !important;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        filter 0.2s ease !important;
+}
+
+.admin-dashboard-page
+section.panel
+> div
+> button.dashboard-retry-button:hover {
+    transform: translateY(-2px) !important;
+
+    filter: brightness(1.03) !important;
+
+    box-shadow:
+        0 13px 30px rgba(19, 136, 8, 0.20) !important;
+}
+
+.admin-dashboard-page
+section.panel
+> div
+> button.dashboard-retry-button:active {
+    transform: translateY(0) !important;
+}
+
+.admin-dashboard-page
+section.panel
+> div
+> button.dashboard-retry-button svg {
+    width: 16px !important;
+    height: 16px !important;
+
+    flex-shrink: 0 !important;
+
+    color: #ffffff !important;
+
+    stroke: #ffffff !important;
+}
+
+
+/* Search + Add Student alignment */
+
+.admin-dashboard-page
+section.panel
+> div[style*="margin-bottom"] {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+}
+
+
+/* Search takes remaining space */
+
+.admin-dashboard-page
+section.panel
+> div[style*="margin-bottom"]
+> div {
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
+}
+
+
+/* Mobile */
+
+@media (max-width: 760px) {
+    .admin-dashboard-page
+    section.panel
+    > div
+    > button.dashboard-retry-button {
+        min-width: 0 !important;
+        width: 100% !important;
+    }
+}
