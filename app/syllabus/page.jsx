@@ -1,2 +1,5 @@
-import ResourcePage from "@/components/ResourcePage";
-export default function Page(){return <ResourcePage resource="syllabus"/>;}
+import SyllabusResourcePage from "@/components/SyllabusResourcePage";
+
+export default function Page() {
+  return <SyllabusResourcePage />;
+}

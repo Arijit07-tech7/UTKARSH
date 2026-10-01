@@ -19345,3 +19345,262 @@ body {
     animation: none;
   }
 }
+
+/* SUBJECT FOLDER TOOLBAR */
+.student-notes-premium .student-notes-toolbar-card {
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #dfe8e1;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(20, 55, 34, 0.045);
+  display: grid;
+  gap: 12px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  margin: 18px 0 25px;
+  min-width: 0;
+  padding: 12px;
+}
+
+.student-notes-premium .student-notes-search {
+  align-items: center;
+  background: #f8faf8;
+  border: 1px solid #e1e9e2;
+  border-radius: 11px;
+  color: #78867d;
+  display: flex;
+  gap: 10px;
+  min-height: 46px;
+  min-width: 0;
+  padding: 0 13px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.student-notes-premium .student-notes-search:focus-within {
+  background: #ffffff;
+  border-color: #83b894;
+  box-shadow: 0 0 0 3px rgba(19, 136, 8, 0.08);
+}
+
+.student-notes-premium .student-notes-search > svg {
+  color: #738178;
+  flex: 0 0 auto;
+}
+
+.student-notes-premium .student-notes-search input {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  color: #17251f;
+  flex: 1;
+  font-family: inherit;
+  font-size: 13px;
+  height: 44px;
+  min-width: 0;
+  outline: none;
+  padding: 0;
+  width: 100%;
+}
+
+.student-notes-premium .student-notes-search input::placeholder {
+  color: #98a39b;
+  opacity: 1;
+}
+
+.student-notes-premium .student-notes-search input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.student-notes-premium .student-notes-search button {
+  align-items: center;
+  background: #edf4ee;
+  border: 0;
+  border-radius: 50%;
+  color: #5d7063;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 27px;
+  height: 27px;
+  justify-content: center;
+  padding: 0;
+  width: 27px;
+}
+
+.student-notes-premium .student-notes-search button:hover {
+  background: #e2efe4;
+  color: #0d6238;
+}
+
+.student-notes-premium .student-notes-refresh {
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #cfe0d2;
+  border-radius: 11px;
+  color: #176d37;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 750;
+  gap: 9px;
+  justify-content: center;
+  min-height: 46px;
+  min-width: 112px;
+  padding: 0 15px;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+}
+
+.student-notes-premium .student-notes-refresh svg {
+  color: #138808;
+  flex: 0 0 auto;
+}
+
+.student-notes-premium .student-notes-refresh:hover:not(:disabled) {
+  background: #f0f8f1;
+  border-color: #a9cdb1;
+  transform: translateY(-1px);
+}
+
+.student-notes-premium .student-notes-refresh:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.student-notes-premium .student-notes-spin {
+  animation: student-notes-folder-spin 0.85s linear infinite;
+}
+
+@keyframes student-notes-folder-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* CARD ALIGNMENT AND TEXT WRAPPING */
+.student-notes-premium .student-material-card {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.student-notes-premium .student-material-copy {
+  min-width: 0;
+}
+
+.student-notes-premium .student-material-copy h3,
+.student-notes-premium .student-material-copy p {
+  overflow-wrap: anywhere;
+}
+
+.student-notes-premium .student-material-footer {
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  min-width: 0;
+}
+
+.student-notes-premium .student-material-footer small {
+  flex: 1 1 100px;
+  min-width: 0;
+}
+
+.student-notes-premium .student-material-footer button {
+  flex: 0 0 auto;
+  justify-content: center;
+  min-width: 100px;
+  white-space: nowrap;
+}
+
+/* ERROR MESSAGE */
+.student-notes-premium .student-notes-error {
+  align-items: center;
+  background: #fff8f2;
+  border: 1px solid #f0d8c3;
+  border-radius: 14px;
+  display: flex;
+  gap: 14px;
+  justify-content: space-between;
+  margin: 0 0 22px;
+  padding: 14px 16px;
+}
+
+.student-notes-premium .student-notes-error strong,
+.student-notes-premium .student-notes-error span {
+  display: block;
+}
+
+.student-notes-premium .student-notes-error strong {
+  color: #99501f;
+  font-size: 12px;
+}
+
+.student-notes-premium .student-notes-error span {
+  color: #846e5e;
+  font-size: 11px;
+  line-height: 1.5;
+  margin-top: 4px;
+  overflow-wrap: anywhere;
+}
+
+.student-notes-premium .student-notes-error button {
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #ead3bf;
+  border-radius: 10px;
+  color: #8b4d26;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 750;
+  gap: 7px;
+  justify-content: center;
+  min-height: 36px;
+  padding: 0 12px;
+}
+
+/* ACCESSIBLE KEYBOARD FOCUS */
+.student-notes-premium .student-notes-back:focus-visible,
+.student-notes-premium .student-notes-search button:focus-visible,
+.student-notes-premium .student-notes-refresh:focus-visible,
+.student-notes-premium .student-material-footer button:focus-visible {
+  outline: 3px solid rgba(36, 77, 143, 0.32);
+  outline-offset: 3px;
+}
+
+/* TABLET AND MOBILE */
+@media (max-width: 700px) {
+  .student-notes-premium .student-notes-toolbar-card {
+    align-items: stretch;
+    grid-template-columns: minmax(0, 1fr);
+    margin: 14px 0 20px;
+    padding: 10px;
+  }
+
+  .student-notes-premium .student-notes-refresh {
+    width: 100%;
+  }
+
+  .student-notes-premium .student-notes-error {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .student-notes-premium .student-notes-error button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .student-notes-premium .student-material-footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .student-notes-premium .student-material-footer button {
+    min-height: 40px;
+    width: 100%;
+  }
+}

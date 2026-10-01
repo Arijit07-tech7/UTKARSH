@@ -1,2 +1,5 @@
-import ResourcePage from "@/components/ResourcePage";
-export default function Page(){return <ResourcePage resource="routine"/>;}
+import RoutineResourcePage from "@/components/RoutineResourcePage";
+
+export default function Page() {
+  return <RoutineResourcePage />;
+}
