@@ -1,5 +1,7 @@
-import AdminResourcePage from "@/components/AdminResourcePage";
+import AdminAssignmentsWorkspace from "@/components/AdminAssignmentsWorkspace";
 
 export default function Page() {
-  return <AdminResourcePage resource="assignments" />;
+  return (
+    <AdminAssignmentsWorkspace />
+  );
 }

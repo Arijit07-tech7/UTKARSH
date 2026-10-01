@@ -1,9 +1,183 @@
 "use client";
-import { Search, Plus, ArrowUpRight, CheckCircle2, AlertCircle, Clock3, FileText, CalendarDays, MessageCircle, Bell, Layers3 } from "lucide-react";
-export function StatCard({icon:Icon,title,value,caption,tone="blue"}){return <div className={`stat-card ${tone}`}><span className="stat-icon"><Icon size={20}/></span><div><small>{title}</small><strong>{value}</strong><p>{caption}</p></div><ArrowUpRight size={16} className="stat-arrow"/></div>}
-export function PageHeader({eyebrow,title,description,action,actionLabel="Add New"}){return <div className="page-header"><div><span>{eyebrow}</span><h2>{title}</h2><p>{description}</p></div>{action&&<button className="primary-button" onClick={action}><Plus size={17}/>{actionLabel}</button>}</div>}
-export function SearchFilter({value,onChange,placeholder="Search..."}){return <div className="toolbar"><div className="search-box"><Search size={17}/><input value={value} onChange={e=>onChange(e.target.value)} placeholder={placeholder}/></div></div>}
-export function Status({children,tone="blue"}){return <span className={`status ${tone}`}>{children}</span>}
-export function EmptyState({icon:Icon=Layers3,title="Nothing here yet",text="Content will appear here when it is available.",action}){return <div className="empty-state"><span><Icon size={28}/></span><h3>{title}</h3><p>{text}</p>{action&&<button className="primary-button" onClick={action}>Get started</button>}</div>}
-export function NoticeCard({item}){return <article className="notice-card"><span className="notice-icon"><Bell size={18}/></span><div><div className="notice-meta"><Status tone={item.priority === "important" ? "pink" : "blue"}>{item.category||"Academic"}</Status><small>{item.date||"Recently"}</small></div><h3>{item.title||"Academic notice"}</h3><p>{item.content||item.description||"Important academic information is available."}</p></div><ArrowUpRight size={17}/></article>}
-export const resourceIcon={notes:FileText,assignments:CheckCircle2,routine:CalendarDays,syllabus:Layers3,notices:Bell,queries:MessageCircle};
+
+import {
+  Search,
+  Plus,
+  ArrowUpRight,
+  CheckCircle2,
+  FileText,
+  CalendarDays,
+  MessageCircle,
+  Bell,
+  Layers3,
+} from "lucide-react";
+
+export function StatCard({
+  icon: Icon,
+  title,
+  value,
+  caption,
+  tone = "blue",
+}) {
+  return (
+    <div className={`stat-card ${tone}`}>
+      <span className="stat-icon">
+        <Icon size={20} />
+      </span>
+
+      <div>
+        <small>{title}</small>
+        <strong>{value}</strong>
+        <p>{caption}</p>
+      </div>
+
+      <ArrowUpRight
+        size={16}
+        className="stat-arrow"
+      />
+    </div>
+  );
+}
+
+export function PageHeader({
+  eyebrow,
+  title,
+  description,
+  action,
+  actionLabel = "Add New",
+}) {
+  return (
+    <div className="page-header">
+      <div>
+        <span>{eyebrow}</span>
+
+        <h2>{title}</h2>
+
+        <p>{description}</p>
+      </div>
+
+      {action && (
+        <button
+          type="button"
+          className="primary-button"
+          onClick={action}
+        >
+          <Plus size={17} />
+          {actionLabel}
+        </button>
+      )}
+    </div>
+  );
+}
+
+export function SearchFilter({
+  value,
+  onChange,
+  placeholder = "Search...",
+}) {
+  return (
+    <div className="toolbar">
+      <div className="search-box">
+        <Search size={17} />
+
+        <input
+          type="text"
+          value={value}
+          onChange={(e) =>
+            onChange(e.target.value)
+          }
+          placeholder={placeholder}
+        />
+      </div>
+    </div>
+  );
+}
+
+export function Status({
+  children,
+  tone = "blue",
+}) {
+  return (
+    <span className={`status ${tone}`}>
+      {children}
+    </span>
+  );
+}
+
+export function EmptyState({
+  icon: Icon = Layers3,
+  title = "Nothing here yet",
+  text = "Content will appear here when it is available.",
+  action,
+}) {
+  return (
+    <div className="empty-state">
+      <span>
+        <Icon size={28} />
+      </span>
+
+      <h3>{title}</h3>
+
+      <p>{text}</p>
+
+      {action && (
+        <button
+          type="button"
+          className="primary-button"
+          onClick={action}
+        >
+          Get started
+        </button>
+      )}
+    </div>
+  );
+}
+
+export function NoticeCard({ item }) {
+  return (
+    <article className="notice-card">
+      <span className="notice-icon">
+        <Bell size={18} />
+      </span>
+
+      <div>
+        <div className="notice-meta">
+          <Status
+            tone={
+              item.priority === "important"
+                ? "pink"
+                : "blue"
+            }
+          >
+            {item.category || "Academic"}
+          </Status>
+
+          <small>
+            {item.date || "Recently"}
+          </small>
+        </div>
+
+        <h3>
+          {item.title || "Academic notice"}
+        </h3>
+
+        <p>
+          {item.content ||
+            item.description ||
+            "Important academic information is available."}
+        </p>
+      </div>
+
+      <ArrowUpRight size={17} />
+    </article>
+  );
+}
+
+export const resourceIcon = {
+  notes: FileText,
+  assignments: CheckCircle2,
+  routine: CalendarDays,
+  syllabus: Layers3,
+  notices: Bell,
+  queries: MessageCircle,
+};
